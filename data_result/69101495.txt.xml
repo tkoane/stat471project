@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Health</word>
+            <lemma>Health</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Net</word>
+            <lemma>Net</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>filed</word>
+            <lemma>file</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Shelf</word>
+            <lemma>shelf</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Registration</word>
+            <lemma>registration</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>amount</word>
+            <lemma>amount</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>$</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.1438E8</NormalizedNER>
+          </token>
+          <token id="14">
+            <word>114.38</word>
+            <lemma>114.38</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.1438E8</NormalizedNER>
+          </token>
+          <token id="15">
+            <word>million</word>
+            <lemma>million</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.1438E8</NormalizedNER>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Health) (NNP Net) (NNP Inc.)) (VP (VBZ has) (VP (VBN filed) (NP (DT a) (NN Shelf) (NN Registration)) (PP (IN in) (NP (NP (DT the) (NN amount)) (PP (IN of) (NP (QP ($ $) (CD 114.38) (CD million)))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Registration</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Registration</governor>
+            <dependent idx="7">Shelf</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Registration</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">filed</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">amount</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="11">amount</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">amount</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">of</governor>
+            <dependent idx="13">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="14">114.38</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="15">million</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Registration</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Registration</governor>
+            <dependent idx="7">Shelf</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Registration</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">amount</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">filed</governor>
+            <dependent idx="11">amount</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">amount</governor>
+            <dependent idx="13">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="14">114.38</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="15">million</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Registration</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Registration</governor>
+            <dependent idx="7">Shelf</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Registration</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">amount</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">filed</governor>
+            <dependent idx="11">amount</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">amount</governor>
+            <dependent idx="13">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="14">114.38</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="15">million</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (. .))) </parse>
+        <basic-dependencies/>
+        <collapsed-dependencies/>
+        <collapsed-ccprocessed-dependencies/>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Health</word>
+            <lemma>Health</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Net</word>
+            <lemma>Net</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>filed</word>
+            <lemma>file</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Shelf</word>
+            <lemma>shelf</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Registration</word>
+            <lemma>registration</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>amount</word>
+            <lemma>amount</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>143</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>144</CharacterOffsetBegin>
+            <CharacterOffsetEnd>146</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>147</CharacterOffsetBegin>
+            <CharacterOffsetEnd>148</CharacterOffsetEnd>
+            <POS>$</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.1438E8</NormalizedNER>
+          </token>
+          <token id="14">
+            <word>114.38</word>
+            <lemma>114.38</lemma>
+            <CharacterOffsetBegin>148</CharacterOffsetBegin>
+            <CharacterOffsetEnd>154</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.1438E8</NormalizedNER>
+          </token>
+          <token id="15">
+            <word>million</word>
+            <lemma>million</lemma>
+            <CharacterOffsetBegin>155</CharacterOffsetBegin>
+            <CharacterOffsetEnd>162</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.1438E8</NormalizedNER>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>162</CharacterOffsetBegin>
+            <CharacterOffsetEnd>163</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Health) (NNP Net) (NNP Inc.)) (VP (VBZ has) (VP (VBN filed) (NP (DT a) (NN Shelf) (NN Registration)) (PP (IN in) (NP (NP (DT the) (NN amount)) (PP (IN of) (NP (QP ($ $) (CD 114.38) (CD million)))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Registration</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Registration</governor>
+            <dependent idx="7">Shelf</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Registration</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">filed</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">amount</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="11">amount</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">amount</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">of</governor>
+            <dependent idx="13">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="14">114.38</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="15">million</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Registration</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Registration</governor>
+            <dependent idx="7">Shelf</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Registration</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">amount</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">filed</governor>
+            <dependent idx="11">amount</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">amount</governor>
+            <dependent idx="13">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="14">114.38</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="15">million</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Registration</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Registration</governor>
+            <dependent idx="7">Shelf</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Registration</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">amount</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">filed</governor>
+            <dependent idx="11">amount</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">amount</governor>
+            <dependent idx="13">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="14">114.38</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="13">$</governor>
+            <dependent idx="15">million</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

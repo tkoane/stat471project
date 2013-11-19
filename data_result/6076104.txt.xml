@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NNP Starbucks) (NNP Corp.) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Plans</word>
+            <lemma>plan</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Open</word>
+            <lemma>open</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="4">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Outlet</word>
+            <lemma>Outlet</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Bulgaria</word>
+            <lemma>Bulgaria</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="8">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNS Plans)) (VP (TO to) (VP (VB Open) (NP (PRP$ its) (NNP Outlet)) (PP (IN in) (NP (NNP Bulgaria))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="3">Open</governor>
+            <dependent idx="1">Plans</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">Open</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">Outlet</governor>
+            <dependent idx="4">its</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">Open</governor>
+            <dependent idx="5">Outlet</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Open</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="7">Bulgaria</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="3">Open</governor>
+            <dependent idx="1">Plans</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">Open</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">Outlet</governor>
+            <dependent idx="4">its</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">Open</governor>
+            <dependent idx="5">Outlet</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Open</governor>
+            <dependent idx="7">Bulgaria</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="3">Open</governor>
+            <dependent idx="1">Plans</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">Open</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">Outlet</governor>
+            <dependent idx="4">its</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">Open</governor>
+            <dependent idx="5">Outlet</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Open</governor>
+            <dependent idx="7">Bulgaria</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>plans</word>
+            <lemma>plan</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>open</word>
+            <lemma>open</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>first</word>
+            <lemma>first</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>ORDINAL</NER>
+            <NormalizedNER>1.0</NormalizedNER>
+          </token>
+          <token id="8">
+            <word>outlet</word>
+            <lemma>outlet</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>EU</word>
+            <lemma>EU</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="11">
+            <word>newcomer</word>
+            <lemma>newcomer</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>Bulgaria</word>
+            <lemma>Bulgaria</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="13">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>126</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>November</word>
+            <lemma>November</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>XXXX-11</NormalizedNER>
+            <Timex tid="t1" type="DATE">XXXX-11</Timex>
+          </token>
+          <token id="15">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>138</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>part</word>
+            <lemma>part</lemma>
+            <CharacterOffsetBegin>141</CharacterOffsetBegin>
+            <CharacterOffsetEnd>145</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>146</CharacterOffsetBegin>
+            <CharacterOffsetEnd>148</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>149</CharacterOffsetBegin>
+            <CharacterOffsetEnd>152</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>strategy</word>
+            <lemma>strategy</lemma>
+            <CharacterOffsetBegin>153</CharacterOffsetBegin>
+            <CharacterOffsetEnd>161</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>162</CharacterOffsetBegin>
+            <CharacterOffsetEnd>164</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>expand</word>
+            <lemma>expand</lemma>
+            <CharacterOffsetBegin>165</CharacterOffsetBegin>
+            <CharacterOffsetEnd>171</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>worldwide</word>
+            <lemma>worldwide</lemma>
+            <CharacterOffsetBegin>172</CharacterOffsetBegin>
+            <CharacterOffsetEnd>181</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>181</CharacterOffsetBegin>
+            <CharacterOffsetEnd>182</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Starbucks) (NNP Corp.)) (VP (VBZ plans) (S (VP (TO to) (VP (VB open) (NP (PRP$ its) (JJ first) (NN outlet)) (PP (IN in) (NP (NP (NNP EU) (NN newcomer) (NNP Bulgaria)) (PP (IN in) (NP (NNP November))))) (PP (IN as) (NP (NP (NN part)) (PP (IN of) (NP (PRP$ its) (NN strategy) (S (VP (TO to) (VP (VB expand) (NP (JJ worldwide))))))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">plans</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">open</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">plans</governor>
+            <dependent idx="5">open</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">outlet</governor>
+            <dependent idx="6">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">outlet</governor>
+            <dependent idx="7">first</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">open</governor>
+            <dependent idx="8">outlet</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">open</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Bulgaria</governor>
+            <dependent idx="10">EU</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Bulgaria</governor>
+            <dependent idx="11">newcomer</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="12">Bulgaria</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">Bulgaria</governor>
+            <dependent idx="13">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">in</governor>
+            <dependent idx="14">November</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">open</governor>
+            <dependent idx="15">as</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="15">as</governor>
+            <dependent idx="16">part</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="16">part</governor>
+            <dependent idx="17">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="19">strategy</governor>
+            <dependent idx="18">its</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="17">of</governor>
+            <dependent idx="19">strategy</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="21">expand</governor>
+            <dependent idx="20">to</dependent>
+          </dep>
+          <dep type="infmod">
+            <governor idx="19">strategy</governor>
+            <dependent idx="21">expand</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="21">expand</governor>
+            <dependent idx="22">worldwide</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">plans</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">open</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">plans</governor>
+            <dependent idx="5">open</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">outlet</governor>
+            <dependent idx="6">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">outlet</governor>
+            <dependent idx="7">first</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">open</governor>
+            <dependent idx="8">outlet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Bulgaria</governor>
+            <dependent idx="10">EU</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Bulgaria</governor>
+            <dependent idx="11">newcomer</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">open</governor>
+            <dependent idx="12">Bulgaria</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="12">Bulgaria</governor>
+            <dependent idx="14">November</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="5">open</governor>
+            <dependent idx="16">part</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="19">strategy</governor>
+            <dependent idx="18">its</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="16">part</governor>
+            <dependent idx="19">strategy</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="21">expand</governor>
+            <dependent idx="20">to</dependent>
+          </dep>
+          <dep type="infmod">
+            <governor idx="19">strategy</governor>
+            <dependent idx="21">expand</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="21">expand</governor>
+            <dependent idx="22">worldwide</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">plans</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">open</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">plans</governor>
+            <dependent idx="5">open</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">outlet</governor>
+            <dependent idx="6">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">outlet</governor>
+            <dependent idx="7">first</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">open</governor>
+            <dependent idx="8">outlet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Bulgaria</governor>
+            <dependent idx="10">EU</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Bulgaria</governor>
+            <dependent idx="11">newcomer</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">open</governor>
+            <dependent idx="12">Bulgaria</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="12">Bulgaria</governor>
+            <dependent idx="14">November</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="5">open</governor>
+            <dependent idx="16">part</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="19">strategy</governor>
+            <dependent idx="18">its</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="16">part</governor>
+            <dependent idx="19">strategy</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="21">expand</governor>
+            <dependent idx="20">to</dependent>
+          </dep>
+          <dep type="infmod">
+            <governor idx="19">strategy</governor>
+            <dependent idx="21">expand</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="21">expand</governor>
+            <dependent idx="22">worldwide</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

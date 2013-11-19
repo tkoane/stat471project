@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>York</word>
+            <lemma>York</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Times</word>
+            <lemma>Times</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Company</word>
+            <lemma>Company</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>Presents</word>
+            <lemma>present</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Innovation</word>
+            <lemma>Innovation</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>2010</word>
+            <lemma>2010</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2010</NormalizedNER>
+            <Timex tid="t1" type="DATE">2010</Timex>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>May-07-2010</word>
+            <lemma>may-07-2010</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>09:00</word>
+            <lemma>09:00</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>TIME</NER>
+            <NormalizedNER>T09:00</NormalizedNER>
+            <Timex tid="t2" type="TIME">T09:00</Timex>
+          </token>
+          <token id="13">
+            <word>AM</word>
+            <lemma>AM</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>TIME</NER>
+            <NormalizedNER>T09:00</NormalizedNER>
+            <Timex tid="t2" type="TIME">T09:00</Timex>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NNP New) (NNP York) (NNP Times) (NNP Company)) (VP (VBZ Presents) (PP (IN at) (NP (NP (NNP Innovation) (CD 2010)) (, ,) (NP (NN May-07-2010) (CD 09:00) (NNP AM))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="5">Company</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="2">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="3">York</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="4">Times</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Presents</governor>
+            <dependent idx="5">Company</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">Presents</governor>
+            <dependent idx="7">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">at</governor>
+            <dependent idx="8">Innovation</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="9">2010</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">AM</governor>
+            <dependent idx="11">May-07-2010</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">AM</governor>
+            <dependent idx="12">09:00</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="13">AM</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="5">Company</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="2">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="3">York</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="4">Times</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Presents</governor>
+            <dependent idx="5">Company</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="6">Presents</governor>
+            <dependent idx="8">Innovation</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="9">2010</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">AM</governor>
+            <dependent idx="11">May-07-2010</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">AM</governor>
+            <dependent idx="12">09:00</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="13">AM</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="5">Company</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="2">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="3">York</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="4">Times</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Presents</governor>
+            <dependent idx="5">Company</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="6">Presents</governor>
+            <dependent idx="8">Innovation</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="9">2010</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">AM</governor>
+            <dependent idx="11">May-07-2010</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">AM</governor>
+            <dependent idx="12">09:00</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="13">AM</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>York</word>
+            <lemma>York</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Times</word>
+            <lemma>Times</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Company</word>
+            <lemma>Company</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>Presents</word>
+            <lemma>present</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Innovation</word>
+            <lemma>Innovation</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>2010</word>
+            <lemma>2010</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2010</NormalizedNER>
+            <Timex tid="t1" type="DATE">2010</Timex>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>May-07-2010</word>
+            <lemma>may-07-2010</lemma>
+            <CharacterOffsetBegin>135</CharacterOffsetBegin>
+            <CharacterOffsetEnd>146</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>09:00</word>
+            <lemma>09:00</lemma>
+            <CharacterOffsetBegin>147</CharacterOffsetBegin>
+            <CharacterOffsetEnd>152</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>TIME</NER>
+            <NormalizedNER>T09:00</NormalizedNER>
+            <Timex tid="t2" type="TIME">T09:00</Timex>
+          </token>
+          <token id="13">
+            <word>AM</word>
+            <lemma>AM</lemma>
+            <CharacterOffsetBegin>153</CharacterOffsetBegin>
+            <CharacterOffsetEnd>155</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>TIME</NER>
+            <NormalizedNER>T09:00</NormalizedNER>
+            <Timex tid="t2" type="TIME">T09:00</Timex>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>155</CharacterOffsetBegin>
+            <CharacterOffsetEnd>156</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NNP New) (NNP York) (NNP Times) (NNP Company)) (VP (VBZ Presents) (PP (IN at) (NP (NP (NNP Innovation) (CD 2010)) (, ,) (NP (NN May-07-2010) (CD 09:00) (NNP AM))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="5">Company</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="2">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="3">York</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="4">Times</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Presents</governor>
+            <dependent idx="5">Company</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">Presents</governor>
+            <dependent idx="7">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">at</governor>
+            <dependent idx="8">Innovation</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="9">2010</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">AM</governor>
+            <dependent idx="11">May-07-2010</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">AM</governor>
+            <dependent idx="12">09:00</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="13">AM</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="5">Company</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="2">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="3">York</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="4">Times</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Presents</governor>
+            <dependent idx="5">Company</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="6">Presents</governor>
+            <dependent idx="8">Innovation</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="9">2010</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">AM</governor>
+            <dependent idx="11">May-07-2010</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">AM</governor>
+            <dependent idx="12">09:00</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="13">AM</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="5">Company</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="2">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="3">York</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Company</governor>
+            <dependent idx="4">Times</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Presents</governor>
+            <dependent idx="5">Company</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="6">Presents</governor>
+            <dependent idx="8">Innovation</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="9">2010</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">AM</governor>
+            <dependent idx="11">May-07-2010</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">AM</governor>
+            <dependent idx="12">09:00</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Innovation</governor>
+            <dependent idx="13">AM</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Venue</word>
+            <lemma>venue</lemma>
+            <CharacterOffsetBegin>157</CharacterOffsetBegin>
+            <CharacterOffsetEnd>162</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>:</word>
+            <lemma>:</lemma>
+            <CharacterOffsetBegin>162</CharacterOffsetBegin>
+            <CharacterOffsetEnd>163</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>164</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Ritz-Carlton</word>
+            <lemma>Ritz-Carlton</lemma>
+            <CharacterOffsetBegin>168</CharacterOffsetBegin>
+            <CharacterOffsetEnd>180</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>180</CharacterOffsetBegin>
+            <CharacterOffsetEnd>181</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>Laguna</word>
+            <lemma>Laguna</lemma>
+            <CharacterOffsetBegin>182</CharacterOffsetBegin>
+            <CharacterOffsetEnd>188</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="7">
+            <word>Niguel</word>
+            <lemma>Niguel</lemma>
+            <CharacterOffsetBegin>189</CharacterOffsetBegin>
+            <CharacterOffsetEnd>195</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>195</CharacterOffsetBegin>
+            <CharacterOffsetEnd>196</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Dana</word>
+            <lemma>Dana</lemma>
+            <CharacterOffsetBegin>197</CharacterOffsetBegin>
+            <CharacterOffsetEnd>201</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="10">
+            <word>Point</word>
+            <lemma>Point</lemma>
+            <CharacterOffsetBegin>202</CharacterOffsetBegin>
+            <CharacterOffsetEnd>207</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="11">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>207</CharacterOffsetBegin>
+            <CharacterOffsetEnd>208</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>CA</word>
+            <lemma>CA</lemma>
+            <CharacterOffsetBegin>209</CharacterOffsetBegin>
+            <CharacterOffsetEnd>211</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>211</CharacterOffsetBegin>
+            <CharacterOffsetEnd>212</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>United</word>
+            <lemma>United</lemma>
+            <CharacterOffsetBegin>213</CharacterOffsetBegin>
+            <CharacterOffsetEnd>219</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="15">
+            <word>States</word>
+            <lemma>States</lemma>
+            <CharacterOffsetBegin>220</CharacterOffsetBegin>
+            <CharacterOffsetEnd>226</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>226</CharacterOffsetBegin>
+            <CharacterOffsetEnd>227</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN Venue)) (: :) (NP (NP (DT The) (NNP Ritz-Carlton)) (, ,) (NP (NNP Laguna) (NNP Niguel)) (, ,) (NP (NNP Dana) (NNP Point)) (, ,) (NP (NNP CA)) (, ,) (NP (NNP United) (NNPS States))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="3">The</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Venue</governor>
+            <dependent idx="4">Ritz-Carlton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Niguel</governor>
+            <dependent idx="6">Laguna</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="7">Niguel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Point</governor>
+            <dependent idx="9">Dana</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="10">Point</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="12">CA</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">States</governor>
+            <dependent idx="14">United</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="15">States</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="3">The</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Venue</governor>
+            <dependent idx="4">Ritz-Carlton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Niguel</governor>
+            <dependent idx="6">Laguna</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="7">Niguel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Point</governor>
+            <dependent idx="9">Dana</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="10">Point</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="12">CA</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">States</governor>
+            <dependent idx="14">United</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="15">States</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="3">The</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Venue</governor>
+            <dependent idx="4">Ritz-Carlton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Niguel</governor>
+            <dependent idx="6">Laguna</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="7">Niguel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Point</governor>
+            <dependent idx="9">Dana</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="10">Point</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="12">CA</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">States</governor>
+            <dependent idx="14">United</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Ritz-Carlton</governor>
+            <dependent idx="15">States</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>Speakers</word>
+            <lemma>speaker</lemma>
+            <CharacterOffsetBegin>228</CharacterOffsetBegin>
+            <CharacterOffsetEnd>236</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>:</word>
+            <lemma>:</lemma>
+            <CharacterOffsetBegin>236</CharacterOffsetBegin>
+            <CharacterOffsetEnd>237</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Steve</word>
+            <lemma>Steve</lemma>
+            <CharacterOffsetBegin>238</CharacterOffsetBegin>
+            <CharacterOffsetEnd>243</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="4">
+            <word>Lohr</word>
+            <lemma>Lohr</lemma>
+            <CharacterOffsetBegin>244</CharacterOffsetBegin>
+            <CharacterOffsetEnd>248</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="5">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>248</CharacterOffsetBegin>
+            <CharacterOffsetEnd>249</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS Speakers)) (: :) (NP (NNP Steve) (NNP Lohr)) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="4">Lohr</governor>
+            <dependent idx="3">Steve</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Speakers</governor>
+            <dependent idx="4">Lohr</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Lohr</governor>
+            <dependent idx="3">Steve</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Speakers</governor>
+            <dependent idx="4">Lohr</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Lohr</governor>
+            <dependent idx="3">Steve</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Speakers</governor>
+            <dependent idx="4">Lohr</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

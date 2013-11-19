@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Brocade</word>
+            <lemma>Brocade</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Communications</word>
+            <lemma>Communications</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Systems</word>
+            <lemma>Systems</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Special\/M</word>
+            <lemma>Special\/M</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>&amp;</word>
+            <lemma>&amp;</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>A</word>
+            <lemma>A</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>Call</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNP Brocade) (NNPS Communications) (NNPS Systems)) (, ,) (NP (NNP Inc.))) (: -) (S (NP (NNP Special\/M) (CC &amp;) (NNP A)) (VP (VB Call))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Systems</governor>
+            <dependent idx="1">Brocade</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Systems</governor>
+            <dependent idx="2">Communications</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Systems</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">Call</governor>
+            <dependent idx="7">Special\/M</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">Special\/M</governor>
+            <dependent idx="8">&amp;</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">Special\/M</governor>
+            <dependent idx="9">A</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Systems</governor>
+            <dependent idx="10">Call</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Systems</governor>
+            <dependent idx="1">Brocade</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Systems</governor>
+            <dependent idx="2">Communications</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Systems</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">Call</governor>
+            <dependent idx="7">Special\/M</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">Special\/M</governor>
+            <dependent idx="9">A</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Systems</governor>
+            <dependent idx="10">Call</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Systems</governor>
+            <dependent idx="1">Brocade</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Systems</governor>
+            <dependent idx="2">Communications</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Systems</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">Call</governor>
+            <dependent idx="7">Special\/M</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">Special\/M</governor>
+            <dependent idx="9">A</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">Call</governor>
+            <dependent idx="9">A</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Systems</governor>
+            <dependent idx="10">Call</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>To</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>discuss</word>
+            <lemma>discuss</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>acquisition</word>
+            <lemma>acquisition</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Foundry</word>
+            <lemma>Foundry</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>Networks</word>
+            <lemma>Networks</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>R</word>
+            <lemma>R</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="9">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>Inc</word>
+            <lemma>Inc</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (S (VP (TO To) (VP (VB discuss) (NP (NP (NN acquisition)) (PP (IN of) (NP (NP (NP (NNP Foundry) (NNP Networks)) (PRN (-LRB- -LRB-) (NP (NNP R)) (-RRB- -RRB-))) (, ,) (NP (NNP Inc)))))))))) </parse>
+        <basic-dependencies>
+          <dep type="aux">
+            <governor idx="2">discuss</governor>
+            <dependent idx="1">To</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">discuss</governor>
+            <dependent idx="3">acquisition</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">acquisition</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Networks</governor>
+            <dependent idx="5">Foundry</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="6">Networks</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="6">Networks</governor>
+            <dependent idx="8">R</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="6">Networks</governor>
+            <dependent idx="11">Inc</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="aux">
+            <governor idx="2">discuss</governor>
+            <dependent idx="1">To</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">discuss</governor>
+            <dependent idx="3">acquisition</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Networks</governor>
+            <dependent idx="5">Foundry</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">acquisition</governor>
+            <dependent idx="6">Networks</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="6">Networks</governor>
+            <dependent idx="8">R</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="6">Networks</governor>
+            <dependent idx="11">Inc</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="aux">
+            <governor idx="2">discuss</governor>
+            <dependent idx="1">To</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">discuss</governor>
+            <dependent idx="3">acquisition</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Networks</governor>
+            <dependent idx="5">Foundry</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">acquisition</governor>
+            <dependent idx="6">Networks</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="6">Networks</governor>
+            <dependent idx="8">R</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="6">Networks</governor>
+            <dependent idx="11">Inc</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

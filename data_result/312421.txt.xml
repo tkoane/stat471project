@@ -1,0 +1,1765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Reports</word>
+            <lemma>Reports</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>results</word>
+            <lemma>result</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Four</word>
+            <lemma>four</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t1" type="DURATION">P4W</Timex>
+          </token>
+          <token id="6">
+            <word>Weeks</word>
+            <lemma>week</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t1" type="DURATION">P4W</Timex>
+          </token>
+          <token id="7">
+            <word>ended</word>
+            <lemma>end</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>27th</word>
+            <lemma>27th</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t2" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="10">
+            <word>October</word>
+            <lemma>October</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t2" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="11">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t2" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="12">
+            <word>2002</word>
+            <lemma>2002</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t2" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Starbucks) (NNP Reports)) (VP (VBZ results) (PP (IN for) (NP (NP (CD Four) (NNS Weeks)) (VP (VBN ended) (PP (IN on) (NP (NP (JJ 27th) (NNP October)) (, ,) (NP (CD 2002)))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Reports</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">results</governor>
+            <dependent idx="2">Reports</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">results</governor>
+            <dependent idx="4">for</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">Weeks</governor>
+            <dependent idx="5">Four</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">for</governor>
+            <dependent idx="6">Weeks</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="6">Weeks</governor>
+            <dependent idx="7">ended</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">ended</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">October</governor>
+            <dependent idx="9">27th</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">on</governor>
+            <dependent idx="10">October</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="10">October</governor>
+            <dependent idx="12">2002</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Reports</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">results</governor>
+            <dependent idx="2">Reports</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">Weeks</governor>
+            <dependent idx="5">Four</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">results</governor>
+            <dependent idx="6">Weeks</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="6">Weeks</governor>
+            <dependent idx="7">ended</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">October</governor>
+            <dependent idx="9">27th</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">ended</governor>
+            <dependent idx="10">October</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="10">October</governor>
+            <dependent idx="12">2002</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Reports</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">results</governor>
+            <dependent idx="2">Reports</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">Weeks</governor>
+            <dependent idx="5">Four</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">results</governor>
+            <dependent idx="6">Weeks</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="6">Weeks</governor>
+            <dependent idx="7">ended</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">October</governor>
+            <dependent idx="9">27th</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">ended</governor>
+            <dependent idx="10">October</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="10">October</governor>
+            <dependent idx="12">2002</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>reported</word>
+            <lemma>report</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>consolidated</word>
+            <lemma>consolidated</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>net</word>
+            <lemma>net</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>revenues</word>
+            <lemma>revenue</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>$</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$2.79E8</NormalizedNER>
+          </token>
+          <token id="9">
+            <word>279</word>
+            <lemma>279</lemma>
+            <CharacterOffsetBegin>126</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$2.79E8</NormalizedNER>
+          </token>
+          <token id="10">
+            <word>million</word>
+            <lemma>million</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$2.79E8</NormalizedNER>
+          </token>
+          <token id="11">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>138</CharacterOffsetBegin>
+            <CharacterOffsetEnd>141</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>142</CharacterOffsetBegin>
+            <CharacterOffsetEnd>145</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>four-week</word>
+            <lemma>four-week</lemma>
+            <CharacterOffsetBegin>146</CharacterOffsetBegin>
+            <CharacterOffsetEnd>155</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t1" type="DURATION">P4W</Timex>
+          </token>
+          <token id="14">
+            <word>period</word>
+            <lemma>period</lemma>
+            <CharacterOffsetBegin>156</CharacterOffsetBegin>
+            <CharacterOffsetEnd>162</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>ended</word>
+            <lemma>end</lemma>
+            <CharacterOffsetBegin>163</CharacterOffsetBegin>
+            <CharacterOffsetEnd>168</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>October</word>
+            <lemma>October</lemma>
+            <CharacterOffsetBegin>169</CharacterOffsetBegin>
+            <CharacterOffsetEnd>176</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t2" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="17">
+            <word>27</word>
+            <lemma>27</lemma>
+            <CharacterOffsetBegin>177</CharacterOffsetBegin>
+            <CharacterOffsetEnd>179</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t2" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="18">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>179</CharacterOffsetBegin>
+            <CharacterOffsetEnd>180</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t2" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="19">
+            <word>2002</word>
+            <lemma>2002</lemma>
+            <CharacterOffsetBegin>181</CharacterOffsetBegin>
+            <CharacterOffsetEnd>185</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t2" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="20">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>185</CharacterOffsetBegin>
+            <CharacterOffsetEnd>186</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>187</CharacterOffsetBegin>
+            <CharacterOffsetEnd>189</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>increase</word>
+            <lemma>increase</lemma>
+            <CharacterOffsetBegin>190</CharacterOffsetBegin>
+            <CharacterOffsetEnd>198</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>199</CharacterOffsetBegin>
+            <CharacterOffsetEnd>201</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>24</word>
+            <lemma>24</lemma>
+            <CharacterOffsetBegin>202</CharacterOffsetBegin>
+            <CharacterOffsetEnd>204</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%24.0</NormalizedNER>
+          </token>
+          <token id="25">
+            <word>percent</word>
+            <lemma>percent</lemma>
+            <CharacterOffsetBegin>205</CharacterOffsetBegin>
+            <CharacterOffsetEnd>212</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%24.0</NormalizedNER>
+          </token>
+          <token id="26">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>213</CharacterOffsetBegin>
+            <CharacterOffsetEnd>217</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="27">
+            <word>consolidated</word>
+            <lemma>consolidated</lemma>
+            <CharacterOffsetBegin>218</CharacterOffsetBegin>
+            <CharacterOffsetEnd>230</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="28">
+            <word>net</word>
+            <lemma>net</lemma>
+            <CharacterOffsetBegin>231</CharacterOffsetBegin>
+            <CharacterOffsetEnd>234</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="29">
+            <word>revenues</word>
+            <lemma>revenue</lemma>
+            <CharacterOffsetBegin>235</CharacterOffsetBegin>
+            <CharacterOffsetEnd>243</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="30">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>244</CharacterOffsetBegin>
+            <CharacterOffsetEnd>246</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="31">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>247</CharacterOffsetBegin>
+            <CharacterOffsetEnd>248</CharacterOffsetEnd>
+            <POS>$</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$2.25E8</NormalizedNER>
+          </token>
+          <token id="32">
+            <word>225</word>
+            <lemma>225</lemma>
+            <CharacterOffsetBegin>248</CharacterOffsetBegin>
+            <CharacterOffsetEnd>251</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$2.25E8</NormalizedNER>
+          </token>
+          <token id="33">
+            <word>million</word>
+            <lemma>million</lemma>
+            <CharacterOffsetBegin>252</CharacterOffsetBegin>
+            <CharacterOffsetEnd>259</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$2.25E8</NormalizedNER>
+          </token>
+          <token id="34">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>260</CharacterOffsetBegin>
+            <CharacterOffsetEnd>263</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="35">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>264</CharacterOffsetBegin>
+            <CharacterOffsetEnd>267</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="36">
+            <word>same</word>
+            <lemma>same</lemma>
+            <CharacterOffsetBegin>268</CharacterOffsetBegin>
+            <CharacterOffsetEnd>272</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="37">
+            <word>period</word>
+            <lemma>period</lemma>
+            <CharacterOffsetBegin>273</CharacterOffsetBegin>
+            <CharacterOffsetEnd>279</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="38">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>280</CharacterOffsetBegin>
+            <CharacterOffsetEnd>282</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="39">
+            <word>fiscal</word>
+            <lemma>fiscal</lemma>
+            <CharacterOffsetBegin>283</CharacterOffsetBegin>
+            <CharacterOffsetEnd>289</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="40">
+            <word>2002</word>
+            <lemma>2002</lemma>
+            <CharacterOffsetBegin>290</CharacterOffsetBegin>
+            <CharacterOffsetEnd>294</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002</NormalizedNER>
+            <Timex tid="t3" type="DATE">2002</Timex>
+          </token>
+          <token id="41">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>294</CharacterOffsetBegin>
+            <CharacterOffsetEnd>295</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (S (NP (NNP Starbucks) (NNP Corp.)) (VP (VBD reported) (NP (NP (JJ consolidated) (JJ net) (NNS revenues)) (PP (IN of) (NP (QP ($ $) (CD 279) (CD million))))) (PP (IN for) (NP (DT the) (JJ four-week) (NN period))))) (VP (VBD ended)) (NP (NP (NNP October) (CD 27) (, ,) (CD 2002)) (, ,) (NP (NP (DT an) (NN increase)) (PP (IN of) (NP (NP (CD 24) (NN percent)) (PP (IN from) (NP (NP (JJ consolidated) (JJ net) (NNS revenues)) (PP (IN of) (NP (NP (QP ($ $) (CD 225) (CD million))) (PP (IN for) (NP (NP (DT the) (JJ same) (NN period)) (PP (IN in) (NP (JJ fiscal) (CD 2002))))))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">reported</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="15">ended</governor>
+            <dependent idx="3">reported</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">revenues</governor>
+            <dependent idx="4">consolidated</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">revenues</governor>
+            <dependent idx="5">net</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">reported</governor>
+            <dependent idx="6">revenues</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">revenues</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">of</governor>
+            <dependent idx="8">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="8">$</governor>
+            <dependent idx="9">279</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="8">$</governor>
+            <dependent idx="10">million</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">reported</governor>
+            <dependent idx="11">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">period</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">period</governor>
+            <dependent idx="13">four-week</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">for</governor>
+            <dependent idx="14">period</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">ended</governor>
+            <dependent idx="16">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="16">October</governor>
+            <dependent idx="17">27</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="16">October</governor>
+            <dependent idx="19">2002</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="22">increase</governor>
+            <dependent idx="21">an</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="16">October</governor>
+            <dependent idx="22">increase</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="22">increase</governor>
+            <dependent idx="23">of</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="25">percent</governor>
+            <dependent idx="24">24</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="23">of</governor>
+            <dependent idx="25">percent</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="25">percent</governor>
+            <dependent idx="26">from</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="29">revenues</governor>
+            <dependent idx="27">consolidated</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="29">revenues</governor>
+            <dependent idx="28">net</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="26">from</governor>
+            <dependent idx="29">revenues</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="29">revenues</governor>
+            <dependent idx="30">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="30">of</governor>
+            <dependent idx="31">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="31">$</governor>
+            <dependent idx="32">225</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="31">$</governor>
+            <dependent idx="33">million</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="31">$</governor>
+            <dependent idx="34">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="37">period</governor>
+            <dependent idx="35">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="37">period</governor>
+            <dependent idx="36">same</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="34">for</governor>
+            <dependent idx="37">period</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="37">period</governor>
+            <dependent idx="38">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="40">2002</governor>
+            <dependent idx="39">fiscal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="38">in</governor>
+            <dependent idx="40">2002</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">reported</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="15">ended</governor>
+            <dependent idx="3">reported</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">revenues</governor>
+            <dependent idx="4">consolidated</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">revenues</governor>
+            <dependent idx="5">net</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">reported</governor>
+            <dependent idx="6">revenues</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="6">revenues</governor>
+            <dependent idx="8">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="8">$</governor>
+            <dependent idx="9">279</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="8">$</governor>
+            <dependent idx="10">million</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">period</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">period</governor>
+            <dependent idx="13">four-week</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">reported</governor>
+            <dependent idx="14">period</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">ended</governor>
+            <dependent idx="16">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="16">October</governor>
+            <dependent idx="17">27</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="16">October</governor>
+            <dependent idx="19">2002</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="22">increase</governor>
+            <dependent idx="21">an</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="16">October</governor>
+            <dependent idx="22">increase</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="25">percent</governor>
+            <dependent idx="24">24</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="22">increase</governor>
+            <dependent idx="25">percent</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="29">revenues</governor>
+            <dependent idx="27">consolidated</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="29">revenues</governor>
+            <dependent idx="28">net</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="25">percent</governor>
+            <dependent idx="29">revenues</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="29">revenues</governor>
+            <dependent idx="31">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="31">$</governor>
+            <dependent idx="32">225</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="31">$</governor>
+            <dependent idx="33">million</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="37">period</governor>
+            <dependent idx="35">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="37">period</governor>
+            <dependent idx="36">same</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="31">$</governor>
+            <dependent idx="37">period</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="40">2002</governor>
+            <dependent idx="39">fiscal</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="37">period</governor>
+            <dependent idx="40">2002</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">reported</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="15">ended</governor>
+            <dependent idx="3">reported</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">revenues</governor>
+            <dependent idx="4">consolidated</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">revenues</governor>
+            <dependent idx="5">net</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">reported</governor>
+            <dependent idx="6">revenues</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="6">revenues</governor>
+            <dependent idx="8">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="8">$</governor>
+            <dependent idx="9">279</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="8">$</governor>
+            <dependent idx="10">million</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">period</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">period</governor>
+            <dependent idx="13">four-week</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">reported</governor>
+            <dependent idx="14">period</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">ended</governor>
+            <dependent idx="16">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="16">October</governor>
+            <dependent idx="17">27</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="16">October</governor>
+            <dependent idx="19">2002</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="22">increase</governor>
+            <dependent idx="21">an</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="16">October</governor>
+            <dependent idx="22">increase</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="25">percent</governor>
+            <dependent idx="24">24</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="22">increase</governor>
+            <dependent idx="25">percent</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="29">revenues</governor>
+            <dependent idx="27">consolidated</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="29">revenues</governor>
+            <dependent idx="28">net</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="25">percent</governor>
+            <dependent idx="29">revenues</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="29">revenues</governor>
+            <dependent idx="31">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="31">$</governor>
+            <dependent idx="32">225</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="31">$</governor>
+            <dependent idx="33">million</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="37">period</governor>
+            <dependent idx="35">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="37">period</governor>
+            <dependent idx="36">same</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="31">$</governor>
+            <dependent idx="37">period</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="40">2002</governor>
+            <dependent idx="39">fiscal</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="37">period</governor>
+            <dependent idx="40">2002</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>On</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>296</CharacterOffsetBegin>
+            <CharacterOffsetEnd>298</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>299</CharacterOffsetBegin>
+            <CharacterOffsetEnd>300</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>comparable</word>
+            <lemma>comparable</lemma>
+            <CharacterOffsetBegin>301</CharacterOffsetBegin>
+            <CharacterOffsetEnd>311</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>store</word>
+            <lemma>store</lemma>
+            <CharacterOffsetBegin>312</CharacterOffsetBegin>
+            <CharacterOffsetEnd>317</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>sales</word>
+            <lemma>sale</lemma>
+            <CharacterOffsetBegin>318</CharacterOffsetBegin>
+            <CharacterOffsetEnd>323</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>basis</word>
+            <lemma>basis</lemma>
+            <CharacterOffsetBegin>324</CharacterOffsetBegin>
+            <CharacterOffsetEnd>329</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>330</CharacterOffsetBegin>
+            <CharacterOffsetEnd>331</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>stores</word>
+            <lemma>store</lemma>
+            <CharacterOffsetBegin>331</CharacterOffsetBegin>
+            <CharacterOffsetEnd>337</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>open</word>
+            <lemma>open</lemma>
+            <CharacterOffsetBegin>338</CharacterOffsetBegin>
+            <CharacterOffsetEnd>342</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>343</CharacterOffsetBegin>
+            <CharacterOffsetEnd>346</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>347</CharacterOffsetBegin>
+            <CharacterOffsetEnd>349</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t1" type="DURATION">P13M</Timex>
+          </token>
+          <token id="12">
+            <word>least</word>
+            <lemma>least</lemma>
+            <CharacterOffsetBegin>350</CharacterOffsetBegin>
+            <CharacterOffsetEnd>355</CharacterOffsetEnd>
+            <POS>JJS</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t1" type="DURATION">P13M</Timex>
+          </token>
+          <token id="13">
+            <word>13</word>
+            <lemma>13</lemma>
+            <CharacterOffsetBegin>356</CharacterOffsetBegin>
+            <CharacterOffsetEnd>358</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t1" type="DURATION">P13M</Timex>
+          </token>
+          <token id="14">
+            <word>months</word>
+            <lemma>month</lemma>
+            <CharacterOffsetBegin>359</CharacterOffsetBegin>
+            <CharacterOffsetEnd>365</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>0.0</NormalizedNER>
+            <Timex tid="t1" type="DURATION">P13M</Timex>
+          </token>
+          <token id="15">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>365</CharacterOffsetBegin>
+            <CharacterOffsetEnd>366</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>366</CharacterOffsetBegin>
+            <CharacterOffsetEnd>367</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>sales</word>
+            <lemma>sale</lemma>
+            <CharacterOffsetBegin>368</CharacterOffsetBegin>
+            <CharacterOffsetEnd>373</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>374</CharacterOffsetBegin>
+            <CharacterOffsetEnd>376</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>Company-operated</word>
+            <lemma>company-operated</lemma>
+            <CharacterOffsetBegin>377</CharacterOffsetBegin>
+            <CharacterOffsetEnd>393</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>stores</word>
+            <lemma>store</lemma>
+            <CharacterOffsetBegin>394</CharacterOffsetBegin>
+            <CharacterOffsetEnd>400</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>increased</word>
+            <lemma>increase</lemma>
+            <CharacterOffsetBegin>401</CharacterOffsetBegin>
+            <CharacterOffsetEnd>410</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>10</word>
+            <lemma>10</lemma>
+            <CharacterOffsetBegin>411</CharacterOffsetBegin>
+            <CharacterOffsetEnd>413</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%10.0</NormalizedNER>
+          </token>
+          <token id="23">
+            <word>percent</word>
+            <lemma>percent</lemma>
+            <CharacterOffsetBegin>414</CharacterOffsetBegin>
+            <CharacterOffsetEnd>421</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%10.0</NormalizedNER>
+          </token>
+          <token id="24">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>422</CharacterOffsetBegin>
+            <CharacterOffsetEnd>425</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>426</CharacterOffsetBegin>
+            <CharacterOffsetEnd>429</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t2" type="DURATION">P4W</Timex>
+          </token>
+          <token id="26">
+            <word>four</word>
+            <lemma>four</lemma>
+            <CharacterOffsetBegin>430</CharacterOffsetBegin>
+            <CharacterOffsetEnd>434</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t2" type="DURATION">P4W</Timex>
+          </token>
+          <token id="27">
+            <word>weeks</word>
+            <lemma>week</lemma>
+            <CharacterOffsetBegin>435</CharacterOffsetBegin>
+            <CharacterOffsetEnd>440</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>0.0</NormalizedNER>
+            <Timex tid="t2" type="DURATION">P4W</Timex>
+          </token>
+          <token id="28">
+            <word>ended</word>
+            <lemma>end</lemma>
+            <CharacterOffsetBegin>441</CharacterOffsetBegin>
+            <CharacterOffsetEnd>446</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="29">
+            <word>October</word>
+            <lemma>October</lemma>
+            <CharacterOffsetBegin>447</CharacterOffsetBegin>
+            <CharacterOffsetEnd>454</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t3" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="30">
+            <word>27</word>
+            <lemma>27</lemma>
+            <CharacterOffsetBegin>455</CharacterOffsetBegin>
+            <CharacterOffsetEnd>457</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t3" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="31">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>457</CharacterOffsetBegin>
+            <CharacterOffsetEnd>458</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t3" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="32">
+            <word>2002</word>
+            <lemma>2002</lemma>
+            <CharacterOffsetBegin>459</CharacterOffsetBegin>
+            <CharacterOffsetEnd>463</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-10-27</NormalizedNER>
+            <Timex tid="t3" type="DATE">2002-10-27</Timex>
+          </token>
+          <token id="33">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>463</CharacterOffsetBegin>
+            <CharacterOffsetEnd>464</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="34">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>465</CharacterOffsetBegin>
+            <CharacterOffsetEnd>467</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="35">
+            <word>compared</word>
+            <lemma>compare</lemma>
+            <CharacterOffsetBegin>468</CharacterOffsetBegin>
+            <CharacterOffsetEnd>476</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="36">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>477</CharacterOffsetBegin>
+            <CharacterOffsetEnd>479</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="37">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>480</CharacterOffsetBegin>
+            <CharacterOffsetEnd>483</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="38">
+            <word>same</word>
+            <lemma>same</lemma>
+            <CharacterOffsetBegin>484</CharacterOffsetBegin>
+            <CharacterOffsetEnd>488</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="39">
+            <word>four-week</word>
+            <lemma>four-week</lemma>
+            <CharacterOffsetBegin>489</CharacterOffsetBegin>
+            <CharacterOffsetEnd>498</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t4" type="DURATION">P4W</Timex>
+          </token>
+          <token id="40">
+            <word>period</word>
+            <lemma>period</lemma>
+            <CharacterOffsetBegin>499</CharacterOffsetBegin>
+            <CharacterOffsetEnd>505</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="41">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>506</CharacterOffsetBegin>
+            <CharacterOffsetEnd>508</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="42">
+            <word>fiscal</word>
+            <lemma>fiscal</lemma>
+            <CharacterOffsetBegin>509</CharacterOffsetBegin>
+            <CharacterOffsetEnd>515</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002</NormalizedNER>
+          </token>
+          <token id="43">
+            <word>2002</word>
+            <lemma>2002</lemma>
+            <CharacterOffsetBegin>516</CharacterOffsetBegin>
+            <CharacterOffsetEnd>520</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002</NormalizedNER>
+            <Timex tid="t5" type="DATE">2002</Timex>
+          </token>
+          <token id="44">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>520</CharacterOffsetBegin>
+            <CharacterOffsetEnd>521</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN On) (NP (NP (DT a) (ADJP (JJ comparable)) (NN store) (NNS sales) (NN basis)) (PRN (-LRB- -LRB-) (S (NP (NNS stores)) (ADJP (JJ open) (PP (IN for) (NP (QP (XS (IN at) (JJS least)) (CD 13)) (NNS months))))) (-RRB- -RRB-)))) (, ,) (NP (NP (NNS sales)) (PP (IN at) (NP (JJ Company-operated) (NNS stores)))) (VP (VBD increased) (SBAR (S (NP (NP (CD 10) (NN percent)) (PP (IN for) (NP (DT the) (CD four) (NNS weeks)))) (VP (VBD ended) (NP-TMP (NNP October) (CD 27) (, ,) (CD 2002)) (, ,) (PP (IN as) (PP (VBN compared) (PP (TO to) (NP (NP (DT the) (JJ same) (JJ four-week) (NN period)) (PP (IN in) (NP (JJ fiscal) (CD 2002))))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="21">increased</governor>
+            <dependent idx="1">On</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">basis</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">basis</governor>
+            <dependent idx="3">comparable</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">basis</governor>
+            <dependent idx="4">store</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">basis</governor>
+            <dependent idx="5">sales</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">On</governor>
+            <dependent idx="6">basis</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">open</governor>
+            <dependent idx="8">stores</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">basis</governor>
+            <dependent idx="9">open</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">open</governor>
+            <dependent idx="10">for</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="13">13</governor>
+            <dependent idx="11">at</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="11">at</governor>
+            <dependent idx="12">least</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="14">months</governor>
+            <dependent idx="13">13</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">for</governor>
+            <dependent idx="14">months</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="21">increased</governor>
+            <dependent idx="17">sales</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="17">sales</governor>
+            <dependent idx="18">at</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">stores</governor>
+            <dependent idx="19">Company-operated</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="18">at</governor>
+            <dependent idx="20">stores</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="23">percent</governor>
+            <dependent idx="22">10</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="28">ended</governor>
+            <dependent idx="23">percent</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="23">percent</governor>
+            <dependent idx="24">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="27">weeks</governor>
+            <dependent idx="25">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="27">weeks</governor>
+            <dependent idx="26">four</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="24">for</governor>
+            <dependent idx="27">weeks</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="21">increased</governor>
+            <dependent idx="28">ended</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="28">ended</governor>
+            <dependent idx="29">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="29">October</governor>
+            <dependent idx="30">27</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="29">October</governor>
+            <dependent idx="32">2002</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="28">ended</governor>
+            <dependent idx="34">as</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="34">as</governor>
+            <dependent idx="35">compared</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="35">compared</governor>
+            <dependent idx="36">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="40">period</governor>
+            <dependent idx="37">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="40">period</governor>
+            <dependent idx="38">same</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="40">period</governor>
+            <dependent idx="39">four-week</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="36">to</governor>
+            <dependent idx="40">period</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="40">period</governor>
+            <dependent idx="41">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="43">2002</governor>
+            <dependent idx="42">fiscal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="41">in</governor>
+            <dependent idx="43">2002</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="6">basis</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">basis</governor>
+            <dependent idx="3">comparable</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">basis</governor>
+            <dependent idx="4">store</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">basis</governor>
+            <dependent idx="5">sales</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="21">increased</governor>
+            <dependent idx="6">basis</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">open</governor>
+            <dependent idx="8">stores</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">basis</governor>
+            <dependent idx="9">open</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="13">13</governor>
+            <dependent idx="11">at</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="11">at</governor>
+            <dependent idx="12">least</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="14">months</governor>
+            <dependent idx="13">13</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="9">open</governor>
+            <dependent idx="14">months</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="21">increased</governor>
+            <dependent idx="17">sales</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">stores</governor>
+            <dependent idx="19">Company-operated</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="17">sales</governor>
+            <dependent idx="20">stores</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="23">percent</governor>
+            <dependent idx="22">10</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="28">ended</governor>
+            <dependent idx="23">percent</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="27">weeks</governor>
+            <dependent idx="25">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="27">weeks</governor>
+            <dependent idx="26">four</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="23">percent</governor>
+            <dependent idx="27">weeks</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="21">increased</governor>
+            <dependent idx="28">ended</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="28">ended</governor>
+            <dependent idx="29">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="29">October</governor>
+            <dependent idx="30">27</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="29">October</governor>
+            <dependent idx="32">2002</dependent>
+          </dep>
+          <dep type="prepc_as">
+            <governor idx="28">ended</governor>
+            <dependent idx="35">compared</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="35">compared</governor>
+            <dependent idx="36">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="40">period</governor>
+            <dependent idx="37">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="40">period</governor>
+            <dependent idx="38">same</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="40">period</governor>
+            <dependent idx="39">four-week</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="36">to</governor>
+            <dependent idx="40">period</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="43">2002</governor>
+            <dependent idx="42">fiscal</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="40">period</governor>
+            <dependent idx="43">2002</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="6">basis</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">basis</governor>
+            <dependent idx="3">comparable</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">basis</governor>
+            <dependent idx="4">store</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">basis</governor>
+            <dependent idx="5">sales</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="21">increased</governor>
+            <dependent idx="6">basis</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">open</governor>
+            <dependent idx="8">stores</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">basis</governor>
+            <dependent idx="9">open</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="13">13</governor>
+            <dependent idx="11">at</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="11">at</governor>
+            <dependent idx="12">least</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="14">months</governor>
+            <dependent idx="13">13</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="9">open</governor>
+            <dependent idx="14">months</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="21">increased</governor>
+            <dependent idx="17">sales</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">stores</governor>
+            <dependent idx="19">Company-operated</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="17">sales</governor>
+            <dependent idx="20">stores</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="23">percent</governor>
+            <dependent idx="22">10</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="28">ended</governor>
+            <dependent idx="23">percent</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="27">weeks</governor>
+            <dependent idx="25">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="27">weeks</governor>
+            <dependent idx="26">four</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="23">percent</governor>
+            <dependent idx="27">weeks</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="21">increased</governor>
+            <dependent idx="28">ended</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="28">ended</governor>
+            <dependent idx="29">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="29">October</governor>
+            <dependent idx="30">27</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="29">October</governor>
+            <dependent idx="32">2002</dependent>
+          </dep>
+          <dep type="prepc_as">
+            <governor idx="28">ended</governor>
+            <dependent idx="35">compared</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="35">compared</governor>
+            <dependent idx="36">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="40">period</governor>
+            <dependent idx="37">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="40">period</governor>
+            <dependent idx="38">same</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="40">period</governor>
+            <dependent idx="39">four-week</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="36">to</governor>
+            <dependent idx="40">period</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="43">2002</governor>
+            <dependent idx="42">fiscal</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="40">period</governor>
+            <dependent idx="43">2002</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

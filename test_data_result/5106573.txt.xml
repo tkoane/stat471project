@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>XM</word>
+            <lemma>XM</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Satellite</word>
+            <lemma>Satellite</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Radio</word>
+            <lemma>Radio</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Holdings</word>
+            <lemma>Holdings</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Ends</word>
+            <lemma>Ends</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>Marketing</word>
+            <lemma>Marketing</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>Agreement</word>
+            <lemma>Agreement</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="8">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="10">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP XM) (NNP Satellite) (NNP Radio)) (NP (NP (NNP Holdings) (NNPS Ends) (NNP Marketing) (NNP Agreement)) (PP (IN with) (NP (NNP Starbucks) (NNP Corp.)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Radio</governor>
+            <dependent idx="1">XM</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Radio</governor>
+            <dependent idx="2">Satellite</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="4">Holdings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="5">Ends</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="6">Marketing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Radio</governor>
+            <dependent idx="7">Agreement</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="8">with</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Corp.</governor>
+            <dependent idx="9">Starbucks</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">with</governor>
+            <dependent idx="10">Corp.</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Radio</governor>
+            <dependent idx="1">XM</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Radio</governor>
+            <dependent idx="2">Satellite</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="4">Holdings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="5">Ends</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="6">Marketing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Radio</governor>
+            <dependent idx="7">Agreement</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Corp.</governor>
+            <dependent idx="9">Starbucks</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="10">Corp.</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Radio</governor>
+            <dependent idx="1">XM</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Radio</governor>
+            <dependent idx="2">Satellite</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="4">Holdings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="5">Ends</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="6">Marketing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Radio</governor>
+            <dependent idx="7">Agreement</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Corp.</governor>
+            <dependent idx="9">Starbucks</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="7">Agreement</governor>
+            <dependent idx="10">Corp.</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>XM</word>
+            <lemma>XM</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Satellite</word>
+            <lemma>Satellite</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Radio</word>
+            <lemma>Radio</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Holdings</word>
+            <lemma>Holdings</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>no</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>longer</word>
+            <lemma>longer</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>broadcast</word>
+            <lemma>broadcast</lemma>
+            <CharacterOffsetBegin>123</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>146</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="12">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>147</CharacterOffsetBegin>
+            <CharacterOffsetEnd>151</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>151</CharacterOffsetBegin>
+            <CharacterOffsetEnd>152</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP XM) (NNP Satellite) (NNP Radio) (NNP Holdings) (NNP Inc.)) (VP (MD will) (ADVP (RB no) (RB longer)) (VP (VB broadcast) (NP (DT the) (NNP Starbucks) (NNP Corp.)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="1">XM</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="2">Satellite</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="3">Radio</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="4">Holdings</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="6">will</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">longer</governor>
+            <dependent idx="7">no</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="8">longer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">Corp.</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Corp.</governor>
+            <dependent idx="11">Starbucks</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="12">Corp.</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="1">XM</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="2">Satellite</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="3">Radio</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="4">Holdings</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="6">will</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">longer</governor>
+            <dependent idx="7">no</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="8">longer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">Corp.</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Corp.</governor>
+            <dependent idx="11">Starbucks</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="12">Corp.</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="1">XM</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="2">Satellite</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="3">Radio</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="4">Holdings</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="6">will</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">longer</governor>
+            <dependent idx="7">no</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="8">longer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">Corp.</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Corp.</governor>
+            <dependent idx="11">Starbucks</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">broadcast</governor>
+            <dependent idx="12">Corp.</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>XM</word>
+            <lemma>XM</lemma>
+            <CharacterOffsetBegin>153</CharacterOffsetBegin>
+            <CharacterOffsetEnd>155</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Cafe</word>
+            <lemma>Cafe</lemma>
+            <CharacterOffsetBegin>156</CharacterOffsetBegin>
+            <CharacterOffsetEnd>160</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>channel</word>
+            <lemma>channel</lemma>
+            <CharacterOffsetBegin>161</CharacterOffsetBegin>
+            <CharacterOffsetEnd>168</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>after</word>
+            <lemma>after</lemma>
+            <CharacterOffsetBegin>169</CharacterOffsetBegin>
+            <CharacterOffsetEnd>174</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>ending</word>
+            <lemma>end</lemma>
+            <CharacterOffsetBegin>175</CharacterOffsetBegin>
+            <CharacterOffsetEnd>181</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>182</CharacterOffsetBegin>
+            <CharacterOffsetEnd>183</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>marketing</word>
+            <lemma>marketing</lemma>
+            <CharacterOffsetBegin>184</CharacterOffsetBegin>
+            <CharacterOffsetEnd>193</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>agreement</word>
+            <lemma>agreement</lemma>
+            <CharacterOffsetBegin>194</CharacterOffsetBegin>
+            <CharacterOffsetEnd>203</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>204</CharacterOffsetBegin>
+            <CharacterOffsetEnd>208</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>209</CharacterOffsetBegin>
+            <CharacterOffsetEnd>212</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>company</word>
+            <lemma>company</lemma>
+            <CharacterOffsetBegin>213</CharacterOffsetBegin>
+            <CharacterOffsetEnd>220</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>220</CharacterOffsetBegin>
+            <CharacterOffsetEnd>221</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP XM) (NNP Cafe) (NN channel)) (PP (IN after) (S (VP (VBG ending) (NP (DT a) (NN marketing) (NN agreement)) (PP (IN with) (NP (DT the) (NN company)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">channel</governor>
+            <dependent idx="1">XM</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">channel</governor>
+            <dependent idx="2">Cafe</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">channel</governor>
+            <dependent idx="4">after</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="4">after</governor>
+            <dependent idx="5">ending</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">agreement</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">agreement</governor>
+            <dependent idx="7">marketing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">ending</governor>
+            <dependent idx="8">agreement</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">ending</governor>
+            <dependent idx="9">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">company</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">with</governor>
+            <dependent idx="11">company</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">channel</governor>
+            <dependent idx="1">XM</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">channel</governor>
+            <dependent idx="2">Cafe</dependent>
+          </dep>
+          <dep type="prepc_after">
+            <governor idx="3">channel</governor>
+            <dependent idx="5">ending</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">agreement</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">agreement</governor>
+            <dependent idx="7">marketing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">ending</governor>
+            <dependent idx="8">agreement</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">company</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="5">ending</governor>
+            <dependent idx="11">company</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">channel</governor>
+            <dependent idx="1">XM</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">channel</governor>
+            <dependent idx="2">Cafe</dependent>
+          </dep>
+          <dep type="prepc_after">
+            <governor idx="3">channel</governor>
+            <dependent idx="5">ending</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">agreement</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">agreement</governor>
+            <dependent idx="7">marketing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">ending</governor>
+            <dependent idx="8">agreement</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">company</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="5">ending</governor>
+            <dependent idx="11">company</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>AES</word>
+            <lemma>ae</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Nigeria</word>
+            <lemma>Nigeria</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Secures</word>
+            <lemma>secure</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>$</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.2E8</NormalizedNER>
+          </token>
+          <token id="5">
+            <word>120</word>
+            <lemma>120</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.2E8</NormalizedNER>
+          </token>
+          <token id="6">
+            <word>Million</word>
+            <lemma>Million</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.2E8</NormalizedNER>
+          </token>
+          <token id="7">
+            <word>Financing</word>
+            <lemma>Financing</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Power</word>
+            <lemma>Power</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>Supply</word>
+            <lemma>Supply</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN AES) (NNP Nigeria)) (VP (VBZ Secures) (NP ($ $) (CD 120)) (NP-TMP (NP (NNP Million) (NNP Financing)) (PP (IN for) (NP (NNP Power) (NNP Supply))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Nigeria</governor>
+            <dependent idx="1">AES</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">Secures</governor>
+            <dependent idx="2">Nigeria</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">Secures</governor>
+            <dependent idx="4">$</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">$</governor>
+            <dependent idx="5">120</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Financing</governor>
+            <dependent idx="6">Million</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">Secures</governor>
+            <dependent idx="7">Financing</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">Financing</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Supply</governor>
+            <dependent idx="9">Power</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">for</governor>
+            <dependent idx="10">Supply</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Nigeria</governor>
+            <dependent idx="1">AES</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">Secures</governor>
+            <dependent idx="2">Nigeria</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">Secures</governor>
+            <dependent idx="4">$</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">$</governor>
+            <dependent idx="5">120</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Financing</governor>
+            <dependent idx="6">Million</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">Secures</governor>
+            <dependent idx="7">Financing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Supply</governor>
+            <dependent idx="9">Power</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">Financing</governor>
+            <dependent idx="10">Supply</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Nigeria</governor>
+            <dependent idx="1">AES</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">Secures</governor>
+            <dependent idx="2">Nigeria</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">Secures</governor>
+            <dependent idx="4">$</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">$</governor>
+            <dependent idx="5">120</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Financing</governor>
+            <dependent idx="6">Million</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">Secures</governor>
+            <dependent idx="7">Financing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Supply</governor>
+            <dependent idx="9">Power</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">Financing</governor>
+            <dependent idx="10">Supply</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>AES</word>
+            <lemma>ae</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>aes</word>
+            <lemma>ae</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>said</word>
+            <lemma>say</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>1.0</NormalizedNER>
+          </token>
+          <token id="7">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>units</word>
+            <lemma>unit</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>secured</word>
+            <lemma>secure</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>$</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.2E8</NormalizedNER>
+          </token>
+          <token id="13">
+            <word>120</word>
+            <lemma>120</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.2E8</NormalizedNER>
+          </token>
+          <token id="14">
+            <word>million</word>
+            <lemma>million</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$1.2E8</NormalizedNER>
+          </token>
+          <token id="15">
+            <word>financing</word>
+            <lemma>financing</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>power</word>
+            <lemma>power</lemma>
+            <CharacterOffsetBegin>135</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>supply</word>
+            <lemma>supply</lemma>
+            <CharacterOffsetBegin>141</CharacterOffsetBegin>
+            <CharacterOffsetEnd>147</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>project</word>
+            <lemma>project</lemma>
+            <CharacterOffsetBegin>148</CharacterOffsetBegin>
+            <CharacterOffsetEnd>155</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>156</CharacterOffsetBegin>
+            <CharacterOffsetEnd>158</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>Nigeria</word>
+            <lemma>Nigeria</lemma>
+            <CharacterOffsetBegin>159</CharacterOffsetBegin>
+            <CharacterOffsetEnd>166</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="23">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>166</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN AES)) (PRN (-LRB- -LRB-) (NP (NNS aes)) (-RRB- -RRB-))) (VP (VBD said) (SBAR (S (NP (NP (CD one)) (PP (IN of) (NP (PRP$ its) (NNS units)))) (VP (VBZ has) (VP (VBN secured) (NP (NP (QP ($ $) (CD 120) (CD million)) (NN financing)) (PP (IN for) (NP (DT a) (NN power) (NN supply) (NN project)))) (PP (IN in) (NP (NNP Nigeria)))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="5">said</governor>
+            <dependent idx="1">AES</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">AES</governor>
+            <dependent idx="3">aes</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">secured</governor>
+            <dependent idx="6">one</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">one</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">units</governor>
+            <dependent idx="8">its</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">of</governor>
+            <dependent idx="9">units</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">secured</governor>
+            <dependent idx="10">has</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">said</governor>
+            <dependent idx="11">secured</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="15">financing</governor>
+            <dependent idx="12">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="12">$</governor>
+            <dependent idx="13">120</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="12">$</governor>
+            <dependent idx="14">million</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">secured</governor>
+            <dependent idx="15">financing</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="15">financing</governor>
+            <dependent idx="16">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="20">project</governor>
+            <dependent idx="17">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="20">project</governor>
+            <dependent idx="18">power</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="20">project</governor>
+            <dependent idx="19">supply</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="16">for</governor>
+            <dependent idx="20">project</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">secured</governor>
+            <dependent idx="21">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="21">in</governor>
+            <dependent idx="22">Nigeria</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="5">said</governor>
+            <dependent idx="1">AES</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">AES</governor>
+            <dependent idx="3">aes</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">secured</governor>
+            <dependent idx="6">one</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">units</governor>
+            <dependent idx="8">its</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="6">one</governor>
+            <dependent idx="9">units</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">secured</governor>
+            <dependent idx="10">has</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">said</governor>
+            <dependent idx="11">secured</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="15">financing</governor>
+            <dependent idx="12">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="12">$</governor>
+            <dependent idx="13">120</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="12">$</governor>
+            <dependent idx="14">million</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">secured</governor>
+            <dependent idx="15">financing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="20">project</governor>
+            <dependent idx="17">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="20">project</governor>
+            <dependent idx="18">power</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="20">project</governor>
+            <dependent idx="19">supply</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="15">financing</governor>
+            <dependent idx="20">project</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="11">secured</governor>
+            <dependent idx="22">Nigeria</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="5">said</governor>
+            <dependent idx="1">AES</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">AES</governor>
+            <dependent idx="3">aes</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">secured</governor>
+            <dependent idx="6">one</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">units</governor>
+            <dependent idx="8">its</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="6">one</governor>
+            <dependent idx="9">units</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">secured</governor>
+            <dependent idx="10">has</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">said</governor>
+            <dependent idx="11">secured</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="15">financing</governor>
+            <dependent idx="12">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="12">$</governor>
+            <dependent idx="13">120</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="12">$</governor>
+            <dependent idx="14">million</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">secured</governor>
+            <dependent idx="15">financing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="20">project</governor>
+            <dependent idx="17">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="20">project</governor>
+            <dependent idx="18">power</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="20">project</governor>
+            <dependent idx="19">supply</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="15">financing</governor>
+            <dependent idx="20">project</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="11">secured</governor>
+            <dependent idx="22">Nigeria</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

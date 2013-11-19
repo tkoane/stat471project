@@ -1,0 +1,1890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Atheros</word>
+            <lemma>Atheros</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Communications</word>
+            <lemma>Communications</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>UTStarcom</word>
+            <lemma>UTStarcom</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Collaboration</word>
+            <lemma>Collaboration</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>Delivers</word>
+            <lemma>deliver</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>Portfolio</word>
+            <lemma>portfolio</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="9">
+            <word>PAS</word>
+            <lemma>pa</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="10">
+            <word>Cellular</word>
+            <lemma>cellular</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="11">
+            <word>Solutions</word>
+            <lemma>Solutions</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Atheros) (NNPS Communications)) (CC and) (NP (NNP UTStarcom) (NNP Collaboration))) (VP (VBZ Delivers) (S (NP (NP (NN Portfolio)) (PP (IN of) (NP (NN PAS)))) (NP (JJ Cellular) (NNPS Solutions)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Communications</governor>
+            <dependent idx="1">Atheros</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Delivers</governor>
+            <dependent idx="2">Communications</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">Communications</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Collaboration</governor>
+            <dependent idx="4">UTStarcom</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">Communications</governor>
+            <dependent idx="5">Collaboration</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">Solutions</governor>
+            <dependent idx="7">Portfolio</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">Portfolio</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="9">PAS</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">Solutions</governor>
+            <dependent idx="10">Cellular</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">Delivers</governor>
+            <dependent idx="11">Solutions</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Communications</governor>
+            <dependent idx="1">Atheros</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Delivers</governor>
+            <dependent idx="2">Communications</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Collaboration</governor>
+            <dependent idx="4">UTStarcom</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Communications</governor>
+            <dependent idx="5">Collaboration</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">Solutions</governor>
+            <dependent idx="7">Portfolio</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">Portfolio</governor>
+            <dependent idx="9">PAS</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">Solutions</governor>
+            <dependent idx="10">Cellular</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">Delivers</governor>
+            <dependent idx="11">Solutions</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Communications</governor>
+            <dependent idx="1">Atheros</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Delivers</governor>
+            <dependent idx="2">Communications</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Collaboration</governor>
+            <dependent idx="4">UTStarcom</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Communications</governor>
+            <dependent idx="5">Collaboration</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Delivers</governor>
+            <dependent idx="5">Collaboration</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">Solutions</governor>
+            <dependent idx="7">Portfolio</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">Portfolio</governor>
+            <dependent idx="9">PAS</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">Solutions</governor>
+            <dependent idx="10">Cellular</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">Delivers</governor>
+            <dependent idx="11">Solutions</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Atheros</word>
+            <lemma>Atheros</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Communications</word>
+            <lemma>Communications</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>announced</word>
+            <lemma>announce</lemma>
+            <CharacterOffsetBegin>126</CharacterOffsetBegin>
+            <CharacterOffsetEnd>135</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>136</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>UTStarcom</word>
+            <lemma>UTStarcom</lemma>
+            <CharacterOffsetBegin>141</CharacterOffsetBegin>
+            <CharacterOffsetEnd>150</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>151</CharacterOffsetBegin>
+            <CharacterOffsetEnd>155</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="8">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>156</CharacterOffsetBegin>
+            <CharacterOffsetEnd>159</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>launched</word>
+            <lemma>launch</lemma>
+            <CharacterOffsetBegin>160</CharacterOffsetBegin>
+            <CharacterOffsetEnd>168</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>four</word>
+            <lemma>four</lemma>
+            <CharacterOffsetBegin>169</CharacterOffsetBegin>
+            <CharacterOffsetEnd>173</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>4.0</NormalizedNER>
+          </token>
+          <token id="11">
+            <word>high-performance</word>
+            <lemma>high-performance</lemma>
+            <CharacterOffsetBegin>174</CharacterOffsetBegin>
+            <CharacterOffsetEnd>190</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>190</CharacterOffsetBegin>
+            <CharacterOffsetEnd>191</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>low-cost</word>
+            <lemma>low-cost</lemma>
+            <CharacterOffsetBegin>192</CharacterOffsetBegin>
+            <CharacterOffsetEnd>200</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>200</CharacterOffsetBegin>
+            <CharacterOffsetEnd>201</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>IP-based</word>
+            <lemma>ip-based</lemma>
+            <CharacterOffsetBegin>202</CharacterOffsetBegin>
+            <CharacterOffsetEnd>210</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="16">
+            <word>Personal</word>
+            <lemma>personal</lemma>
+            <CharacterOffsetBegin>211</CharacterOffsetBegin>
+            <CharacterOffsetEnd>219</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="17">
+            <word>Access</word>
+            <lemma>access</lemma>
+            <CharacterOffsetBegin>220</CharacterOffsetBegin>
+            <CharacterOffsetEnd>226</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="18">
+            <word>System</word>
+            <lemma>system</lemma>
+            <CharacterOffsetBegin>227</CharacterOffsetBegin>
+            <CharacterOffsetEnd>233</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="19">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>234</CharacterOffsetBegin>
+            <CharacterOffsetEnd>235</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>iPAS</word>
+            <lemma>ipa</lemma>
+            <CharacterOffsetBegin>235</CharacterOffsetBegin>
+            <CharacterOffsetEnd>239</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>239</CharacterOffsetBegin>
+            <CharacterOffsetEnd>240</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>TM</word>
+            <lemma>tm</lemma>
+            <CharacterOffsetBegin>240</CharacterOffsetBegin>
+            <CharacterOffsetEnd>242</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="23">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>242</CharacterOffsetBegin>
+            <CharacterOffsetEnd>243</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>243</CharacterOffsetBegin>
+            <CharacterOffsetEnd>244</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>handsets</word>
+            <lemma>handset</lemma>
+            <CharacterOffsetBegin>245</CharacterOffsetBegin>
+            <CharacterOffsetEnd>253</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="26">
+            <word>based</word>
+            <lemma>base</lemma>
+            <CharacterOffsetBegin>254</CharacterOffsetBegin>
+            <CharacterOffsetEnd>259</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="27">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>260</CharacterOffsetBegin>
+            <CharacterOffsetEnd>262</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="28">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>263</CharacterOffsetBegin>
+            <CharacterOffsetEnd>266</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="29">
+            <word>Atheros</word>
+            <lemma>Atheros</lemma>
+            <CharacterOffsetBegin>267</CharacterOffsetBegin>
+            <CharacterOffsetEnd>274</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="30">
+            <word>AR1900</word>
+            <lemma>AR1900</lemma>
+            <CharacterOffsetBegin>275</CharacterOffsetBegin>
+            <CharacterOffsetEnd>281</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="31">
+            <word>chip</word>
+            <lemma>chip</lemma>
+            <CharacterOffsetBegin>282</CharacterOffsetBegin>
+            <CharacterOffsetEnd>286</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="32">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>286</CharacterOffsetBegin>
+            <CharacterOffsetEnd>287</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Atheros) (NNPS Communications) (NNP Inc.)) (VP (VBD announced) (SBAR (IN that) (S (NP (NNP UTStarcom) (NNP Inc.)) (VP (VBZ has) (VP (VBN launched) (NP (NP (CD four) (NP (JJ high-performance) (, ,) (JJ low-cost) (, ,) (JJ IP-based) (JJ Personal) (NN Access) (NN System) (-LRB- -LRB-) (NN iPAS) (-LRB- -LRB-) (NN TM) (-RRB- -RRB-)) (-RRB- -RRB-) (NNS handsets)) (PP (VBN based) (PP (IN on) (NP (DT the) (NNP Atheros) (NNP AR1900) (NN chip)))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Atheros</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Communications</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">announced</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="complm">
+            <governor idx="9">launched</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Inc.</governor>
+            <dependent idx="6">UTStarcom</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">launched</governor>
+            <dependent idx="7">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">launched</governor>
+            <dependent idx="8">has</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">announced</governor>
+            <dependent idx="9">launched</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="25">handsets</governor>
+            <dependent idx="10">four</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="11">high-performance</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="13">low-cost</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="15">IP-based</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="16">Personal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">TM</governor>
+            <dependent idx="17">Access</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">TM</governor>
+            <dependent idx="18">System</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">TM</governor>
+            <dependent idx="20">iPAS</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">handsets</governor>
+            <dependent idx="22">TM</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">launched</governor>
+            <dependent idx="25">handsets</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="25">handsets</governor>
+            <dependent idx="26">based</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="26">based</governor>
+            <dependent idx="27">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="31">chip</governor>
+            <dependent idx="28">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="31">chip</governor>
+            <dependent idx="29">Atheros</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="31">chip</governor>
+            <dependent idx="30">AR1900</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="27">on</governor>
+            <dependent idx="31">chip</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Atheros</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Communications</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">announced</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="complm">
+            <governor idx="9">launched</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Inc.</governor>
+            <dependent idx="6">UTStarcom</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">launched</governor>
+            <dependent idx="7">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">launched</governor>
+            <dependent idx="8">has</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">announced</governor>
+            <dependent idx="9">launched</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="25">handsets</governor>
+            <dependent idx="10">four</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="11">high-performance</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="13">low-cost</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="15">IP-based</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="16">Personal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">TM</governor>
+            <dependent idx="17">Access</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">TM</governor>
+            <dependent idx="18">System</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">TM</governor>
+            <dependent idx="20">iPAS</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">handsets</governor>
+            <dependent idx="22">TM</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">launched</governor>
+            <dependent idx="25">handsets</dependent>
+          </dep>
+          <dep type="prepc_based_on">
+            <governor idx="25">handsets</governor>
+            <dependent idx="27">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="31">chip</governor>
+            <dependent idx="28">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="31">chip</governor>
+            <dependent idx="29">Atheros</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="31">chip</governor>
+            <dependent idx="30">AR1900</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="25">handsets</governor>
+            <dependent idx="31">chip</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Atheros</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Communications</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">announced</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="complm">
+            <governor idx="9">launched</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Inc.</governor>
+            <dependent idx="6">UTStarcom</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">launched</governor>
+            <dependent idx="7">Inc.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">launched</governor>
+            <dependent idx="8">has</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">announced</governor>
+            <dependent idx="9">launched</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="25">handsets</governor>
+            <dependent idx="10">four</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="11">high-performance</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="13">low-cost</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="15">IP-based</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">TM</governor>
+            <dependent idx="16">Personal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">TM</governor>
+            <dependent idx="17">Access</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">TM</governor>
+            <dependent idx="18">System</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">TM</governor>
+            <dependent idx="20">iPAS</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">handsets</governor>
+            <dependent idx="22">TM</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">launched</governor>
+            <dependent idx="25">handsets</dependent>
+          </dep>
+          <dep type="prepc_based_on">
+            <governor idx="25">handsets</governor>
+            <dependent idx="27">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="31">chip</governor>
+            <dependent idx="28">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="31">chip</governor>
+            <dependent idx="29">Atheros</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="31">chip</governor>
+            <dependent idx="30">AR1900</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="25">handsets</governor>
+            <dependent idx="31">chip</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>288</CharacterOffsetBegin>
+            <CharacterOffsetEnd>291</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>UTStarcom</word>
+            <lemma>UTStarcom</lemma>
+            <CharacterOffsetBegin>292</CharacterOffsetBegin>
+            <CharacterOffsetEnd>301</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="3">
+            <word>portfolio</word>
+            <lemma>portfolio</lemma>
+            <CharacterOffsetBegin>302</CharacterOffsetBegin>
+            <CharacterOffsetEnd>311</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>312</CharacterOffsetBegin>
+            <CharacterOffsetEnd>314</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>handsets</word>
+            <lemma>handset</lemma>
+            <CharacterOffsetBegin>315</CharacterOffsetBegin>
+            <CharacterOffsetEnd>323</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>324</CharacterOffsetBegin>
+            <CharacterOffsetEnd>326</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>327</CharacterOffsetBegin>
+            <CharacterOffsetEnd>330</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>first</word>
+            <lemma>first</lemma>
+            <CharacterOffsetBegin>331</CharacterOffsetBegin>
+            <CharacterOffsetEnd>336</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>ORDINAL</NER>
+            <NormalizedNER>1.0</NormalizedNER>
+          </token>
+          <token id="9">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>337</CharacterOffsetBegin>
+            <CharacterOffsetEnd>339</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>340</CharacterOffsetBegin>
+            <CharacterOffsetEnd>342</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>based</word>
+            <lemma>base</lemma>
+            <CharacterOffsetBegin>343</CharacterOffsetBegin>
+            <CharacterOffsetEnd>348</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>349</CharacterOffsetBegin>
+            <CharacterOffsetEnd>351</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>Atheros</word>
+            <lemma>Atheros</lemma>
+            <CharacterOffsetBegin>352</CharacterOffsetBegin>
+            <CharacterOffsetEnd>359</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="14">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>359</CharacterOffsetBegin>
+            <CharacterOffsetEnd>360</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>cellular</word>
+            <lemma>cellular</lemma>
+            <CharacterOffsetBegin>361</CharacterOffsetBegin>
+            <CharacterOffsetEnd>369</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>solution</word>
+            <lemma>solution</lemma>
+            <CharacterOffsetBegin>370</CharacterOffsetBegin>
+            <CharacterOffsetEnd>378</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>378</CharacterOffsetBegin>
+            <CharacterOffsetEnd>379</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>380</CharacterOffsetBegin>
+            <CharacterOffsetEnd>385</CharacterOffsetEnd>
+            <POS>WDT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>386</CharacterOffsetBegin>
+            <CharacterOffsetEnd>388</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>389</CharacterOffsetBegin>
+            <CharacterOffsetEnd>392</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>world</word>
+            <lemma>world</lemma>
+            <CharacterOffsetBegin>393</CharacterOffsetBegin>
+            <CharacterOffsetEnd>398</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>398</CharacterOffsetBegin>
+            <CharacterOffsetEnd>400</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>only</word>
+            <lemma>only</lemma>
+            <CharacterOffsetBegin>401</CharacterOffsetBegin>
+            <CharacterOffsetEnd>405</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>single-chip</word>
+            <lemma>single-chip</lemma>
+            <CharacterOffsetBegin>406</CharacterOffsetBegin>
+            <CharacterOffsetEnd>417</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>technology</word>
+            <lemma>technology</lemma>
+            <CharacterOffsetBegin>418</CharacterOffsetBegin>
+            <CharacterOffsetEnd>428</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="26">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>429</CharacterOffsetBegin>
+            <CharacterOffsetEnd>432</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="27">
+            <word>PHS</word>
+            <lemma>ph</lemma>
+            <CharacterOffsetBegin>433</CharacterOffsetBegin>
+            <CharacterOffsetEnd>436</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="28">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>437</CharacterOffsetBegin>
+            <CharacterOffsetEnd>438</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="29">
+            <word>Personal</word>
+            <lemma>personal</lemma>
+            <CharacterOffsetBegin>438</CharacterOffsetBegin>
+            <CharacterOffsetEnd>446</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="30">
+            <word>Handyphone</word>
+            <lemma>Handyphone</lemma>
+            <CharacterOffsetBegin>447</CharacterOffsetBegin>
+            <CharacterOffsetEnd>457</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="31">
+            <word>System</word>
+            <lemma>System</lemma>
+            <CharacterOffsetBegin>458</CharacterOffsetBegin>
+            <CharacterOffsetEnd>464</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="32">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>464</CharacterOffsetBegin>
+            <CharacterOffsetEnd>465</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="33">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>466</CharacterOffsetBegin>
+            <CharacterOffsetEnd>468</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="34">
+            <word>PAS</word>
+            <lemma>pa</lemma>
+            <CharacterOffsetBegin>469</CharacterOffsetBegin>
+            <CharacterOffsetEnd>472</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="35">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>473</CharacterOffsetBegin>
+            <CharacterOffsetEnd>475</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="36">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>476</CharacterOffsetBegin>
+            <CharacterOffsetEnd>478</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="37">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>479</CharacterOffsetBegin>
+            <CharacterOffsetEnd>481</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="38">
+            <word>known</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>482</CharacterOffsetBegin>
+            <CharacterOffsetEnd>487</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="39">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>488</CharacterOffsetBegin>
+            <CharacterOffsetEnd>490</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="40">
+            <word>China</word>
+            <lemma>China</lemma>
+            <CharacterOffsetBegin>491</CharacterOffsetBegin>
+            <CharacterOffsetEnd>496</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="41">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>496</CharacterOffsetBegin>
+            <CharacterOffsetEnd>497</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT The) (NNP UTStarcom) (NN portfolio)) (PP (IN of) (NP (NNS handsets)))) (VP (VBZ is) (NP (DT the) (JJ first) (S (VP (TO to) (VP (VB be) (VP (VBN based) (PP (IN on) (NP (NP (NP (NP (NP (NNP Atheros) (POS ')) (JJ cellular) (NN solution)) (, ,) (SBAR (WHNP (WDT which)) (S (VP (VBZ is) (NP (NP (NP (DT the) (NN world) (POS 's)) (JJ only) (NN single-chip) (NN technology)) (PP (IN for) (NP (NN PHS)))))))) (-LRB- -LRB-) (NP (JJ Personal) (NNP Handyphone) (NNP System)) (-RRB- -RRB-)) (CC or) (NP (NP (NN PAS)) (SBAR (IN as) (S (NP (PRP it)) (VP (VBZ is) (VP (VBN known) (PP (IN in) (NP (NNP China)))))))))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="3">portfolio</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">portfolio</governor>
+            <dependent idx="2">UTStarcom</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">first</governor>
+            <dependent idx="3">portfolio</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">portfolio</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="5">handsets</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">first</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">first</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">based</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="11">based</governor>
+            <dependent idx="10">be</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">first</governor>
+            <dependent idx="11">based</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">based</governor>
+            <dependent idx="12">on</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="16">solution</governor>
+            <dependent idx="13">Atheros</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">solution</governor>
+            <dependent idx="15">cellular</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">on</governor>
+            <dependent idx="16">solution</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="25">technology</governor>
+            <dependent idx="18">which</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="25">technology</governor>
+            <dependent idx="19">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="21">world</governor>
+            <dependent idx="20">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="25">technology</governor>
+            <dependent idx="21">world</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="21">world</governor>
+            <dependent idx="22">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="25">technology</governor>
+            <dependent idx="23">only</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">technology</governor>
+            <dependent idx="24">single-chip</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="16">solution</governor>
+            <dependent idx="25">technology</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="25">technology</governor>
+            <dependent idx="26">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="26">for</governor>
+            <dependent idx="27">PHS</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="31">System</governor>
+            <dependent idx="29">Personal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="31">System</governor>
+            <dependent idx="30">Handyphone</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="16">solution</governor>
+            <dependent idx="31">System</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="16">solution</governor>
+            <dependent idx="33">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="16">solution</governor>
+            <dependent idx="34">PAS</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="38">known</governor>
+            <dependent idx="35">as</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="38">known</governor>
+            <dependent idx="36">it</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="38">known</governor>
+            <dependent idx="37">is</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="34">PAS</governor>
+            <dependent idx="38">known</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="38">known</governor>
+            <dependent idx="39">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="39">in</governor>
+            <dependent idx="40">China</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="3">portfolio</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">portfolio</governor>
+            <dependent idx="2">UTStarcom</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">first</governor>
+            <dependent idx="3">portfolio</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">portfolio</governor>
+            <dependent idx="5">handsets</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">first</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">first</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">first</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">first</governor>
+            <dependent idx="10">be</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="16">solution</governor>
+            <dependent idx="13">Atheros</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">solution</governor>
+            <dependent idx="15">cellular</dependent>
+          </dep>
+          <dep type="prep_based_on">
+            <governor idx="8">first</governor>
+            <dependent idx="16">solution</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="25">technology</governor>
+            <dependent idx="18">which</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="25">technology</governor>
+            <dependent idx="19">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="21">world</governor>
+            <dependent idx="20">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="25">technology</governor>
+            <dependent idx="21">world</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="25">technology</governor>
+            <dependent idx="23">only</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">technology</governor>
+            <dependent idx="24">single-chip</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="16">solution</governor>
+            <dependent idx="25">technology</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="25">technology</governor>
+            <dependent idx="27">PHS</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="31">System</governor>
+            <dependent idx="29">Personal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="31">System</governor>
+            <dependent idx="30">Handyphone</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="16">solution</governor>
+            <dependent idx="31">System</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="16">solution</governor>
+            <dependent idx="34">PAS</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="38">known</governor>
+            <dependent idx="35">as</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="38">known</governor>
+            <dependent idx="36">it</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="38">known</governor>
+            <dependent idx="37">is</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="34">PAS</governor>
+            <dependent idx="38">known</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="38">known</governor>
+            <dependent idx="40">China</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="3">portfolio</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">portfolio</governor>
+            <dependent idx="2">UTStarcom</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">first</governor>
+            <dependent idx="3">portfolio</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">portfolio</governor>
+            <dependent idx="5">handsets</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">first</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">first</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">first</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">first</governor>
+            <dependent idx="10">be</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="16">solution</governor>
+            <dependent idx="13">Atheros</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">solution</governor>
+            <dependent idx="15">cellular</dependent>
+          </dep>
+          <dep type="prep_based_on">
+            <governor idx="8">first</governor>
+            <dependent idx="16">solution</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="25">technology</governor>
+            <dependent idx="18">which</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="25">technology</governor>
+            <dependent idx="19">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="21">world</governor>
+            <dependent idx="20">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="25">technology</governor>
+            <dependent idx="21">world</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="25">technology</governor>
+            <dependent idx="23">only</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">technology</governor>
+            <dependent idx="24">single-chip</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="16">solution</governor>
+            <dependent idx="25">technology</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="25">technology</governor>
+            <dependent idx="27">PHS</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="31">System</governor>
+            <dependent idx="29">Personal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="31">System</governor>
+            <dependent idx="30">Handyphone</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="16">solution</governor>
+            <dependent idx="31">System</dependent>
+          </dep>
+          <dep type="prep_based_on">
+            <governor idx="8">first</governor>
+            <dependent idx="34">PAS</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="16">solution</governor>
+            <dependent idx="34">PAS</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="38">known</governor>
+            <dependent idx="35">as</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="38">known</governor>
+            <dependent idx="36">it</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="38">known</governor>
+            <dependent idx="37">is</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="34">PAS</governor>
+            <dependent idx="38">known</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="38">known</governor>
+            <dependent idx="40">China</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>498</CharacterOffsetBegin>
+            <CharacterOffsetEnd>501</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Atheros</word>
+            <lemma>Atheros</lemma>
+            <CharacterOffsetBegin>502</CharacterOffsetBegin>
+            <CharacterOffsetEnd>509</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>510</CharacterOffsetBegin>
+            <CharacterOffsetEnd>513</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>UTStarcom</word>
+            <lemma>UTStarcom</lemma>
+            <CharacterOffsetBegin>514</CharacterOffsetBegin>
+            <CharacterOffsetEnd>523</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="5">
+            <word>collaboration</word>
+            <lemma>collaboration</lemma>
+            <CharacterOffsetBegin>524</CharacterOffsetBegin>
+            <CharacterOffsetEnd>537</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>538</CharacterOffsetBegin>
+            <CharacterOffsetEnd>541</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>resulted</word>
+            <lemma>result</lemma>
+            <CharacterOffsetBegin>542</CharacterOffsetBegin>
+            <CharacterOffsetEnd>550</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>551</CharacterOffsetBegin>
+            <CharacterOffsetEnd>553</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>554</CharacterOffsetBegin>
+            <CharacterOffsetEnd>556</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>array</word>
+            <lemma>array</lemma>
+            <CharacterOffsetBegin>557</CharacterOffsetBegin>
+            <CharacterOffsetEnd>562</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>563</CharacterOffsetBegin>
+            <CharacterOffsetEnd>565</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>handsets</word>
+            <lemma>handset</lemma>
+            <CharacterOffsetBegin>566</CharacterOffsetBegin>
+            <CharacterOffsetEnd>574</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>ranging</word>
+            <lemma>range</lemma>
+            <CharacterOffsetBegin>575</CharacterOffsetBegin>
+            <CharacterOffsetEnd>582</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>583</CharacterOffsetBegin>
+            <CharacterOffsetEnd>587</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>588</CharacterOffsetBegin>
+            <CharacterOffsetEnd>591</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>ultra</word>
+            <lemma>ultra</lemma>
+            <CharacterOffsetBegin>592</CharacterOffsetBegin>
+            <CharacterOffsetEnd>597</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>low-cost</word>
+            <lemma>low-cost</lemma>
+            <CharacterOffsetBegin>598</CharacterOffsetBegin>
+            <CharacterOffsetEnd>606</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>UT117</word>
+            <lemma>ut117</lemma>
+            <CharacterOffsetBegin>607</CharacterOffsetBegin>
+            <CharacterOffsetEnd>612</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>613</CharacterOffsetBegin>
+            <CharacterOffsetEnd>615</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>616</CharacterOffsetBegin>
+            <CharacterOffsetEnd>619</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>feature-rich</word>
+            <lemma>feature-rich</lemma>
+            <CharacterOffsetBegin>620</CharacterOffsetBegin>
+            <CharacterOffsetEnd>632</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>UT619</word>
+            <lemma>ut619</lemma>
+            <CharacterOffsetBegin>633</CharacterOffsetBegin>
+            <CharacterOffsetEnd>638</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>638</CharacterOffsetBegin>
+            <CharacterOffsetEnd>639</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NP (NNP Atheros) (CC and) (NNP UTStarcom)) (NN collaboration)) (VP (VBZ has) (VP (VBN resulted) (PP (IN in) (NP (NP (DT an) (NN array)) (PP (IN of) (NP (NP (NNS handsets)) (VP (VBG ranging) (PP (IN from) (NP (DT the) (NN ultra) (JJ low-cost) (NN UT117))) (PP (TO to) (NP (DT the) (JJ feature-rich) (NN UT619)))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="5">collaboration</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">collaboration</governor>
+            <dependent idx="2">Atheros</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">Atheros</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">Atheros</governor>
+            <dependent idx="4">UTStarcom</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">resulted</governor>
+            <dependent idx="5">collaboration</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">resulted</governor>
+            <dependent idx="6">has</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">resulted</governor>
+            <dependent idx="8">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">array</governor>
+            <dependent idx="9">an</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">in</governor>
+            <dependent idx="10">array</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">array</governor>
+            <dependent idx="11">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">of</governor>
+            <dependent idx="12">handsets</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="12">handsets</governor>
+            <dependent idx="13">ranging</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="13">ranging</governor>
+            <dependent idx="14">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="18">UT117</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="18">UT117</governor>
+            <dependent idx="16">ultra</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">UT117</governor>
+            <dependent idx="17">low-cost</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="14">from</governor>
+            <dependent idx="18">UT117</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="13">ranging</governor>
+            <dependent idx="19">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="22">UT619</governor>
+            <dependent idx="20">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">UT619</governor>
+            <dependent idx="21">feature-rich</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="19">to</governor>
+            <dependent idx="22">UT619</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="5">collaboration</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">collaboration</governor>
+            <dependent idx="2">Atheros</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Atheros</governor>
+            <dependent idx="4">UTStarcom</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">resulted</governor>
+            <dependent idx="5">collaboration</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">resulted</governor>
+            <dependent idx="6">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">array</governor>
+            <dependent idx="9">an</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="7">resulted</governor>
+            <dependent idx="10">array</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="10">array</governor>
+            <dependent idx="12">handsets</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="12">handsets</governor>
+            <dependent idx="13">ranging</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="18">UT117</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="18">UT117</governor>
+            <dependent idx="16">ultra</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">UT117</governor>
+            <dependent idx="17">low-cost</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="13">ranging</governor>
+            <dependent idx="18">UT117</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="22">UT619</governor>
+            <dependent idx="20">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">UT619</governor>
+            <dependent idx="21">feature-rich</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="13">ranging</governor>
+            <dependent idx="22">UT619</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="5">collaboration</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">collaboration</governor>
+            <dependent idx="2">Atheros</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Atheros</governor>
+            <dependent idx="4">UTStarcom</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">collaboration</governor>
+            <dependent idx="4">UTStarcom</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">resulted</governor>
+            <dependent idx="5">collaboration</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">resulted</governor>
+            <dependent idx="6">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">array</governor>
+            <dependent idx="9">an</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="7">resulted</governor>
+            <dependent idx="10">array</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="10">array</governor>
+            <dependent idx="12">handsets</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="12">handsets</governor>
+            <dependent idx="13">ranging</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="18">UT117</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="18">UT117</governor>
+            <dependent idx="16">ultra</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">UT117</governor>
+            <dependent idx="17">low-cost</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="13">ranging</governor>
+            <dependent idx="18">UT117</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="22">UT619</governor>
+            <dependent idx="20">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="22">UT619</governor>
+            <dependent idx="21">feature-rich</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="13">ranging</governor>
+            <dependent idx="22">UT619</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

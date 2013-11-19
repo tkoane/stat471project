@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Health</word>
+            <lemma>Health</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Net</word>
+            <lemma>Net</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>added</word>
+            <lemma>add</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>S&amp;P</word>
+            <lemma>S&amp;P</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>1000</word>
+            <lemma>1000</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>1000</NormalizedNER>
+            <Timex tid="t1" type="DATE">1000</Timex>
+          </token>
+          <token id="8">
+            <word>Index</word>
+            <lemma>Index</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Health) (NNP Net) (NNP Inc.)) (VP (VBD added) (PP (TO to) (NP (NNP S&amp;P) (CD 1000))) (NP (NNP Index))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">added</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">added</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">to</governor>
+            <dependent idx="6">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">S&amp;P</governor>
+            <dependent idx="7">1000</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">added</governor>
+            <dependent idx="8">Index</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">added</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">added</governor>
+            <dependent idx="6">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">S&amp;P</governor>
+            <dependent idx="7">1000</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">added</governor>
+            <dependent idx="8">Index</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">added</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">added</governor>
+            <dependent idx="6">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">S&amp;P</governor>
+            <dependent idx="7">1000</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">added</governor>
+            <dependent idx="8">Index</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Health</word>
+            <lemma>Health</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Net</word>
+            <lemma>Net</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>added</word>
+            <lemma>add</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>S&amp;P</word>
+            <lemma>S&amp;P</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>1000</word>
+            <lemma>1000</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>1000</NormalizedNER>
+            <Timex tid="t1" type="DATE">1000</Timex>
+          </token>
+          <token id="8">
+            <word>Index</word>
+            <lemma>Index</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (FRAG (NP (NNP Health) (NNP Net) (NNP Inc.))) (VP (VBD added) (PP (TO to) (NP (NNP S&amp;P) (CD 1000)))) (NP (NNP Index)))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">added</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">added</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">to</governor>
+            <dependent idx="6">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">S&amp;P</governor>
+            <dependent idx="7">1000</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">added</governor>
+            <dependent idx="8">Index</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">added</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">added</governor>
+            <dependent idx="6">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">S&amp;P</governor>
+            <dependent idx="7">1000</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">added</governor>
+            <dependent idx="8">Index</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Health</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">Net</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">added</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">added</governor>
+            <dependent idx="6">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">S&amp;P</governor>
+            <dependent idx="7">1000</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">added</governor>
+            <dependent idx="8">Index</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

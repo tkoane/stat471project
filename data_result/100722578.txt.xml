@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Newspaper</word>
+            <lemma>Newspaper</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Association</word>
+            <lemma>Association</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>America</word>
+            <lemma>America</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>MediaXchange</word>
+            <lemma>MediaXchange</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>conference</word>
+            <lemma>conference</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Apr-11-2010</word>
+            <lemma>apr-11-2010</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>through</word>
+            <lemma>through</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>Apr-14-2010</word>
+            <lemma>apr-14-2010</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Newspaper) (NNP Association)) (PP (IN of) (NP (NNP America))) (, ,) (NP (NNP MediaXchange) (NN conference)) (, ,) (NP (NP (NN Apr-11-2010)) (PP (IN through) (NP (NN Apr-14-2010)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Association</governor>
+            <dependent idx="1">Newspaper</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Association</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">conference</governor>
+            <dependent idx="6">MediaXchange</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="7">conference</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="9">Apr-11-2010</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">Apr-11-2010</governor>
+            <dependent idx="10">through</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">through</governor>
+            <dependent idx="11">Apr-14-2010</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Association</governor>
+            <dependent idx="1">Newspaper</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">Association</governor>
+            <dependent idx="4">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">conference</governor>
+            <dependent idx="6">MediaXchange</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="7">conference</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="9">Apr-11-2010</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="9">Apr-11-2010</governor>
+            <dependent idx="11">Apr-14-2010</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Association</governor>
+            <dependent idx="1">Newspaper</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">Association</governor>
+            <dependent idx="4">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">conference</governor>
+            <dependent idx="6">MediaXchange</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="7">conference</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="9">Apr-11-2010</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="9">Apr-11-2010</governor>
+            <dependent idx="11">Apr-14-2010</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Newspaper</word>
+            <lemma>Newspaper</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Association</word>
+            <lemma>Association</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>America</word>
+            <lemma>America</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>MediaXchange</word>
+            <lemma>MediaXchange</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>conference</word>
+            <lemma>conference</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>150</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>150</CharacterOffsetBegin>
+            <CharacterOffsetEnd>151</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Apr-11-2010</word>
+            <lemma>apr-11-2010</lemma>
+            <CharacterOffsetBegin>152</CharacterOffsetBegin>
+            <CharacterOffsetEnd>163</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>through</word>
+            <lemma>through</lemma>
+            <CharacterOffsetBegin>164</CharacterOffsetBegin>
+            <CharacterOffsetEnd>171</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>Apr-14-2010</word>
+            <lemma>apr-14-2010</lemma>
+            <CharacterOffsetBegin>172</CharacterOffsetBegin>
+            <CharacterOffsetEnd>183</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>183</CharacterOffsetBegin>
+            <CharacterOffsetEnd>184</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Newspaper) (NNP Association)) (PP (IN of) (NP (NNP America))) (, ,) (NP (NNP MediaXchange) (NN conference)) (, ,) (NP (NP (NN Apr-11-2010)) (PP (IN through) (NP (NN Apr-14-2010)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Association</governor>
+            <dependent idx="1">Newspaper</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Association</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">conference</governor>
+            <dependent idx="6">MediaXchange</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="7">conference</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="9">Apr-11-2010</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">Apr-11-2010</governor>
+            <dependent idx="10">through</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">through</governor>
+            <dependent idx="11">Apr-14-2010</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Association</governor>
+            <dependent idx="1">Newspaper</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">Association</governor>
+            <dependent idx="4">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">conference</governor>
+            <dependent idx="6">MediaXchange</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="7">conference</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="9">Apr-11-2010</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="9">Apr-11-2010</governor>
+            <dependent idx="11">Apr-14-2010</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Association</governor>
+            <dependent idx="1">Newspaper</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">Association</governor>
+            <dependent idx="4">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">conference</governor>
+            <dependent idx="6">MediaXchange</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="7">conference</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Association</governor>
+            <dependent idx="9">Apr-11-2010</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="9">Apr-11-2010</governor>
+            <dependent idx="11">Apr-14-2010</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Venue</word>
+            <lemma>venue</lemma>
+            <CharacterOffsetBegin>185</CharacterOffsetBegin>
+            <CharacterOffsetEnd>190</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>:</word>
+            <lemma>:</lemma>
+            <CharacterOffsetBegin>190</CharacterOffsetBegin>
+            <CharacterOffsetEnd>191</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Orlando</word>
+            <lemma>Orlando</lemma>
+            <CharacterOffsetBegin>192</CharacterOffsetBegin>
+            <CharacterOffsetEnd>199</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>199</CharacterOffsetBegin>
+            <CharacterOffsetEnd>200</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Florida</word>
+            <lemma>Florida</lemma>
+            <CharacterOffsetBegin>201</CharacterOffsetBegin>
+            <CharacterOffsetEnd>208</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>208</CharacterOffsetBegin>
+            <CharacterOffsetEnd>209</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>United</word>
+            <lemma>United</lemma>
+            <CharacterOffsetBegin>210</CharacterOffsetBegin>
+            <CharacterOffsetEnd>216</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="8">
+            <word>States</word>
+            <lemma>States</lemma>
+            <CharacterOffsetBegin>217</CharacterOffsetBegin>
+            <CharacterOffsetEnd>223</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>223</CharacterOffsetBegin>
+            <CharacterOffsetEnd>224</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN Venue)) (: :) (NP (NP (NNP Orlando)) (, ,) (NP (NNP Florida) (, ,) (NNP United) (NNPS States))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="dep">
+            <governor idx="1">Venue</governor>
+            <dependent idx="3">Orlando</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">States</governor>
+            <dependent idx="5">Florida</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">States</governor>
+            <dependent idx="7">United</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Orlando</governor>
+            <dependent idx="8">States</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="dep">
+            <governor idx="1">Venue</governor>
+            <dependent idx="3">Orlando</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">States</governor>
+            <dependent idx="5">Florida</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">States</governor>
+            <dependent idx="7">United</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Orlando</governor>
+            <dependent idx="8">States</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="dep">
+            <governor idx="1">Venue</governor>
+            <dependent idx="3">Orlando</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">States</governor>
+            <dependent idx="5">Florida</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">States</governor>
+            <dependent idx="7">United</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Orlando</governor>
+            <dependent idx="8">States</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>225</CharacterOffsetBegin>
+            <CharacterOffsetEnd>228</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>conference</word>
+            <lemma>conference</lemma>
+            <CharacterOffsetBegin>229</CharacterOffsetBegin>
+            <CharacterOffsetEnd>239</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>brings</word>
+            <lemma>bring</lemma>
+            <CharacterOffsetBegin>240</CharacterOffsetBegin>
+            <CharacterOffsetEnd>246</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>together</word>
+            <lemma>together</lemma>
+            <CharacterOffsetBegin>247</CharacterOffsetBegin>
+            <CharacterOffsetEnd>255</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>top</word>
+            <lemma>top</lemma>
+            <CharacterOffsetBegin>256</CharacterOffsetBegin>
+            <CharacterOffsetEnd>259</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>executives</word>
+            <lemma>executive</lemma>
+            <CharacterOffsetBegin>260</CharacterOffsetBegin>
+            <CharacterOffsetEnd>270</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>271</CharacterOffsetBegin>
+            <CharacterOffsetEnd>273</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>274</CharacterOffsetBegin>
+            <CharacterOffsetEnd>277</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>newspaper</word>
+            <lemma>newspaper</lemma>
+            <CharacterOffsetBegin>278</CharacterOffsetBegin>
+            <CharacterOffsetEnd>287</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>industry</word>
+            <lemma>industry</lemma>
+            <CharacterOffsetBegin>288</CharacterOffsetBegin>
+            <CharacterOffsetEnd>296</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>297</CharacterOffsetBegin>
+            <CharacterOffsetEnd>299</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>network</word>
+            <lemma>network</lemma>
+            <CharacterOffsetBegin>300</CharacterOffsetBegin>
+            <CharacterOffsetEnd>307</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>308</CharacterOffsetBegin>
+            <CharacterOffsetEnd>311</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>share</word>
+            <lemma>share</lemma>
+            <CharacterOffsetBegin>312</CharacterOffsetBegin>
+            <CharacterOffsetEnd>317</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>ideas</word>
+            <lemma>idea</lemma>
+            <CharacterOffsetBegin>318</CharacterOffsetBegin>
+            <CharacterOffsetEnd>323</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>324</CharacterOffsetBegin>
+            <CharacterOffsetEnd>329</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>major</word>
+            <lemma>major</lemma>
+            <CharacterOffsetBegin>330</CharacterOffsetBegin>
+            <CharacterOffsetEnd>335</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>issues</word>
+            <lemma>issue</lemma>
+            <CharacterOffsetBegin>336</CharacterOffsetBegin>
+            <CharacterOffsetEnd>342</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>343</CharacterOffsetBegin>
+            <CharacterOffsetEnd>347</CharacterOffsetEnd>
+            <POS>WDT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>affect</word>
+            <lemma>affect</lemma>
+            <CharacterOffsetBegin>348</CharacterOffsetBegin>
+            <CharacterOffsetEnd>354</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>355</CharacterOffsetBegin>
+            <CharacterOffsetEnd>358</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>publishing</word>
+            <lemma>publishing</lemma>
+            <CharacterOffsetBegin>359</CharacterOffsetBegin>
+            <CharacterOffsetEnd>369</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>industry</word>
+            <lemma>industry</lemma>
+            <CharacterOffsetBegin>370</CharacterOffsetBegin>
+            <CharacterOffsetEnd>378</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>378</CharacterOffsetBegin>
+            <CharacterOffsetEnd>379</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN conference)) (VP (VBZ brings) (ADVP (RB together)) (NP (NP (JJ top) (NNS executives)) (PP (IN in) (NP (DT the) (NN newspaper) (NN industry)))) (PP (TO to) (NP (NP (NP (NN network) (CC and) (NN share)) (NNS ideas)) (PP (IN about) (NP (JJ major) (NNS issues))) (SBAR (WHNP (WDT that)) (S (VP (VBP affect) (NP (DT the) (NN publishing) (NN industry)))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">conference</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">brings</governor>
+            <dependent idx="2">conference</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">brings</governor>
+            <dependent idx="4">together</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">executives</governor>
+            <dependent idx="5">top</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">brings</governor>
+            <dependent idx="6">executives</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">executives</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">industry</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">industry</governor>
+            <dependent idx="9">newspaper</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="10">industry</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">brings</governor>
+            <dependent idx="11">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">ideas</governor>
+            <dependent idx="12">network</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="12">network</governor>
+            <dependent idx="13">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="12">network</governor>
+            <dependent idx="14">share</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">to</governor>
+            <dependent idx="15">ideas</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="15">ideas</governor>
+            <dependent idx="16">about</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">issues</governor>
+            <dependent idx="17">major</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="16">about</governor>
+            <dependent idx="18">issues</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="20">affect</governor>
+            <dependent idx="19">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="15">ideas</governor>
+            <dependent idx="20">affect</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="23">industry</governor>
+            <dependent idx="21">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="23">industry</governor>
+            <dependent idx="22">publishing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="20">affect</governor>
+            <dependent idx="23">industry</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">conference</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">brings</governor>
+            <dependent idx="2">conference</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">brings</governor>
+            <dependent idx="4">together</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">executives</governor>
+            <dependent idx="5">top</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">brings</governor>
+            <dependent idx="6">executives</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">industry</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">industry</governor>
+            <dependent idx="9">newspaper</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">executives</governor>
+            <dependent idx="10">industry</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">ideas</governor>
+            <dependent idx="12">network</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="12">network</governor>
+            <dependent idx="14">share</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">brings</governor>
+            <dependent idx="15">ideas</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">issues</governor>
+            <dependent idx="17">major</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="15">ideas</governor>
+            <dependent idx="18">issues</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="20">affect</governor>
+            <dependent idx="19">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="15">ideas</governor>
+            <dependent idx="20">affect</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="23">industry</governor>
+            <dependent idx="21">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="23">industry</governor>
+            <dependent idx="22">publishing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="20">affect</governor>
+            <dependent idx="23">industry</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">conference</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">brings</governor>
+            <dependent idx="2">conference</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">brings</governor>
+            <dependent idx="4">together</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">executives</governor>
+            <dependent idx="5">top</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">brings</governor>
+            <dependent idx="6">executives</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">industry</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">industry</governor>
+            <dependent idx="9">newspaper</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">executives</governor>
+            <dependent idx="10">industry</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">ideas</governor>
+            <dependent idx="12">network</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="12">network</governor>
+            <dependent idx="14">share</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">ideas</governor>
+            <dependent idx="14">share</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">brings</governor>
+            <dependent idx="15">ideas</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">issues</governor>
+            <dependent idx="17">major</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="15">ideas</governor>
+            <dependent idx="18">issues</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="20">affect</governor>
+            <dependent idx="19">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="15">ideas</governor>
+            <dependent idx="20">affect</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="23">industry</governor>
+            <dependent idx="21">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="23">industry</governor>
+            <dependent idx="22">publishing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="20">affect</governor>
+            <dependent idx="23">industry</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

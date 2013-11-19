@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Cephalon</word>
+            <lemma>Cephalon</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>dropped</word>
+            <lemma>drop</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>S&amp;P</word>
+            <lemma>S&amp;P</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>400</word>
+            <lemma>400</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>400.0</NormalizedNER>
+          </token>
+          <token id="7">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Biotechnology</word>
+            <lemma>biotechnology</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>Industry</word>
+            <lemma>industry</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>Index</word>
+            <lemma>index</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Cephalon) (NNP Inc.)) (VP (VBD dropped) (PP (IN from) (NP (NP (NNP S&amp;P) (CD 400)) (: -) (NP (NP (NN Biotechnology)) (PRN (-LRB- -LRB-) (NP (NN Industry)) (-RRB- -RRB-)) (NP (NN Index)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">dropped</governor>
+            <dependent idx="2">Inc.</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">dropped</governor>
+            <dependent idx="4">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">from</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">S&amp;P</governor>
+            <dependent idx="6">400</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">S&amp;P</governor>
+            <dependent idx="8">Biotechnology</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="10">Industry</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">dropped</governor>
+            <dependent idx="2">Inc.</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">dropped</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">S&amp;P</governor>
+            <dependent idx="6">400</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">S&amp;P</governor>
+            <dependent idx="8">Biotechnology</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="10">Industry</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">dropped</governor>
+            <dependent idx="2">Inc.</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">dropped</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">S&amp;P</governor>
+            <dependent idx="6">400</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">S&amp;P</governor>
+            <dependent idx="8">Biotechnology</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="10">Industry</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Cephalon</word>
+            <lemma>Cephalon</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>dropped</word>
+            <lemma>drop</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>S&amp;P</word>
+            <lemma>S&amp;P</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>400</word>
+            <lemma>400</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>400.0</NormalizedNER>
+          </token>
+          <token id="7">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Biotechnology</word>
+            <lemma>biotechnology</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>Industry</word>
+            <lemma>industry</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>130</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>Index</word>
+            <lemma>index</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP-TMP (NP (NNP Cephalon) (NNP Inc.)) (VP (VBD dropped) (PP (IN from) (NP (NNP S&amp;P) (CD 400))))) (: -) (NP (NP (NN Biotechnology)) (PRN (-LRB- -LRB-) (NP (NN Industry)) (-RRB- -RRB-)) (NP (NN Index))))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="3">dropped</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">dropped</governor>
+            <dependent idx="4">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">from</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">S&amp;P</governor>
+            <dependent idx="6">400</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="8">Biotechnology</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="10">Industry</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="3">dropped</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">dropped</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">S&amp;P</governor>
+            <dependent idx="6">400</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="8">Biotechnology</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="10">Industry</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="3">dropped</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">dropped</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">S&amp;P</governor>
+            <dependent idx="6">400</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="8">Biotechnology</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="10">Industry</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">Biotechnology</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,1760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Update</word>
+            <lemma>Update</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Molex</word>
+            <lemma>Molex</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>Equity</word>
+            <lemma>equity</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Buyback</word>
+            <lemma>buyback</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>October</word>
+            <lemma>October</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="10">
+            <word>31</word>
+            <lemma>31</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="11">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="12">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Update)) (PP (TO to) (NP (NP (NNP Molex) (NNP Inc.) (POS 's)) (NN Equity) (NN Buyback))) (PP (IN on) (NP (NNP October) (CD 31) (, ,) (CD 2008))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="1">Update</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Inc.</governor>
+            <dependent idx="3">Molex</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">Buyback</governor>
+            <dependent idx="4">Inc.</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="4">Inc.</governor>
+            <dependent idx="5">'s</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Buyback</governor>
+            <dependent idx="6">Equity</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">to</governor>
+            <dependent idx="7">Buyback</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Update</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">on</governor>
+            <dependent idx="9">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">October</governor>
+            <dependent idx="10">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">October</governor>
+            <dependent idx="12">2008</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Inc.</governor>
+            <dependent idx="3">Molex</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">Buyback</governor>
+            <dependent idx="4">Inc.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Buyback</governor>
+            <dependent idx="6">Equity</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">Update</governor>
+            <dependent idx="7">Buyback</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">Update</governor>
+            <dependent idx="9">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">October</governor>
+            <dependent idx="10">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">October</governor>
+            <dependent idx="12">2008</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Inc.</governor>
+            <dependent idx="3">Molex</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">Buyback</governor>
+            <dependent idx="4">Inc.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Buyback</governor>
+            <dependent idx="6">Equity</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">Update</governor>
+            <dependent idx="7">Buyback</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">Update</governor>
+            <dependent idx="9">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">October</governor>
+            <dependent idx="10">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">October</governor>
+            <dependent idx="12">2008</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>On</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>October</word>
+            <lemma>October</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="3">
+            <word>31</word>
+            <lemma>31</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="5">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Molex</word>
+            <lemma>Molex</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="8">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="9">
+            <word>purchased</word>
+            <lemma>purchase</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>2,000,000</word>
+            <lemma>2,000,000</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>2000000.0</NormalizedNER>
+          </token>
+          <token id="11">
+            <word>shares</word>
+            <lemma>share</lemma>
+            <CharacterOffsetBegin>112</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>common</word>
+            <lemma>common</lemma>
+            <CharacterOffsetBegin>126</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>stock</word>
+            <lemma>stock</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>139</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>MOLX</word>
+            <lemma>molx</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>144</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="18">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>144</CharacterOffsetBegin>
+            <CharacterOffsetEnd>145</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>146</CharacterOffsetBegin>
+            <CharacterOffsetEnd>150</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>Frederick</word>
+            <lemma>Frederick</lemma>
+            <CharacterOffsetBegin>151</CharacterOffsetBegin>
+            <CharacterOffsetEnd>160</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="21">
+            <word>A.</word>
+            <lemma>A.</lemma>
+            <CharacterOffsetBegin>161</CharacterOffsetBegin>
+            <CharacterOffsetEnd>163</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="22">
+            <word>Krehbiel</word>
+            <lemma>Krehbiel</lemma>
+            <CharacterOffsetBegin>164</CharacterOffsetBegin>
+            <CharacterOffsetEnd>172</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="23">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>172</CharacterOffsetBegin>
+            <CharacterOffsetEnd>173</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>Molex</word>
+            <lemma>Molex</lemma>
+            <CharacterOffsetBegin>174</CharacterOffsetBegin>
+            <CharacterOffsetEnd>179</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="25">
+            <word>s</word>
+            <lemma>s</lemma>
+            <CharacterOffsetBegin>180</CharacterOffsetBegin>
+            <CharacterOffsetEnd>181</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="26">
+            <word>Co</word>
+            <lemma>Co</lemma>
+            <CharacterOffsetBegin>182</CharacterOffsetBegin>
+            <CharacterOffsetEnd>184</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="27">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>184</CharacterOffsetBegin>
+            <CharacterOffsetEnd>185</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="28">
+            <word>Chairman</word>
+            <lemma>Chairman</lemma>
+            <CharacterOffsetBegin>186</CharacterOffsetBegin>
+            <CharacterOffsetEnd>194</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="29">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>195</CharacterOffsetBegin>
+            <CharacterOffsetEnd>197</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="30">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>198</CharacterOffsetBegin>
+            <CharacterOffsetEnd>201</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="31">
+            <word>Board</word>
+            <lemma>Board</lemma>
+            <CharacterOffsetBegin>202</CharacterOffsetBegin>
+            <CharacterOffsetEnd>207</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="32">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>207</CharacterOffsetBegin>
+            <CharacterOffsetEnd>208</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="33">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>209</CharacterOffsetBegin>
+            <CharacterOffsetEnd>211</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="34">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>212</CharacterOffsetBegin>
+            <CharacterOffsetEnd>214</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="35">
+            <word>average</word>
+            <lemma>average</lemma>
+            <CharacterOffsetBegin>215</CharacterOffsetBegin>
+            <CharacterOffsetEnd>222</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="36">
+            <word>price</word>
+            <lemma>price</lemma>
+            <CharacterOffsetBegin>223</CharacterOffsetBegin>
+            <CharacterOffsetEnd>228</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="37">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>229</CharacterOffsetBegin>
+            <CharacterOffsetEnd>231</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="38">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>232</CharacterOffsetBegin>
+            <CharacterOffsetEnd>233</CharacterOffsetEnd>
+            <POS>$</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$13.33</NormalizedNER>
+          </token>
+          <token id="39">
+            <word>13.33</word>
+            <lemma>13.33</lemma>
+            <CharacterOffsetBegin>233</CharacterOffsetBegin>
+            <CharacterOffsetEnd>238</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$13.33</NormalizedNER>
+          </token>
+          <token id="40">
+            <word>per</word>
+            <lemma>per</lemma>
+            <CharacterOffsetBegin>239</CharacterOffsetBegin>
+            <CharacterOffsetEnd>242</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="41">
+            <word>share</word>
+            <lemma>share</lemma>
+            <CharacterOffsetBegin>243</CharacterOffsetBegin>
+            <CharacterOffsetEnd>248</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="42">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>249</CharacterOffsetBegin>
+            <CharacterOffsetEnd>252</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="43">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>253</CharacterOffsetBegin>
+            <CharacterOffsetEnd>255</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="44">
+            <word>aggregate</word>
+            <lemma>aggregate</lemma>
+            <CharacterOffsetBegin>256</CharacterOffsetBegin>
+            <CharacterOffsetEnd>265</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="45">
+            <word>cost</word>
+            <lemma>cost</lemma>
+            <CharacterOffsetBegin>266</CharacterOffsetBegin>
+            <CharacterOffsetEnd>270</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="46">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>271</CharacterOffsetBegin>
+            <CharacterOffsetEnd>273</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="47">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>274</CharacterOffsetBegin>
+            <CharacterOffsetEnd>275</CharacterOffsetEnd>
+            <POS>$</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$2.667E7</NormalizedNER>
+          </token>
+          <token id="48">
+            <word>26.67</word>
+            <lemma>26.67</lemma>
+            <CharacterOffsetBegin>275</CharacterOffsetBegin>
+            <CharacterOffsetEnd>280</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$2.667E7</NormalizedNER>
+          </token>
+          <token id="49">
+            <word>million</word>
+            <lemma>million</lemma>
+            <CharacterOffsetBegin>281</CharacterOffsetBegin>
+            <CharacterOffsetEnd>288</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$2.667E7</NormalizedNER>
+          </token>
+          <token id="50">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>288</CharacterOffsetBegin>
+            <CharacterOffsetEnd>289</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="51">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>290</CharacterOffsetBegin>
+            <CharacterOffsetEnd>292</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="52">
+            <word>cash</word>
+            <lemma>cash</lemma>
+            <CharacterOffsetBegin>293</CharacterOffsetBegin>
+            <CharacterOffsetEnd>297</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="53">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>297</CharacterOffsetBegin>
+            <CharacterOffsetEnd>298</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN On) (NP (NNP October) (CD 31) (, ,) (CD 2008))) (, ,) (NP (NNP Molex) (NNP Inc.)) (VP (VBD purchased) (NP (NP (CD 2,000,000) (NNS shares)) (PP (IN of) (NP (PRP$ its) (JJ common) (NN stock))) (PRN (-LRB- -LRB-) (NP (NN MOLX)) (-RRB- -RRB-))) (PP (IN from) (NP (NNP Frederick) (NNP A.) (NNP Krehbiel))) (PRN (, ,) (S (NP (NNP Molex)) (VP (VBZ s) (NP (NP (NNP Co)) (: -) (NP (NP (NNP Chairman)) (PP (IN of) (NP (DT the) (NNP Board)))) (, ,)) (PP (IN at) (NP (NP (DT an) (JJ average) (NN price)) (PP (IN of) (NP (NP (NP ($ $) (CD 13.33)) (PP (IN per) (NP (NN share)))) (CC and) (NP (NP (DT an) (JJ aggregate) (NN cost)) (PP (IN of) (NP (QP ($ $) (CD 26.67) (CD million))))))))))) (, ,)) (PP (IN in) (NP (NN cash)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="9">purchased</governor>
+            <dependent idx="1">On</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">On</governor>
+            <dependent idx="2">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">October</governor>
+            <dependent idx="3">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">October</governor>
+            <dependent idx="5">2008</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Inc.</governor>
+            <dependent idx="7">Molex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">purchased</governor>
+            <dependent idx="8">Inc.</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">shares</governor>
+            <dependent idx="10">2,000,000</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">purchased</governor>
+            <dependent idx="11">shares</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">shares</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="15">stock</governor>
+            <dependent idx="13">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">stock</governor>
+            <dependent idx="14">common</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">of</governor>
+            <dependent idx="15">stock</dependent>
+          </dep>
+          <dep type="abbrev">
+            <governor idx="11">shares</governor>
+            <dependent idx="17">MOLX</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">purchased</governor>
+            <dependent idx="19">from</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">Krehbiel</governor>
+            <dependent idx="20">Frederick</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">Krehbiel</governor>
+            <dependent idx="21">A.</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="19">from</governor>
+            <dependent idx="22">Krehbiel</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="26">Co</governor>
+            <dependent idx="24">Molex</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="26">Co</governor>
+            <dependent idx="25">s</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="9">purchased</governor>
+            <dependent idx="26">Co</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="26">Co</governor>
+            <dependent idx="28">Chairman</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="28">Chairman</governor>
+            <dependent idx="29">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="31">Board</governor>
+            <dependent idx="30">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="29">of</governor>
+            <dependent idx="31">Board</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="26">Co</governor>
+            <dependent idx="33">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="36">price</governor>
+            <dependent idx="34">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="36">price</governor>
+            <dependent idx="35">average</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="33">at</governor>
+            <dependent idx="36">price</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="36">price</governor>
+            <dependent idx="37">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="37">of</governor>
+            <dependent idx="38">$</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="38">$</governor>
+            <dependent idx="39">13.33</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="38">$</governor>
+            <dependent idx="40">per</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="40">per</governor>
+            <dependent idx="41">share</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="38">$</governor>
+            <dependent idx="42">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="45">cost</governor>
+            <dependent idx="43">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="45">cost</governor>
+            <dependent idx="44">aggregate</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="38">$</governor>
+            <dependent idx="45">cost</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="45">cost</governor>
+            <dependent idx="46">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="46">of</governor>
+            <dependent idx="47">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="47">$</governor>
+            <dependent idx="48">26.67</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="47">$</governor>
+            <dependent idx="49">million</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">purchased</governor>
+            <dependent idx="51">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="51">in</governor>
+            <dependent idx="52">cash</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="prep_on">
+            <governor idx="9">purchased</governor>
+            <dependent idx="2">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">October</governor>
+            <dependent idx="3">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">October</governor>
+            <dependent idx="5">2008</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Inc.</governor>
+            <dependent idx="7">Molex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">purchased</governor>
+            <dependent idx="8">Inc.</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">shares</governor>
+            <dependent idx="10">2,000,000</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">purchased</governor>
+            <dependent idx="11">shares</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="15">stock</governor>
+            <dependent idx="13">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">stock</governor>
+            <dependent idx="14">common</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">shares</governor>
+            <dependent idx="15">stock</dependent>
+          </dep>
+          <dep type="abbrev">
+            <governor idx="11">shares</governor>
+            <dependent idx="17">MOLX</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">Krehbiel</governor>
+            <dependent idx="20">Frederick</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">Krehbiel</governor>
+            <dependent idx="21">A.</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="9">purchased</governor>
+            <dependent idx="22">Krehbiel</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="26">Co</governor>
+            <dependent idx="24">Molex</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="26">Co</governor>
+            <dependent idx="25">s</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="9">purchased</governor>
+            <dependent idx="26">Co</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="26">Co</governor>
+            <dependent idx="28">Chairman</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="31">Board</governor>
+            <dependent idx="30">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="28">Chairman</governor>
+            <dependent idx="31">Board</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="36">price</governor>
+            <dependent idx="34">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="36">price</governor>
+            <dependent idx="35">average</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="26">Co</governor>
+            <dependent idx="36">price</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="36">price</governor>
+            <dependent idx="38">$</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="38">$</governor>
+            <dependent idx="39">13.33</dependent>
+          </dep>
+          <dep type="prep_per">
+            <governor idx="38">$</governor>
+            <dependent idx="41">share</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="45">cost</governor>
+            <dependent idx="43">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="45">cost</governor>
+            <dependent idx="44">aggregate</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="38">$</governor>
+            <dependent idx="45">cost</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="45">cost</governor>
+            <dependent idx="47">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="47">$</governor>
+            <dependent idx="48">26.67</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="47">$</governor>
+            <dependent idx="49">million</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">purchased</governor>
+            <dependent idx="52">cash</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="prep_on">
+            <governor idx="9">purchased</governor>
+            <dependent idx="2">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">October</governor>
+            <dependent idx="3">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">October</governor>
+            <dependent idx="5">2008</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Inc.</governor>
+            <dependent idx="7">Molex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">purchased</governor>
+            <dependent idx="8">Inc.</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">shares</governor>
+            <dependent idx="10">2,000,000</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">purchased</governor>
+            <dependent idx="11">shares</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="15">stock</governor>
+            <dependent idx="13">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">stock</governor>
+            <dependent idx="14">common</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">shares</governor>
+            <dependent idx="15">stock</dependent>
+          </dep>
+          <dep type="abbrev">
+            <governor idx="11">shares</governor>
+            <dependent idx="17">MOLX</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">Krehbiel</governor>
+            <dependent idx="20">Frederick</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">Krehbiel</governor>
+            <dependent idx="21">A.</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="9">purchased</governor>
+            <dependent idx="22">Krehbiel</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="26">Co</governor>
+            <dependent idx="24">Molex</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="26">Co</governor>
+            <dependent idx="25">s</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="9">purchased</governor>
+            <dependent idx="26">Co</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="26">Co</governor>
+            <dependent idx="28">Chairman</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="31">Board</governor>
+            <dependent idx="30">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="28">Chairman</governor>
+            <dependent idx="31">Board</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="36">price</governor>
+            <dependent idx="34">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="36">price</governor>
+            <dependent idx="35">average</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="26">Co</governor>
+            <dependent idx="36">price</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="36">price</governor>
+            <dependent idx="38">$</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="38">$</governor>
+            <dependent idx="39">13.33</dependent>
+          </dep>
+          <dep type="prep_per">
+            <governor idx="38">$</governor>
+            <dependent idx="41">share</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="45">cost</governor>
+            <dependent idx="43">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="45">cost</governor>
+            <dependent idx="44">aggregate</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="36">price</governor>
+            <dependent idx="45">cost</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="38">$</governor>
+            <dependent idx="45">cost</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="45">cost</governor>
+            <dependent idx="47">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="47">$</governor>
+            <dependent idx="48">26.67</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="47">$</governor>
+            <dependent idx="49">million</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">purchased</governor>
+            <dependent idx="52">cash</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>As</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>299</CharacterOffsetBegin>
+            <CharacterOffsetEnd>301</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>302</CharacterOffsetBegin>
+            <CharacterOffsetEnd>304</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>October</word>
+            <lemma>October</lemma>
+            <CharacterOffsetBegin>305</CharacterOffsetBegin>
+            <CharacterOffsetEnd>312</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="4">
+            <word>31</word>
+            <lemma>31</lemma>
+            <CharacterOffsetBegin>313</CharacterOffsetBegin>
+            <CharacterOffsetEnd>315</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>315</CharacterOffsetBegin>
+            <CharacterOffsetEnd>316</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="6">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>317</CharacterOffsetBegin>
+            <CharacterOffsetEnd>321</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-10-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-10-31</Timex>
+          </token>
+          <token id="7">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>321</CharacterOffsetBegin>
+            <CharacterOffsetEnd>322</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>323</CharacterOffsetBegin>
+            <CharacterOffsetEnd>326</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>company</word>
+            <lemma>company</lemma>
+            <CharacterOffsetBegin>327</CharacterOffsetBegin>
+            <CharacterOffsetEnd>334</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>repurchased</word>
+            <lemma>repurchase</lemma>
+            <CharacterOffsetBegin>335</CharacterOffsetBegin>
+            <CharacterOffsetEnd>346</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>732,000</word>
+            <lemma>732,000</lemma>
+            <CharacterOffsetBegin>347</CharacterOffsetBegin>
+            <CharacterOffsetEnd>354</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>732000.0</NormalizedNER>
+          </token>
+          <token id="12">
+            <word>shares</word>
+            <lemma>share</lemma>
+            <CharacterOffsetBegin>355</CharacterOffsetBegin>
+            <CharacterOffsetEnd>361</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>362</CharacterOffsetBegin>
+            <CharacterOffsetEnd>364</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>Class</word>
+            <lemma>class</lemma>
+            <CharacterOffsetBegin>365</CharacterOffsetBegin>
+            <CharacterOffsetEnd>370</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>A</word>
+            <lemma>A</lemma>
+            <CharacterOffsetBegin>371</CharacterOffsetBegin>
+            <CharacterOffsetEnd>372</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>Common</word>
+            <lemma>Common</lemma>
+            <CharacterOffsetBegin>373</CharacterOffsetBegin>
+            <CharacterOffsetEnd>379</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>Stock</word>
+            <lemma>Stock</lemma>
+            <CharacterOffsetBegin>380</CharacterOffsetBegin>
+            <CharacterOffsetEnd>385</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>386</CharacterOffsetBegin>
+            <CharacterOffsetEnd>387</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>MOLXA</word>
+            <lemma>MOLXA</lemma>
+            <CharacterOffsetBegin>387</CharacterOffsetBegin>
+            <CharacterOffsetEnd>392</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>392</CharacterOffsetBegin>
+            <CharacterOffsetEnd>393</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>394</CharacterOffsetBegin>
+            <CharacterOffsetEnd>397</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>2,900,000</word>
+            <lemma>2,900,000</lemma>
+            <CharacterOffsetBegin>398</CharacterOffsetBegin>
+            <CharacterOffsetEnd>407</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>2900000.0</NormalizedNER>
+          </token>
+          <token id="23">
+            <word>shares</word>
+            <lemma>share</lemma>
+            <CharacterOffsetBegin>408</CharacterOffsetBegin>
+            <CharacterOffsetEnd>414</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>415</CharacterOffsetBegin>
+            <CharacterOffsetEnd>417</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>Common</word>
+            <lemma>Common</lemma>
+            <CharacterOffsetBegin>418</CharacterOffsetBegin>
+            <CharacterOffsetEnd>424</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="26">
+            <word>Stock</word>
+            <lemma>Stock</lemma>
+            <CharacterOffsetBegin>425</CharacterOffsetBegin>
+            <CharacterOffsetEnd>430</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="27">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>431</CharacterOffsetBegin>
+            <CharacterOffsetEnd>432</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="28">
+            <word>MOLX</word>
+            <lemma>MOLX</lemma>
+            <CharacterOffsetBegin>432</CharacterOffsetBegin>
+            <CharacterOffsetEnd>436</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="29">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>436</CharacterOffsetBegin>
+            <CharacterOffsetEnd>437</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="30">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>438</CharacterOffsetBegin>
+            <CharacterOffsetEnd>440</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="31">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>441</CharacterOffsetBegin>
+            <CharacterOffsetEnd>442</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="32">
+            <word>total</word>
+            <lemma>total</lemma>
+            <CharacterOffsetBegin>443</CharacterOffsetBegin>
+            <CharacterOffsetEnd>448</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="33">
+            <word>cost</word>
+            <lemma>cost</lemma>
+            <CharacterOffsetBegin>449</CharacterOffsetBegin>
+            <CharacterOffsetEnd>453</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="34">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>454</CharacterOffsetBegin>
+            <CharacterOffsetEnd>456</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="35">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>457</CharacterOffsetBegin>
+            <CharacterOffsetEnd>458</CharacterOffsetEnd>
+            <POS>$</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$6.547E7</NormalizedNER>
+          </token>
+          <token id="36">
+            <word>65.47</word>
+            <lemma>65.47</lemma>
+            <CharacterOffsetBegin>458</CharacterOffsetBegin>
+            <CharacterOffsetEnd>463</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$6.547E7</NormalizedNER>
+          </token>
+          <token id="37">
+            <word>million</word>
+            <lemma>million</lemma>
+            <CharacterOffsetBegin>464</CharacterOffsetBegin>
+            <CharacterOffsetEnd>471</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$6.547E7</NormalizedNER>
+          </token>
+          <token id="38">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>471</CharacterOffsetBegin>
+            <CharacterOffsetEnd>472</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN As) (PP (IN of) (NP (NNP October) (CD 31) (, ,) (CD 2008)))) (, ,) (NP (DT the) (NN company)) (VP (VBD repurchased) (NP (NP (NP (CD 732,000) (NNS shares)) (PP (IN of) (NP (NP (NN Class) (NNP A) (NNP Common) (NNP Stock)) (PRN (-LRB- -LRB-) (NP (NNP MOLXA)) (-RRB- -RRB-))))) (CC and) (NP (NP (CD 2,900,000) (NNS shares)) (PP (IN of) (NP (NP (NNP Common) (NNP Stock)) (PRN (-LRB- -LRB-) (NP (NNP MOLX)) (-RRB- -RRB-)))))) (PP (IN at) (NP (NP (DT a) (JJ total) (NN cost)) (PP (IN of) (NP (QP ($ $) (CD 65.47) (CD million))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="1">As</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="1">As</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="3">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">October</governor>
+            <dependent idx="4">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">October</governor>
+            <dependent idx="6">2008</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">company</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="9">company</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">shares</governor>
+            <dependent idx="11">732,000</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="12">shares</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">shares</governor>
+            <dependent idx="13">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Stock</governor>
+            <dependent idx="14">Class</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Stock</governor>
+            <dependent idx="15">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Stock</governor>
+            <dependent idx="16">Common</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">of</governor>
+            <dependent idx="17">Stock</dependent>
+          </dep>
+          <dep type="abbrev">
+            <governor idx="17">Stock</governor>
+            <dependent idx="19">MOLXA</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="12">shares</governor>
+            <dependent idx="21">and</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="23">shares</governor>
+            <dependent idx="22">2,900,000</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="12">shares</governor>
+            <dependent idx="23">shares</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="23">shares</governor>
+            <dependent idx="24">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="26">Stock</governor>
+            <dependent idx="25">Common</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="24">of</governor>
+            <dependent idx="26">Stock</dependent>
+          </dep>
+          <dep type="abbrev">
+            <governor idx="26">Stock</governor>
+            <dependent idx="28">MOLX</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="30">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="33">cost</governor>
+            <dependent idx="31">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="33">cost</governor>
+            <dependent idx="32">total</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="30">at</governor>
+            <dependent idx="33">cost</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="33">cost</governor>
+            <dependent idx="34">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="34">of</governor>
+            <dependent idx="35">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="35">$</governor>
+            <dependent idx="36">65.47</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="35">$</governor>
+            <dependent idx="37">million</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="prepc_as_of">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="3">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">October</governor>
+            <dependent idx="4">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">October</governor>
+            <dependent idx="6">2008</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">company</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="9">company</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">shares</governor>
+            <dependent idx="11">732,000</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="12">shares</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Stock</governor>
+            <dependent idx="14">Class</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Stock</governor>
+            <dependent idx="15">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Stock</governor>
+            <dependent idx="16">Common</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="12">shares</governor>
+            <dependent idx="17">Stock</dependent>
+          </dep>
+          <dep type="abbrev">
+            <governor idx="17">Stock</governor>
+            <dependent idx="19">MOLXA</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="23">shares</governor>
+            <dependent idx="22">2,900,000</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="12">shares</governor>
+            <dependent idx="23">shares</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="26">Stock</governor>
+            <dependent idx="25">Common</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="23">shares</governor>
+            <dependent idx="26">Stock</dependent>
+          </dep>
+          <dep type="abbrev">
+            <governor idx="26">Stock</governor>
+            <dependent idx="28">MOLX</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="33">cost</governor>
+            <dependent idx="31">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="33">cost</governor>
+            <dependent idx="32">total</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="33">cost</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="33">cost</governor>
+            <dependent idx="35">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="35">$</governor>
+            <dependent idx="36">65.47</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="35">$</governor>
+            <dependent idx="37">million</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="prepc_as_of">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="3">October</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">October</governor>
+            <dependent idx="4">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">October</governor>
+            <dependent idx="6">2008</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">company</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="9">company</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">shares</governor>
+            <dependent idx="11">732,000</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="12">shares</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Stock</governor>
+            <dependent idx="14">Class</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Stock</governor>
+            <dependent idx="15">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Stock</governor>
+            <dependent idx="16">Common</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="12">shares</governor>
+            <dependent idx="17">Stock</dependent>
+          </dep>
+          <dep type="abbrev">
+            <governor idx="17">Stock</governor>
+            <dependent idx="19">MOLXA</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="23">shares</governor>
+            <dependent idx="22">2,900,000</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="23">shares</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="12">shares</governor>
+            <dependent idx="23">shares</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="26">Stock</governor>
+            <dependent idx="25">Common</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="23">shares</governor>
+            <dependent idx="26">Stock</dependent>
+          </dep>
+          <dep type="abbrev">
+            <governor idx="26">Stock</governor>
+            <dependent idx="28">MOLX</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="33">cost</governor>
+            <dependent idx="31">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="33">cost</governor>
+            <dependent idx="32">total</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="10">repurchased</governor>
+            <dependent idx="33">cost</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="33">cost</governor>
+            <dependent idx="35">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="35">$</governor>
+            <dependent idx="36">65.47</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="35">$</governor>
+            <dependent idx="37">million</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Panera</word>
+            <lemma>Panera</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Bread</word>
+            <lemma>Bread</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Co.</word>
+            <lemma>Co.</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NNP Panera) (NNP Bread) (NNP Co.) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="1">Panera</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="2">Bread</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="1">Panera</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="2">Bread</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="1">Panera</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="2">Bread</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Opens</word>
+            <lemma>open</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>23rd</word>
+            <lemma>23rd</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>ORDINAL</NER>
+            <NormalizedNER>23.0</NormalizedNER>
+          </token>
+          <token id="4">
+            <word>Colorado</word>
+            <lemma>Colorado</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Location</word>
+            <lemma>Location</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Sheridan</word>
+            <lemma>Sheridan</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="8">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS Opens)) (NP (NP (PRP$ its) (JJ 23rd) (NNP Colorado) (NNP Location)) (PP (IN in) (NP (NNP Sheridan)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="poss">
+            <governor idx="5">Location</governor>
+            <dependent idx="2">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">Location</governor>
+            <dependent idx="3">23rd</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Location</governor>
+            <dependent idx="4">Colorado</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Opens</governor>
+            <dependent idx="5">Location</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">Location</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="7">Sheridan</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="poss">
+            <governor idx="5">Location</governor>
+            <dependent idx="2">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">Location</governor>
+            <dependent idx="3">23rd</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Location</governor>
+            <dependent idx="4">Colorado</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Opens</governor>
+            <dependent idx="5">Location</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">Location</governor>
+            <dependent idx="7">Sheridan</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="poss">
+            <governor idx="5">Location</governor>
+            <dependent idx="2">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">Location</governor>
+            <dependent idx="3">23rd</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Location</governor>
+            <dependent idx="4">Colorado</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Opens</governor>
+            <dependent idx="5">Location</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">Location</governor>
+            <dependent idx="7">Sheridan</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Panera</word>
+            <lemma>Panera</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Bread</word>
+            <lemma>Bread</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Co.</word>
+            <lemma>Co.</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>opened</word>
+            <lemma>open</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>23rd</word>
+            <lemma>23rd</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>ORDINAL</NER>
+            <NormalizedNER>23.0</NormalizedNER>
+          </token>
+          <token id="7">
+            <word>Colorado</word>
+            <lemma>Colorado</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="8">
+            <word>location</word>
+            <lemma>location</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>Sheridan</word>
+            <lemma>Sheridan</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="11">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>River</word>
+            <lemma>river</lemma>
+            <CharacterOffsetBegin>134</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>Point</word>
+            <lemma>point</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>145</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>Parkway</word>
+            <lemma>Parkway</lemma>
+            <CharacterOffsetBegin>146</CharacterOffsetBegin>
+            <CharacterOffsetEnd>153</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>Shopping</word>
+            <lemma>Shopping</lemma>
+            <CharacterOffsetBegin>154</CharacterOffsetBegin>
+            <CharacterOffsetEnd>162</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>Center</word>
+            <lemma>Center</lemma>
+            <CharacterOffsetBegin>163</CharacterOffsetBegin>
+            <CharacterOffsetEnd>169</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>169</CharacterOffsetBegin>
+            <CharacterOffsetEnd>170</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Panera) (NNP Bread) (NNP Co.)) (VP (VBD opened) (NP (PRP$ its) (JJ 23rd) (NNP Colorado) (NN location)) (PP (IN in) (NP (NNP Sheridan))) (PP (IN at) (NP (DT the) (NN River) (NN Point) (NNP Parkway) (NNP Shopping) (NNP Center)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="1">Panera</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="2">Bread</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">opened</governor>
+            <dependent idx="3">Co.</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">location</governor>
+            <dependent idx="5">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">location</governor>
+            <dependent idx="6">23rd</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">location</governor>
+            <dependent idx="7">Colorado</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">opened</governor>
+            <dependent idx="8">location</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">opened</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="10">Sheridan</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">opened</governor>
+            <dependent idx="11">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">Center</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="13">River</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="14">Point</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="15">Parkway</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="16">Shopping</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">at</governor>
+            <dependent idx="17">Center</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="1">Panera</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="2">Bread</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">opened</governor>
+            <dependent idx="3">Co.</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">location</governor>
+            <dependent idx="5">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">location</governor>
+            <dependent idx="6">23rd</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">location</governor>
+            <dependent idx="7">Colorado</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">opened</governor>
+            <dependent idx="8">location</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">opened</governor>
+            <dependent idx="10">Sheridan</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">Center</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="13">River</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="14">Point</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="15">Parkway</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="16">Shopping</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="4">opened</governor>
+            <dependent idx="17">Center</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="1">Panera</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="2">Bread</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">opened</governor>
+            <dependent idx="3">Co.</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">location</governor>
+            <dependent idx="5">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">location</governor>
+            <dependent idx="6">23rd</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">location</governor>
+            <dependent idx="7">Colorado</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">opened</governor>
+            <dependent idx="8">location</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">opened</governor>
+            <dependent idx="10">Sheridan</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">Center</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="13">River</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="14">Point</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="15">Parkway</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Center</governor>
+            <dependent idx="16">Shopping</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="4">opened</governor>
+            <dependent idx="17">Center</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

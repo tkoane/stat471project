@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Cephalon</word>
+            <lemma>Cephalon</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NNP Cephalon) (NNP Inc.) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Wins</word>
+            <lemma>win</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Multiple</word>
+            <lemma>multiple</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Awardees</word>
+            <lemma>Awardees</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Contract</word>
+            <lemma>Contract</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>Various</word>
+            <lemma>various</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>Medicinal</word>
+            <lemma>Medicinal</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="8">
+            <word>Products</word>
+            <lemma>Products</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBZ Wins) (S (NP (JJ Multiple) (NNPS Awardees)) (NP (NP (NNP Contract)) (PP (IN for) (NP (JJ Various) (NNP Medicinal) (NNPS Products)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="amod">
+            <governor idx="3">Awardees</governor>
+            <dependent idx="2">Multiple</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Contract</governor>
+            <dependent idx="3">Awardees</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Wins</governor>
+            <dependent idx="4">Contract</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">Contract</governor>
+            <dependent idx="5">for</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Products</governor>
+            <dependent idx="6">Various</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Products</governor>
+            <dependent idx="7">Medicinal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">for</governor>
+            <dependent idx="8">Products</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="amod">
+            <governor idx="3">Awardees</governor>
+            <dependent idx="2">Multiple</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Contract</governor>
+            <dependent idx="3">Awardees</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Wins</governor>
+            <dependent idx="4">Contract</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Products</governor>
+            <dependent idx="6">Various</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Products</governor>
+            <dependent idx="7">Medicinal</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">Contract</governor>
+            <dependent idx="8">Products</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="amod">
+            <governor idx="3">Awardees</governor>
+            <dependent idx="2">Multiple</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Contract</governor>
+            <dependent idx="3">Awardees</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Wins</governor>
+            <dependent idx="4">Contract</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Products</governor>
+            <dependent idx="6">Various</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Products</governor>
+            <dependent idx="7">Medicinal</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">Contract</governor>
+            <dependent idx="8">Products</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Cephalon</word>
+            <lemma>Cephalon</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>won</word>
+            <lemma>win</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>multiple</word>
+            <lemma>multiple</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>awardees</word>
+            <lemma>awardee</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>contract</word>
+            <lemma>contract</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>award</word>
+            <lemma>award</lemma>
+            <CharacterOffsetBegin>126</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>NHS</word>
+            <lemma>NHS</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="11">
+            <word>Purchasing</word>
+            <lemma>Purchasing</lemma>
+            <CharacterOffsetBegin>141</CharacterOffsetBegin>
+            <CharacterOffsetEnd>151</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>152</CharacterOffsetBegin>
+            <CharacterOffsetEnd>155</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>Supply</word>
+            <lemma>Supply</lemma>
+            <CharacterOffsetBegin>156</CharacterOffsetBegin>
+            <CharacterOffsetEnd>162</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>Agency</word>
+            <lemma>Agency</lemma>
+            <CharacterOffsetBegin>163</CharacterOffsetBegin>
+            <CharacterOffsetEnd>169</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>170</CharacterOffsetBegin>
+            <CharacterOffsetEnd>173</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>174</CharacterOffsetBegin>
+            <CharacterOffsetEnd>177</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>supply</word>
+            <lemma>supply</lemma>
+            <CharacterOffsetBegin>178</CharacterOffsetBegin>
+            <CharacterOffsetEnd>184</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>185</CharacterOffsetBegin>
+            <CharacterOffsetEnd>187</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>therapeutic</word>
+            <lemma>therapeutic</lemma>
+            <CharacterOffsetBegin>188</CharacterOffsetBegin>
+            <CharacterOffsetEnd>199</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>pharmaceuticals</word>
+            <lemma>pharmaceutical</lemma>
+            <CharacterOffsetBegin>200</CharacterOffsetBegin>
+            <CharacterOffsetEnd>215</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>216</CharacterOffsetBegin>
+            <CharacterOffsetEnd>218</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>219</CharacterOffsetBegin>
+            <CharacterOffsetEnd>222</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>East</word>
+            <lemma>East</lemma>
+            <CharacterOffsetBegin>223</CharacterOffsetBegin>
+            <CharacterOffsetEnd>227</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="24">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>228</CharacterOffsetBegin>
+            <CharacterOffsetEnd>230</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="25">
+            <word>England</word>
+            <lemma>England</lemma>
+            <CharacterOffsetBegin>231</CharacterOffsetBegin>
+            <CharacterOffsetEnd>238</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="26">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>238</CharacterOffsetBegin>
+            <CharacterOffsetEnd>239</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Cephalon) (NNP Inc.)) (VP (VBD won) (NP (DT a) (JJ multiple) (NNS awardees) (NN contract) (NN award)) (PP (IN from) (NP (NP (NNP NHS) (NNP Purchasing)) (CC and) (NP (NNP Supply) (NNP Agency)))) (PP (IN for) (NP (NP (DT the) (NN supply)) (PP (IN of) (NP (JJ therapeutic) (NNS pharmaceuticals))))) (PP (TO to) (NP (NP (DT the) (NNP East)) (PP (IN of) (NP (NNP England)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">won</governor>
+            <dependent idx="2">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">award</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">award</governor>
+            <dependent idx="5">multiple</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">award</governor>
+            <dependent idx="6">awardees</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">award</governor>
+            <dependent idx="7">contract</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">won</governor>
+            <dependent idx="8">award</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">won</governor>
+            <dependent idx="9">from</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Purchasing</governor>
+            <dependent idx="10">NHS</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">from</governor>
+            <dependent idx="11">Purchasing</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">Purchasing</governor>
+            <dependent idx="12">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Agency</governor>
+            <dependent idx="13">Supply</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="11">Purchasing</governor>
+            <dependent idx="14">Agency</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">won</governor>
+            <dependent idx="15">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">supply</governor>
+            <dependent idx="16">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="15">for</governor>
+            <dependent idx="17">supply</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="17">supply</governor>
+            <dependent idx="18">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">pharmaceuticals</governor>
+            <dependent idx="19">therapeutic</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="18">of</governor>
+            <dependent idx="20">pharmaceuticals</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">won</governor>
+            <dependent idx="21">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="23">East</governor>
+            <dependent idx="22">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="21">to</governor>
+            <dependent idx="23">East</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="23">East</governor>
+            <dependent idx="24">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="24">of</governor>
+            <dependent idx="25">England</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">won</governor>
+            <dependent idx="2">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">award</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">award</governor>
+            <dependent idx="5">multiple</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">award</governor>
+            <dependent idx="6">awardees</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">award</governor>
+            <dependent idx="7">contract</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">won</governor>
+            <dependent idx="8">award</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Purchasing</governor>
+            <dependent idx="10">NHS</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">won</governor>
+            <dependent idx="11">Purchasing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Agency</governor>
+            <dependent idx="13">Supply</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">Purchasing</governor>
+            <dependent idx="14">Agency</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">supply</governor>
+            <dependent idx="16">the</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">won</governor>
+            <dependent idx="17">supply</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">pharmaceuticals</governor>
+            <dependent idx="19">therapeutic</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="17">supply</governor>
+            <dependent idx="20">pharmaceuticals</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="23">East</governor>
+            <dependent idx="22">the</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">won</governor>
+            <dependent idx="23">East</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="23">East</governor>
+            <dependent idx="25">England</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Cephalon</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">won</governor>
+            <dependent idx="2">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">award</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">award</governor>
+            <dependent idx="5">multiple</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">award</governor>
+            <dependent idx="6">awardees</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">award</governor>
+            <dependent idx="7">contract</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">won</governor>
+            <dependent idx="8">award</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Purchasing</governor>
+            <dependent idx="10">NHS</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">won</governor>
+            <dependent idx="11">Purchasing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Agency</governor>
+            <dependent idx="13">Supply</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">won</governor>
+            <dependent idx="14">Agency</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">Purchasing</governor>
+            <dependent idx="14">Agency</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">supply</governor>
+            <dependent idx="16">the</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">won</governor>
+            <dependent idx="17">supply</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">pharmaceuticals</governor>
+            <dependent idx="19">therapeutic</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="17">supply</governor>
+            <dependent idx="20">pharmaceuticals</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="23">East</governor>
+            <dependent idx="22">the</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">won</governor>
+            <dependent idx="23">East</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="23">East</governor>
+            <dependent idx="25">England</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>No</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>240</CharacterOffsetBegin>
+            <CharacterOffsetEnd>242</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>contract</word>
+            <lemma>contract</lemma>
+            <CharacterOffsetBegin>243</CharacterOffsetBegin>
+            <CharacterOffsetEnd>251</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>amount</word>
+            <lemma>amount</lemma>
+            <CharacterOffsetBegin>252</CharacterOffsetBegin>
+            <CharacterOffsetEnd>258</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>259</CharacterOffsetBegin>
+            <CharacterOffsetEnd>262</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>specified</word>
+            <lemma>specify</lemma>
+            <CharacterOffsetBegin>263</CharacterOffsetBegin>
+            <CharacterOffsetEnd>272</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>272</CharacterOffsetBegin>
+            <CharacterOffsetEnd>273</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT No) (NN contract) (NN amount)) (VP (VBD was) (VP (VBN specified))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="3">amount</governor>
+            <dependent idx="1">No</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">amount</governor>
+            <dependent idx="2">contract</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">specified</governor>
+            <dependent idx="3">amount</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">specified</governor>
+            <dependent idx="4">was</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="3">amount</governor>
+            <dependent idx="1">No</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">amount</governor>
+            <dependent idx="2">contract</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">specified</governor>
+            <dependent idx="3">amount</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">specified</governor>
+            <dependent idx="4">was</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="3">amount</governor>
+            <dependent idx="1">No</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">amount</governor>
+            <dependent idx="2">contract</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">specified</governor>
+            <dependent idx="3">amount</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">specified</governor>
+            <dependent idx="4">was</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Kimberly-Clark</word>
+            <lemma>Kimberly-Clark</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corporation</word>
+            <lemma>Corporation</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Provides</word>
+            <lemma>provide</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Guidance</word>
+            <lemma>guidance</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>First</word>
+            <lemma>First</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORDINAL</NER>
+            <NormalizedNER>1.0</NormalizedNER>
+          </token>
+          <token id="9">
+            <word>Half</word>
+            <lemma>half</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>Fiscal</word>
+            <lemma>fiscal</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>Year</word>
+            <lemma>year</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+            <Timex tid="t1" type="DATE">2009</Timex>
+          </token>
+          <token id="13">
+            <word>2009</word>
+            <lemma>2009</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+            <Timex tid="t1" type="DATE">2009</Timex>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Kimberly-Clark) (NNP Corporation)) (VP (VBZ Provides) (NP (NP (NNS Earnings) (NN Guidance)) (PP (IN for) (NP (NP (DT the) (NNP First) (NN Half)) (PP (IN of) (NP (JJ Fiscal) (NN Year)))))) (NP-TMP (CD 2009))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Kimberly-Clark</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">Provides</governor>
+            <dependent idx="2">Corporation</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Guidance</governor>
+            <dependent idx="4">Earnings</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">Provides</governor>
+            <dependent idx="5">Guidance</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">Guidance</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">Half</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Half</governor>
+            <dependent idx="8">First</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="9">Half</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">Half</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">Year</governor>
+            <dependent idx="11">Fiscal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">of</governor>
+            <dependent idx="12">Year</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">Provides</governor>
+            <dependent idx="13">2009</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Kimberly-Clark</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">Provides</governor>
+            <dependent idx="2">Corporation</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Guidance</governor>
+            <dependent idx="4">Earnings</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">Provides</governor>
+            <dependent idx="5">Guidance</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">Half</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Half</governor>
+            <dependent idx="8">First</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">Guidance</governor>
+            <dependent idx="9">Half</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">Year</governor>
+            <dependent idx="11">Fiscal</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">Half</governor>
+            <dependent idx="12">Year</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">Provides</governor>
+            <dependent idx="13">2009</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Kimberly-Clark</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">Provides</governor>
+            <dependent idx="2">Corporation</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Guidance</governor>
+            <dependent idx="4">Earnings</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">Provides</governor>
+            <dependent idx="5">Guidance</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">Half</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Half</governor>
+            <dependent idx="8">First</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">Guidance</governor>
+            <dependent idx="9">Half</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">Year</governor>
+            <dependent idx="11">Fiscal</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">Half</governor>
+            <dependent idx="12">Year</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">Provides</governor>
+            <dependent idx="13">2009</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Kimberly-Clark</word>
+            <lemma>Kimberly-Clark</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corporation</word>
+            <lemma>Corporation</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>provided</word>
+            <lemma>provide</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>130</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>131</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>guidance</word>
+            <lemma>guidance</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>148</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>149</CharacterOffsetBegin>
+            <CharacterOffsetEnd>152</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>153</CharacterOffsetBegin>
+            <CharacterOffsetEnd>156</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>first</word>
+            <lemma>first</lemma>
+            <CharacterOffsetBegin>157</CharacterOffsetBegin>
+            <CharacterOffsetEnd>162</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+          </token>
+          <token id="9">
+            <word>half</word>
+            <lemma>half</lemma>
+            <CharacterOffsetBegin>163</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>168</CharacterOffsetBegin>
+            <CharacterOffsetEnd>170</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+          </token>
+          <token id="11">
+            <word>fiscal</word>
+            <lemma>fiscal</lemma>
+            <CharacterOffsetBegin>171</CharacterOffsetBegin>
+            <CharacterOffsetEnd>177</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+          </token>
+          <token id="12">
+            <word>year</word>
+            <lemma>year</lemma>
+            <CharacterOffsetBegin>178</CharacterOffsetBegin>
+            <CharacterOffsetEnd>182</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+            <Timex tid="t1" type="DATE">2009</Timex>
+          </token>
+          <token id="13">
+            <word>2009</word>
+            <lemma>2009</lemma>
+            <CharacterOffsetBegin>183</CharacterOffsetBegin>
+            <CharacterOffsetEnd>187</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+            <Timex tid="t1" type="DATE">2009</Timex>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>187</CharacterOffsetBegin>
+            <CharacterOffsetEnd>188</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Kimberly-Clark) (NNP Corporation)) (VP (VBD provided) (S (NP (NNS earnings)) (ADJP (NN guidance) (PP (IN for) (NP (NP (DT the) (JJ first) (NN half)) (PP (IN of) (NP (JJ fiscal) (NN year))))))) (NP-TMP (CD 2009))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Kimberly-Clark</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">provided</governor>
+            <dependent idx="2">Corporation</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">guidance</governor>
+            <dependent idx="4">earnings</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">provided</governor>
+            <dependent idx="5">guidance</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">guidance</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">half</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">half</governor>
+            <dependent idx="8">first</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="9">half</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">half</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">year</governor>
+            <dependent idx="11">fiscal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">of</governor>
+            <dependent idx="12">year</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">provided</governor>
+            <dependent idx="13">2009</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Kimberly-Clark</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">provided</governor>
+            <dependent idx="2">Corporation</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">guidance</governor>
+            <dependent idx="4">earnings</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">provided</governor>
+            <dependent idx="5">guidance</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">half</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">half</governor>
+            <dependent idx="8">first</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">guidance</governor>
+            <dependent idx="9">half</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">year</governor>
+            <dependent idx="11">fiscal</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">half</governor>
+            <dependent idx="12">year</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">provided</governor>
+            <dependent idx="13">2009</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Kimberly-Clark</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">provided</governor>
+            <dependent idx="2">Corporation</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">guidance</governor>
+            <dependent idx="4">earnings</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">provided</governor>
+            <dependent idx="5">guidance</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">half</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">half</governor>
+            <dependent idx="8">first</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">guidance</governor>
+            <dependent idx="9">half</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">year</governor>
+            <dependent idx="11">fiscal</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">half</governor>
+            <dependent idx="12">year</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">provided</governor>
+            <dependent idx="13">2009</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>In</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>189</CharacterOffsetBegin>
+            <CharacterOffsetEnd>191</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>light</word>
+            <lemma>light</lemma>
+            <CharacterOffsetBegin>192</CharacterOffsetBegin>
+            <CharacterOffsetEnd>197</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>198</CharacterOffsetBegin>
+            <CharacterOffsetEnd>200</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>recent</word>
+            <lemma>recent</lemma>
+            <CharacterOffsetBegin>201</CharacterOffsetBegin>
+            <CharacterOffsetEnd>207</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>trends</word>
+            <lemma>trend</lemma>
+            <CharacterOffsetBegin>208</CharacterOffsetBegin>
+            <CharacterOffsetEnd>214</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>214</CharacterOffsetBegin>
+            <CharacterOffsetEnd>215</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>216</CharacterOffsetBegin>
+            <CharacterOffsetEnd>219</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>company</word>
+            <lemma>company</lemma>
+            <CharacterOffsetBegin>220</CharacterOffsetBegin>
+            <CharacterOffsetEnd>227</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>provided</word>
+            <lemma>provide</lemma>
+            <CharacterOffsetBegin>228</CharacterOffsetBegin>
+            <CharacterOffsetEnd>236</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>adjusted</word>
+            <lemma>adjusted</lemma>
+            <CharacterOffsetBegin>237</CharacterOffsetBegin>
+            <CharacterOffsetEnd>245</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>246</CharacterOffsetBegin>
+            <CharacterOffsetEnd>254</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>per</word>
+            <lemma>per</lemma>
+            <CharacterOffsetBegin>255</CharacterOffsetBegin>
+            <CharacterOffsetEnd>258</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>share</word>
+            <lemma>share</lemma>
+            <CharacterOffsetBegin>259</CharacterOffsetBegin>
+            <CharacterOffsetEnd>264</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>265</CharacterOffsetBegin>
+            <CharacterOffsetEnd>267</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>268</CharacterOffsetBegin>
+            <CharacterOffsetEnd>271</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>first</word>
+            <lemma>first</lemma>
+            <CharacterOffsetBegin>272</CharacterOffsetBegin>
+            <CharacterOffsetEnd>277</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+          </token>
+          <token id="17">
+            <word>half</word>
+            <lemma>half</lemma>
+            <CharacterOffsetBegin>278</CharacterOffsetBegin>
+            <CharacterOffsetEnd>282</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+          </token>
+          <token id="18">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>283</CharacterOffsetBegin>
+            <CharacterOffsetEnd>285</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+          </token>
+          <token id="19">
+            <word>fiscal</word>
+            <lemma>fiscal</lemma>
+            <CharacterOffsetBegin>286</CharacterOffsetBegin>
+            <CharacterOffsetEnd>292</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+          </token>
+          <token id="20">
+            <word>2009</word>
+            <lemma>2009</lemma>
+            <CharacterOffsetBegin>293</CharacterOffsetBegin>
+            <CharacterOffsetEnd>297</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2009</NormalizedNER>
+            <Timex tid="t1" type="DATE">2009</Timex>
+          </token>
+          <token id="21">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>298</CharacterOffsetBegin>
+            <CharacterOffsetEnd>301</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>likely</word>
+            <lemma>likely</lemma>
+            <CharacterOffsetBegin>302</CharacterOffsetBegin>
+            <CharacterOffsetEnd>308</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>309</CharacterOffsetBegin>
+            <CharacterOffsetEnd>311</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>312</CharacterOffsetBegin>
+            <CharacterOffsetEnd>314</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>down</word>
+            <lemma>down</lemma>
+            <CharacterOffsetBegin>315</CharacterOffsetBegin>
+            <CharacterOffsetEnd>319</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="26">
+            <word>against</word>
+            <lemma>against</lemma>
+            <CharacterOffsetBegin>320</CharacterOffsetBegin>
+            <CharacterOffsetEnd>327</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="27">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>328</CharacterOffsetBegin>
+            <CharacterOffsetEnd>332</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008</NormalizedNER>
+            <Timex tid="t2" type="DATE">2008</Timex>
+          </token>
+          <token id="28">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>333</CharacterOffsetBegin>
+            <CharacterOffsetEnd>337</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="29">
+            <word>improvement</word>
+            <lemma>improvement</lemma>
+            <CharacterOffsetBegin>338</CharacterOffsetBegin>
+            <CharacterOffsetEnd>349</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="30">
+            <word>expected</word>
+            <lemma>expect</lemma>
+            <CharacterOffsetBegin>350</CharacterOffsetBegin>
+            <CharacterOffsetEnd>358</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="31">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>359</CharacterOffsetBegin>
+            <CharacterOffsetEnd>361</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="32">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>362</CharacterOffsetBegin>
+            <CharacterOffsetEnd>365</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="33">
+            <word>second</word>
+            <lemma>second</lemma>
+            <CharacterOffsetBegin>366</CharacterOffsetBegin>
+            <CharacterOffsetEnd>372</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008</NormalizedNER>
+          </token>
+          <token id="34">
+            <word>half</word>
+            <lemma>half</lemma>
+            <CharacterOffsetBegin>373</CharacterOffsetBegin>
+            <CharacterOffsetEnd>377</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008</NormalizedNER>
+          </token>
+          <token id="35">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>378</CharacterOffsetBegin>
+            <CharacterOffsetEnd>380</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008</NormalizedNER>
+          </token>
+          <token id="36">
+            <word>fiscal</word>
+            <lemma>fiscal</lemma>
+            <CharacterOffsetBegin>381</CharacterOffsetBegin>
+            <CharacterOffsetEnd>387</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008</NormalizedNER>
+          </token>
+          <token id="37">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>388</CharacterOffsetBegin>
+            <CharacterOffsetEnd>392</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008</NormalizedNER>
+            <Timex tid="t3" type="DATE">2008</Timex>
+          </token>
+          <token id="38">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>392</CharacterOffsetBegin>
+            <CharacterOffsetEnd>393</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN In) (NP (NP (NN light)) (PP (IN of) (NP (JJ recent) (NNS trends))))) (, ,) (NP (DT the) (NN company)) (VP (VBD provided) (SBAR (S (NP (NP (JJ adjusted) (NNS earnings)) (PP (IN per) (NP (NP (NN share)) (PP (IN in) (NP (NP (DT the) (JJ first) (NN half)) (PP (IN of) (NP (JJ fiscal) (CD 2009)))))))) (VP (VBP are) (ADJP (JJ likely) (S (VP (TO to) (VP (VB be) (VP (ADVP (RB down) (PP (IN against) (NP (NP (CD 2008)) (PP (IN with) (NP (NN improvement)))))) (VBN expected) (PP (IN in) (NP (NP (DT the) (JJ second) (NN half)) (PP (IN of) (NP (JJ fiscal) (CD 2008)))))))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="9">provided</governor>
+            <dependent idx="1">In</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">In</governor>
+            <dependent idx="2">light</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">light</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">trends</governor>
+            <dependent idx="4">recent</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">trends</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">company</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">provided</governor>
+            <dependent idx="8">company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">earnings</governor>
+            <dependent idx="10">adjusted</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="22">likely</governor>
+            <dependent idx="11">earnings</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">earnings</governor>
+            <dependent idx="12">per</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">per</governor>
+            <dependent idx="13">share</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="13">share</governor>
+            <dependent idx="14">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">half</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">half</governor>
+            <dependent idx="16">first</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="14">in</governor>
+            <dependent idx="17">half</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="17">half</governor>
+            <dependent idx="18">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">2009</governor>
+            <dependent idx="19">fiscal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="18">of</governor>
+            <dependent idx="20">2009</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="22">likely</governor>
+            <dependent idx="21">are</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">provided</governor>
+            <dependent idx="22">likely</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="30">expected</governor>
+            <dependent idx="23">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="30">expected</governor>
+            <dependent idx="24">be</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="30">expected</governor>
+            <dependent idx="25">down</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="25">down</governor>
+            <dependent idx="26">against</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="26">against</governor>
+            <dependent idx="27">2008</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="27">2008</governor>
+            <dependent idx="28">with</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="28">with</governor>
+            <dependent idx="29">improvement</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="22">likely</governor>
+            <dependent idx="30">expected</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="30">expected</governor>
+            <dependent idx="31">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="34">half</governor>
+            <dependent idx="32">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="34">half</governor>
+            <dependent idx="33">second</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="31">in</governor>
+            <dependent idx="34">half</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="34">half</governor>
+            <dependent idx="35">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="37">2008</governor>
+            <dependent idx="36">fiscal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="35">of</governor>
+            <dependent idx="37">2008</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="prep_in">
+            <governor idx="9">provided</governor>
+            <dependent idx="2">light</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">trends</governor>
+            <dependent idx="4">recent</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">light</governor>
+            <dependent idx="5">trends</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">company</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">provided</governor>
+            <dependent idx="8">company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">earnings</governor>
+            <dependent idx="10">adjusted</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="22">likely</governor>
+            <dependent idx="11">earnings</dependent>
+          </dep>
+          <dep type="prep_per">
+            <governor idx="11">earnings</governor>
+            <dependent idx="13">share</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">half</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">half</governor>
+            <dependent idx="16">first</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="13">share</governor>
+            <dependent idx="17">half</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">2009</governor>
+            <dependent idx="19">fiscal</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="17">half</governor>
+            <dependent idx="20">2009</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="22">likely</governor>
+            <dependent idx="21">are</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">provided</governor>
+            <dependent idx="22">likely</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="30">expected</governor>
+            <dependent idx="23">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="30">expected</governor>
+            <dependent idx="24">be</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="30">expected</governor>
+            <dependent idx="25">down</dependent>
+          </dep>
+          <dep type="prep_against">
+            <governor idx="25">down</governor>
+            <dependent idx="27">2008</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="27">2008</governor>
+            <dependent idx="29">improvement</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="22">likely</governor>
+            <dependent idx="30">expected</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="34">half</governor>
+            <dependent idx="32">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="34">half</governor>
+            <dependent idx="33">second</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="30">expected</governor>
+            <dependent idx="34">half</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="37">2008</governor>
+            <dependent idx="36">fiscal</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="34">half</governor>
+            <dependent idx="37">2008</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="prep_in">
+            <governor idx="9">provided</governor>
+            <dependent idx="2">light</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">trends</governor>
+            <dependent idx="4">recent</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">light</governor>
+            <dependent idx="5">trends</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">company</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">provided</governor>
+            <dependent idx="8">company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">earnings</governor>
+            <dependent idx="10">adjusted</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="22">likely</governor>
+            <dependent idx="11">earnings</dependent>
+          </dep>
+          <dep type="prep_per">
+            <governor idx="11">earnings</governor>
+            <dependent idx="13">share</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">half</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">half</governor>
+            <dependent idx="16">first</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="13">share</governor>
+            <dependent idx="17">half</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">2009</governor>
+            <dependent idx="19">fiscal</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="17">half</governor>
+            <dependent idx="20">2009</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="22">likely</governor>
+            <dependent idx="21">are</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">provided</governor>
+            <dependent idx="22">likely</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="30">expected</governor>
+            <dependent idx="23">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="30">expected</governor>
+            <dependent idx="24">be</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="30">expected</governor>
+            <dependent idx="25">down</dependent>
+          </dep>
+          <dep type="prep_against">
+            <governor idx="25">down</governor>
+            <dependent idx="27">2008</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="27">2008</governor>
+            <dependent idx="29">improvement</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="22">likely</governor>
+            <dependent idx="30">expected</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="34">half</governor>
+            <dependent idx="32">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="34">half</governor>
+            <dependent idx="33">second</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="30">expected</governor>
+            <dependent idx="34">half</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="37">2008</governor>
+            <dependent idx="36">fiscal</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="34">half</governor>
+            <dependent idx="37">2008</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Gentex</word>
+            <lemma>Gentex</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>added</word>
+            <lemma>add</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>S&amp;P</word>
+            <lemma>S&amp;P</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>SmallCap</word>
+            <lemma>SmallCap</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>600</word>
+            <lemma>600</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>600.0</NormalizedNER>
+          </token>
+          <token id="8">
+            <word>Sector</word>
+            <lemma>Sector</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Indices</word>
+            <lemma>Indices</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>Consumer</word>
+            <lemma>Consumer</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>Discretionary</word>
+            <lemma>Discretionary</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>Sector</word>
+            <lemma>Sector</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>Index</word>
+            <lemma>Index</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Gentex) (NNP Corp.)) (VP (VBD added) (PP (TO to) (NP (NP (NNP S&amp;P) (NNP SmallCap)) (NP (CD 600) (NNP Sector) (NNPS Indices)) (: -) (NP (NNP Consumer) (NNP Discretionary) (NNP Sector) (NNP Index))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">added</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">added</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">to</governor>
+            <dependent idx="6">SmallCap</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">Indices</governor>
+            <dependent idx="7">600</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Indices</governor>
+            <dependent idx="8">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="9">Indices</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="11">Consumer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="12">Discretionary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="13">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="14">Index</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">added</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">added</governor>
+            <dependent idx="6">SmallCap</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">Indices</governor>
+            <dependent idx="7">600</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Indices</governor>
+            <dependent idx="8">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="9">Indices</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="11">Consumer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="12">Discretionary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="13">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="14">Index</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">added</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">added</governor>
+            <dependent idx="6">SmallCap</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">Indices</governor>
+            <dependent idx="7">600</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Indices</governor>
+            <dependent idx="8">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="9">Indices</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="11">Consumer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="12">Discretionary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="13">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="14">Index</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Gentex</word>
+            <lemma>Gentex</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>added</word>
+            <lemma>add</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>S&amp;P</word>
+            <lemma>S&amp;P</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>SmallCap</word>
+            <lemma>SmallCap</lemma>
+            <CharacterOffsetBegin>120</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>600</word>
+            <lemma>600</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>600.0</NormalizedNER>
+          </token>
+          <token id="8">
+            <word>Sector</word>
+            <lemma>Sector</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Indices</word>
+            <lemma>Indices</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>147</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>148</CharacterOffsetBegin>
+            <CharacterOffsetEnd>149</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>Consumer</word>
+            <lemma>Consumer</lemma>
+            <CharacterOffsetBegin>150</CharacterOffsetBegin>
+            <CharacterOffsetEnd>158</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>Discretionary</word>
+            <lemma>Discretionary</lemma>
+            <CharacterOffsetBegin>159</CharacterOffsetBegin>
+            <CharacterOffsetEnd>172</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>Sector</word>
+            <lemma>Sector</lemma>
+            <CharacterOffsetBegin>173</CharacterOffsetBegin>
+            <CharacterOffsetEnd>179</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>Index</word>
+            <lemma>Index</lemma>
+            <CharacterOffsetBegin>180</CharacterOffsetBegin>
+            <CharacterOffsetEnd>185</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Gentex) (NNP Corp.)) (VP (VBD added) (PP (TO to) (NP (NP (NNP S&amp;P) (NNP SmallCap)) (NP (CD 600) (NNP Sector) (NNPS Indices)) (: -) (NP (NNP Consumer) (NNP Discretionary) (NNP Sector) (NNP Index))))))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">added</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">added</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">to</governor>
+            <dependent idx="6">SmallCap</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">Indices</governor>
+            <dependent idx="7">600</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Indices</governor>
+            <dependent idx="8">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="9">Indices</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="11">Consumer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="12">Discretionary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="13">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="14">Index</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">added</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">added</governor>
+            <dependent idx="6">SmallCap</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">Indices</governor>
+            <dependent idx="7">600</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Indices</governor>
+            <dependent idx="8">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="9">Indices</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="11">Consumer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="12">Discretionary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="13">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="14">Index</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">added</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="5">S&amp;P</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">added</governor>
+            <dependent idx="6">SmallCap</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">Indices</governor>
+            <dependent idx="7">600</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Indices</governor>
+            <dependent idx="8">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="9">Indices</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="11">Consumer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="12">Discretionary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Index</governor>
+            <dependent idx="13">Sector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">SmallCap</governor>
+            <dependent idx="14">Index</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

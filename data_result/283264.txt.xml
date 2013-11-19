@@ -1,0 +1,1620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Basell</word>
+            <lemma>Basell</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>USA</word>
+            <lemma>USA</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>ConocoPhillips</word>
+            <lemma>ConocoPhillips</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>Sign</word>
+            <lemma>Sign</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Polypropylene</word>
+            <lemma>Polypropylene</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Sales</word>
+            <lemma>sale</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Agreement</word>
+            <lemma>agreement</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNP Basell) (NNP USA) (NNP Inc.)) (CC and) (NP (NNP ConocoPhillips) (NNP Sign))) (NP (NNP Polypropylene) (NNS Sales) (NN Agreement)) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Basell</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">USA</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Sign</governor>
+            <dependent idx="5">ConocoPhillips</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="6">Sign</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Agreement</governor>
+            <dependent idx="7">Polypropylene</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Agreement</governor>
+            <dependent idx="8">Sales</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="9">Agreement</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Basell</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">USA</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Sign</governor>
+            <dependent idx="5">ConocoPhillips</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="6">Sign</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Agreement</governor>
+            <dependent idx="7">Polypropylene</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Agreement</governor>
+            <dependent idx="8">Sales</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="9">Agreement</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Basell</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">USA</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Sign</governor>
+            <dependent idx="5">ConocoPhillips</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="6">Sign</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Agreement</governor>
+            <dependent idx="7">Polypropylene</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Agreement</governor>
+            <dependent idx="8">Sales</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="9">Agreement</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Basell</word>
+            <lemma>Basell</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>USA</word>
+            <lemma>USA</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>ConocoPhillips</word>
+            <lemma>ConocoPhillips</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>announced</word>
+            <lemma>announce</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>signing</word>
+            <lemma>signing</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>agreement</word>
+            <lemma>agreement</lemma>
+            <CharacterOffsetBegin>135</CharacterOffsetBegin>
+            <CharacterOffsetEnd>144</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>under</word>
+            <lemma>under</lemma>
+            <CharacterOffsetBegin>145</CharacterOffsetBegin>
+            <CharacterOffsetEnd>150</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>151</CharacterOffsetBegin>
+            <CharacterOffsetEnd>156</CharacterOffsetEnd>
+            <POS>WDT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>Basell</word>
+            <lemma>Basell</lemma>
+            <CharacterOffsetBegin>157</CharacterOffsetBegin>
+            <CharacterOffsetEnd>163</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="15">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>164</CharacterOffsetBegin>
+            <CharacterOffsetEnd>168</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>169</CharacterOffsetBegin>
+            <CharacterOffsetEnd>171</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>172</CharacterOffsetBegin>
+            <CharacterOffsetEnd>175</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>exclusive</word>
+            <lemma>exclusive</lemma>
+            <CharacterOffsetBegin>176</CharacterOffsetBegin>
+            <CharacterOffsetEnd>185</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>purchaser</word>
+            <lemma>purchaser</lemma>
+            <CharacterOffsetBegin>186</CharacterOffsetBegin>
+            <CharacterOffsetEnd>195</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>196</CharacterOffsetBegin>
+            <CharacterOffsetEnd>199</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>marketer</word>
+            <lemma>marketer</lemma>
+            <CharacterOffsetBegin>200</CharacterOffsetBegin>
+            <CharacterOffsetEnd>208</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>209</CharacterOffsetBegin>
+            <CharacterOffsetEnd>211</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>212</CharacterOffsetBegin>
+            <CharacterOffsetEnd>215</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>polypropylene</word>
+            <lemma>polypropylene</lemma>
+            <CharacterOffsetBegin>216</CharacterOffsetBegin>
+            <CharacterOffsetEnd>229</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>resins</word>
+            <lemma>resin</lemma>
+            <CharacterOffsetBegin>230</CharacterOffsetBegin>
+            <CharacterOffsetEnd>236</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="26">
+            <word>produced</word>
+            <lemma>produce</lemma>
+            <CharacterOffsetBegin>237</CharacterOffsetBegin>
+            <CharacterOffsetEnd>245</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="27">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>246</CharacterOffsetBegin>
+            <CharacterOffsetEnd>248</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="28">
+            <word>ConocoPhillips</word>
+            <lemma>ConocoPhillips</lemma>
+            <CharacterOffsetBegin>249</CharacterOffsetBegin>
+            <CharacterOffsetEnd>263</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="29">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>263</CharacterOffsetBegin>
+            <CharacterOffsetEnd>264</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="30">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>265</CharacterOffsetBegin>
+            <CharacterOffsetEnd>268</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="31">
+            <word>Bayway</word>
+            <lemma>Bayway</lemma>
+            <CharacterOffsetBegin>269</CharacterOffsetBegin>
+            <CharacterOffsetEnd>275</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="32">
+            <word>plant</word>
+            <lemma>plant</lemma>
+            <CharacterOffsetBegin>276</CharacterOffsetBegin>
+            <CharacterOffsetEnd>281</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="33">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>282</CharacterOffsetBegin>
+            <CharacterOffsetEnd>284</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="34">
+            <word>Linden</word>
+            <lemma>Linden</lemma>
+            <CharacterOffsetBegin>285</CharacterOffsetBegin>
+            <CharacterOffsetEnd>291</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="35">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>291</CharacterOffsetBegin>
+            <CharacterOffsetEnd>292</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="36">
+            <word>N.J.</word>
+            <lemma>N.J.</lemma>
+            <CharacterOffsetBegin>293</CharacterOffsetBegin>
+            <CharacterOffsetEnd>296</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="37">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>296</CharacterOffsetBegin>
+            <CharacterOffsetEnd>297</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Basell) (NNP USA) (NNP Inc.)) (CC and) (NP (NNP ConocoPhillips))) (VP (VBD announced) (SBAR (S (NP (NP (DT the) (NN signing)) (PP (IN of) (NP (NP (DT an) (NN agreement)) (SBAR (WHPP (IN under) (WHNP (WDT which))) (S (NP (NNP Basell)) (VP (MD will) (VP (VB be) (NP (NP (DT the) (JJ exclusive) (NN purchaser) (CC and) (NN marketer)) (PP (IN of) (NP (DT the) (NN polypropylene) (NNS resins))))))))))) (VP (VBD produced) (PP (IN at) (NP (NP (NNP ConocoPhillips) (POS ')) (JJ new) (NNP Bayway) (NN plant))) (PP (IN in) (NP (NNP Linden) (, ,) (NNP N.J.))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Basell</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">USA</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">announced</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="5">ConocoPhillips</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">signing</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="26">produced</governor>
+            <dependent idx="8">signing</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">signing</governor>
+            <dependent idx="9">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">agreement</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">of</governor>
+            <dependent idx="11">agreement</dependent>
+          </dep>
+          <dep type="rel">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="12">under</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">under</governor>
+            <dependent idx="13">which</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="14">Basell</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="15">will</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="16">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="17">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="18">exclusive</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="11">agreement</governor>
+            <dependent idx="19">purchaser</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="20">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="21">marketer</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="22">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="25">resins</governor>
+            <dependent idx="23">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">resins</governor>
+            <dependent idx="24">polypropylene</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="22">of</governor>
+            <dependent idx="25">resins</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="6">announced</governor>
+            <dependent idx="26">produced</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="26">produced</governor>
+            <dependent idx="27">at</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="32">plant</governor>
+            <dependent idx="28">ConocoPhillips</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="32">plant</governor>
+            <dependent idx="30">new</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="32">plant</governor>
+            <dependent idx="31">Bayway</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="27">at</governor>
+            <dependent idx="32">plant</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="26">produced</governor>
+            <dependent idx="33">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="36">N.J.</governor>
+            <dependent idx="34">Linden</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="33">in</governor>
+            <dependent idx="36">N.J.</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Basell</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">USA</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">announced</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="5">ConocoPhillips</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">signing</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="26">produced</governor>
+            <dependent idx="8">signing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">agreement</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="8">signing</governor>
+            <dependent idx="11">agreement</dependent>
+          </dep>
+          <dep type="rel">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="13">which</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="14">Basell</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="15">will</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="16">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="17">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="18">exclusive</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="11">agreement</governor>
+            <dependent idx="19">purchaser</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="21">marketer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="25">resins</governor>
+            <dependent idx="23">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">resins</governor>
+            <dependent idx="24">polypropylene</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="25">resins</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="6">announced</governor>
+            <dependent idx="26">produced</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="32">plant</governor>
+            <dependent idx="28">ConocoPhillips</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="32">plant</governor>
+            <dependent idx="30">new</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="32">plant</governor>
+            <dependent idx="31">Bayway</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="26">produced</governor>
+            <dependent idx="32">plant</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="36">N.J.</governor>
+            <dependent idx="34">Linden</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="26">produced</governor>
+            <dependent idx="36">N.J.</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="1">Basell</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="2">USA</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">announced</governor>
+            <dependent idx="3">Inc.</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">Inc.</governor>
+            <dependent idx="5">ConocoPhillips</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">announced</governor>
+            <dependent idx="5">ConocoPhillips</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">signing</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="26">produced</governor>
+            <dependent idx="8">signing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">agreement</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="8">signing</governor>
+            <dependent idx="11">agreement</dependent>
+          </dep>
+          <dep type="rel">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="13">which</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="14">Basell</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="15">will</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="16">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="17">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="18">exclusive</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="11">agreement</governor>
+            <dependent idx="19">purchaser</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="11">agreement</governor>
+            <dependent idx="21">marketer</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="21">marketer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="25">resins</governor>
+            <dependent idx="23">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">resins</governor>
+            <dependent idx="24">polypropylene</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="19">purchaser</governor>
+            <dependent idx="25">resins</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="6">announced</governor>
+            <dependent idx="26">produced</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="32">plant</governor>
+            <dependent idx="28">ConocoPhillips</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="32">plant</governor>
+            <dependent idx="30">new</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="32">plant</governor>
+            <dependent idx="31">Bayway</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="26">produced</governor>
+            <dependent idx="32">plant</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="36">N.J.</governor>
+            <dependent idx="34">Linden</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="26">produced</governor>
+            <dependent idx="36">N.J.</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>298</CharacterOffsetBegin>
+            <CharacterOffsetEnd>301</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>775</word>
+            <lemma>775</lemma>
+            <CharacterOffsetBegin>302</CharacterOffsetBegin>
+            <CharacterOffsetEnd>305</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>7.75E8</NormalizedNER>
+          </token>
+          <token id="3">
+            <word>million</word>
+            <lemma>million</lemma>
+            <CharacterOffsetBegin>306</CharacterOffsetBegin>
+            <CharacterOffsetEnd>313</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>7.75E8</NormalizedNER>
+          </token>
+          <token id="4">
+            <word>pounds-per-year</word>
+            <lemma>pounds-per-year</lemma>
+            <CharacterOffsetBegin>314</CharacterOffsetBegin>
+            <CharacterOffsetEnd>329</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>plant</word>
+            <lemma>plant</lemma>
+            <CharacterOffsetBegin>330</CharacterOffsetBegin>
+            <CharacterOffsetEnd>335</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>336</CharacterOffsetBegin>
+            <CharacterOffsetEnd>338</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>scheduled</word>
+            <lemma>schedule</lemma>
+            <CharacterOffsetBegin>339</CharacterOffsetBegin>
+            <CharacterOffsetEnd>348</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>349</CharacterOffsetBegin>
+            <CharacterOffsetEnd>351</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>start</word>
+            <lemma>start</lemma>
+            <CharacterOffsetBegin>352</CharacterOffsetBegin>
+            <CharacterOffsetEnd>357</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>358</CharacterOffsetBegin>
+            <CharacterOffsetEnd>360</CharacterOffsetEnd>
+            <POS>RP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>early</word>
+            <lemma>early</lemma>
+            <CharacterOffsetBegin>361</CharacterOffsetBegin>
+            <CharacterOffsetEnd>366</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>THIS P1Y OFFSET P1Y</NormalizedNER>
+            <Timex tid="t1" type="DATE"/>
+          </token>
+          <token id="12">
+            <word>next</word>
+            <lemma>next</lemma>
+            <CharacterOffsetBegin>367</CharacterOffsetBegin>
+            <CharacterOffsetEnd>371</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>THIS P1Y OFFSET P1Y</NormalizedNER>
+            <Timex tid="t1" type="DATE"/>
+          </token>
+          <token id="13">
+            <word>year</word>
+            <lemma>year</lemma>
+            <CharacterOffsetBegin>372</CharacterOffsetBegin>
+            <CharacterOffsetEnd>376</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>THIS P1Y OFFSET P1Y</NormalizedNER>
+            <Timex tid="t1" type="DATE"/>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>376</CharacterOffsetBegin>
+            <CharacterOffsetEnd>377</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (ADJP (QP (CD 775) (CD million))) (JJ pounds-per-year) (NN plant)) (VP (VBZ is) (VP (VBN scheduled) (S (VP (TO to) (VP (VB start) (PRT (RP up)) (NP (JJ early) (JJ next) (NN year))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="5">plant</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="3">million</governor>
+            <dependent idx="2">775</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">plant</governor>
+            <dependent idx="3">million</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">plant</governor>
+            <dependent idx="4">pounds-per-year</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">scheduled</governor>
+            <dependent idx="5">plant</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">scheduled</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">start</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">scheduled</governor>
+            <dependent idx="9">start</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="9">start</governor>
+            <dependent idx="10">up</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">year</governor>
+            <dependent idx="11">early</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">year</governor>
+            <dependent idx="12">next</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="9">start</governor>
+            <dependent idx="13">year</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="5">plant</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="3">million</governor>
+            <dependent idx="2">775</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">plant</governor>
+            <dependent idx="3">million</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">plant</governor>
+            <dependent idx="4">pounds-per-year</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">scheduled</governor>
+            <dependent idx="5">plant</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">scheduled</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">start</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">scheduled</governor>
+            <dependent idx="9">start</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="9">start</governor>
+            <dependent idx="10">up</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">year</governor>
+            <dependent idx="11">early</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">year</governor>
+            <dependent idx="12">next</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="9">start</governor>
+            <dependent idx="13">year</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="5">plant</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="3">million</governor>
+            <dependent idx="2">775</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">plant</governor>
+            <dependent idx="3">million</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">plant</governor>
+            <dependent idx="4">pounds-per-year</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">scheduled</governor>
+            <dependent idx="5">plant</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">scheduled</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">start</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">scheduled</governor>
+            <dependent idx="9">start</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="9">start</governor>
+            <dependent idx="10">up</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">year</governor>
+            <dependent idx="11">early</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">year</governor>
+            <dependent idx="12">next</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="9">start</governor>
+            <dependent idx="13">year</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>Add</word>
+            <lemma>add</lemma>
+            <CharacterOffsetBegin>377</CharacterOffsetBegin>
+            <CharacterOffsetEnd>380</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>381</CharacterOffsetBegin>
+            <CharacterOffsetEnd>384</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Bayway</word>
+            <lemma>Bayway</lemma>
+            <CharacterOffsetBegin>385</CharacterOffsetBegin>
+            <CharacterOffsetEnd>391</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>plant</word>
+            <lemma>plant</lemma>
+            <CharacterOffsetBegin>392</CharacterOffsetBegin>
+            <CharacterOffsetEnd>397</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>397</CharacterOffsetBegin>
+            <CharacterOffsetEnd>399</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>ability</word>
+            <lemma>ability</lemma>
+            <CharacterOffsetBegin>400</CharacterOffsetBegin>
+            <CharacterOffsetEnd>407</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>408</CharacterOffsetBegin>
+            <CharacterOffsetEnd>410</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>produce</word>
+            <lemma>produce</lemma>
+            <CharacterOffsetBegin>411</CharacterOffsetBegin>
+            <CharacterOffsetEnd>418</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>419</CharacterOffsetBegin>
+            <CharacterOffsetEnd>420</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>full</word>
+            <lemma>full</lemma>
+            <CharacterOffsetBegin>421</CharacterOffsetBegin>
+            <CharacterOffsetEnd>425</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>range</word>
+            <lemma>range</lemma>
+            <CharacterOffsetBegin>426</CharacterOffsetBegin>
+            <CharacterOffsetEnd>431</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>432</CharacterOffsetBegin>
+            <CharacterOffsetEnd>434</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>polypropylene</word>
+            <lemma>polypropylene</lemma>
+            <CharacterOffsetBegin>435</CharacterOffsetBegin>
+            <CharacterOffsetEnd>448</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>products</word>
+            <lemma>product</lemma>
+            <CharacterOffsetBegin>449</CharacterOffsetBegin>
+            <CharacterOffsetEnd>457</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>including</word>
+            <lemma>include</lemma>
+            <CharacterOffsetBegin>458</CharacterOffsetBegin>
+            <CharacterOffsetEnd>467</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>homopolymers</word>
+            <lemma>homopolymer</lemma>
+            <CharacterOffsetBegin>468</CharacterOffsetBegin>
+            <CharacterOffsetEnd>480</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>481</CharacterOffsetBegin>
+            <CharacterOffsetEnd>484</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>random</word>
+            <lemma>random</lemma>
+            <CharacterOffsetBegin>485</CharacterOffsetBegin>
+            <CharacterOffsetEnd>491</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>492</CharacterOffsetBegin>
+            <CharacterOffsetEnd>495</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>impact</word>
+            <lemma>impact</lemma>
+            <CharacterOffsetBegin>496</CharacterOffsetBegin>
+            <CharacterOffsetEnd>502</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>copolymers</word>
+            <lemma>copolymer</lemma>
+            <CharacterOffsetBegin>503</CharacterOffsetBegin>
+            <CharacterOffsetEnd>513</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>514</CharacterOffsetBegin>
+            <CharacterOffsetEnd>517</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>company</word>
+            <lemma>company</lemma>
+            <CharacterOffsetBegin>518</CharacterOffsetBegin>
+            <CharacterOffsetEnd>525</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>526</CharacterOffsetBegin>
+            <CharacterOffsetEnd>529</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>arrangement</word>
+            <lemma>arrangement</lemma>
+            <CharacterOffsetBegin>530</CharacterOffsetBegin>
+            <CharacterOffsetEnd>541</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="26">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>542</CharacterOffsetBegin>
+            <CharacterOffsetEnd>546</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="27">
+            <word>Basell</word>
+            <lemma>Basell</lemma>
+            <CharacterOffsetBegin>547</CharacterOffsetBegin>
+            <CharacterOffsetEnd>553</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="28">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>553</CharacterOffsetBegin>
+            <CharacterOffsetEnd>554</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB Add) (NP (NP (DT the) (NNP Bayway) (NN plant) (POS 's)) (NN ability) (S (VP (TO to) (VP (VB produce) (NP (NP (DT a) (JJ full) (NN range)) (PP (IN of) (NP (NP (NN polypropylene) (NNS products)) (PP (VBG including) (NP (NP (NP (NNS homopolymers)) (CC and) (NP (ADJP (JJ random) (CC and) (NN impact)) (NNS copolymers))) (CC and) (NP (NP (NN company) (JJ new) (NN arrangement)) (PP (IN with) (NP (NNP Basell)))))))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="4">plant</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">plant</governor>
+            <dependent idx="3">Bayway</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">ability</governor>
+            <dependent idx="4">plant</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="4">plant</governor>
+            <dependent idx="5">'s</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Add</governor>
+            <dependent idx="6">ability</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">produce</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="infmod">
+            <governor idx="6">ability</governor>
+            <dependent idx="8">produce</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">range</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">range</governor>
+            <dependent idx="10">full</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">produce</governor>
+            <dependent idx="11">range</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">range</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">products</governor>
+            <dependent idx="13">polypropylene</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">of</governor>
+            <dependent idx="14">products</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="14">products</governor>
+            <dependent idx="15">including</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="15">including</governor>
+            <dependent idx="16">homopolymers</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="16">homopolymers</governor>
+            <dependent idx="17">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="21">copolymers</governor>
+            <dependent idx="18">random</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="18">random</governor>
+            <dependent idx="19">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="18">random</governor>
+            <dependent idx="20">impact</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="16">homopolymers</governor>
+            <dependent idx="21">copolymers</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="16">homopolymers</governor>
+            <dependent idx="22">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">arrangement</governor>
+            <dependent idx="23">company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="25">arrangement</governor>
+            <dependent idx="24">new</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="16">homopolymers</governor>
+            <dependent idx="25">arrangement</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="25">arrangement</governor>
+            <dependent idx="26">with</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="26">with</governor>
+            <dependent idx="27">Basell</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="4">plant</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">plant</governor>
+            <dependent idx="3">Bayway</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">ability</governor>
+            <dependent idx="4">plant</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Add</governor>
+            <dependent idx="6">ability</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">produce</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="infmod">
+            <governor idx="6">ability</governor>
+            <dependent idx="8">produce</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">range</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">range</governor>
+            <dependent idx="10">full</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">produce</governor>
+            <dependent idx="11">range</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">products</governor>
+            <dependent idx="13">polypropylene</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">range</governor>
+            <dependent idx="14">products</dependent>
+          </dep>
+          <dep type="prep_including">
+            <governor idx="14">products</governor>
+            <dependent idx="16">homopolymers</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="21">copolymers</governor>
+            <dependent idx="18">random</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="18">random</governor>
+            <dependent idx="20">impact</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="16">homopolymers</governor>
+            <dependent idx="21">copolymers</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">arrangement</governor>
+            <dependent idx="23">company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="25">arrangement</governor>
+            <dependent idx="24">new</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="16">homopolymers</governor>
+            <dependent idx="25">arrangement</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="25">arrangement</governor>
+            <dependent idx="27">Basell</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="4">plant</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">plant</governor>
+            <dependent idx="3">Bayway</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">ability</governor>
+            <dependent idx="4">plant</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Add</governor>
+            <dependent idx="6">ability</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">produce</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="infmod">
+            <governor idx="6">ability</governor>
+            <dependent idx="8">produce</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">range</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">range</governor>
+            <dependent idx="10">full</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">produce</governor>
+            <dependent idx="11">range</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">products</governor>
+            <dependent idx="13">polypropylene</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">range</governor>
+            <dependent idx="14">products</dependent>
+          </dep>
+          <dep type="prep_including">
+            <governor idx="14">products</governor>
+            <dependent idx="16">homopolymers</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="21">copolymers</governor>
+            <dependent idx="18">random</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="18">random</governor>
+            <dependent idx="20">impact</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="21">copolymers</governor>
+            <dependent idx="20">impact</dependent>
+          </dep>
+          <dep type="prep_including">
+            <governor idx="14">products</governor>
+            <dependent idx="21">copolymers</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="16">homopolymers</governor>
+            <dependent idx="21">copolymers</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="25">arrangement</governor>
+            <dependent idx="23">company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="25">arrangement</governor>
+            <dependent idx="24">new</dependent>
+          </dep>
+          <dep type="prep_including">
+            <governor idx="14">products</governor>
+            <dependent idx="25">arrangement</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="16">homopolymers</governor>
+            <dependent idx="25">arrangement</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="25">arrangement</governor>
+            <dependent idx="27">Basell</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

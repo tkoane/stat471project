@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>AK</word>
+            <lemma>AK</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Steel</word>
+            <lemma>Steel</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Holding</word>
+            <lemma>Holding</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>added</word>
+            <lemma>add</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>S&amp;P</word>
+            <lemma>S&amp;P</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="8">
+            <word>500\/Citigroup</word>
+            <lemma>500\/Citigroup</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Growth</word>
+            <lemma>Growth</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="10">
+            <word>Index</word>
+            <lemma>Index</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP AK) (NNP Steel) (NNP Holding) (NNP Corp.)) (VP (VBD added) (PP (TO to) (NP (NNP S&amp;P) (NNP 500\/Citigroup) (NNP Growth) (NNP Index)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="1">AK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="2">Steel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="3">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">added</governor>
+            <dependent idx="4">Corp.</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">added</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="7">S&amp;P</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="8">500\/Citigroup</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="9">Growth</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">to</governor>
+            <dependent idx="10">Index</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="1">AK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="2">Steel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="3">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">added</governor>
+            <dependent idx="4">Corp.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="7">S&amp;P</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="8">500\/Citigroup</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="9">Growth</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="5">added</governor>
+            <dependent idx="10">Index</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="1">AK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="2">Steel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="3">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">added</governor>
+            <dependent idx="4">Corp.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="7">S&amp;P</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="8">500\/Citigroup</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="9">Growth</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="5">added</governor>
+            <dependent idx="10">Index</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>AK</word>
+            <lemma>AK</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Steel</word>
+            <lemma>Steel</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Holding</word>
+            <lemma>Holding</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>added</word>
+            <lemma>add</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>S&amp;P</word>
+            <lemma>S&amp;P</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="8">
+            <word>500\/Citigroup</word>
+            <lemma>500\/Citigroup</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Growth</word>
+            <lemma>Growth</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="10">
+            <word>Index</word>
+            <lemma>Index</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP AK) (NNP Steel) (NNP Holding) (NNP Corp.)) (VP (VBD added) (PP (TO to) (NP (NNP S&amp;P) (NNP 500\/Citigroup) (NNP Growth) (NNP Index)))))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="1">AK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="2">Steel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="3">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">added</governor>
+            <dependent idx="4">Corp.</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">added</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="7">S&amp;P</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="8">500\/Citigroup</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="9">Growth</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">to</governor>
+            <dependent idx="10">Index</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="1">AK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="2">Steel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="3">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">added</governor>
+            <dependent idx="4">Corp.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="7">S&amp;P</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="8">500\/Citigroup</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="9">Growth</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="5">added</governor>
+            <dependent idx="10">Index</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="1">AK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="2">Steel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Corp.</governor>
+            <dependent idx="3">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">added</governor>
+            <dependent idx="4">Corp.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="7">S&amp;P</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="8">500\/Citigroup</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Index</governor>
+            <dependent idx="9">Growth</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="5">added</governor>
+            <dependent idx="10">Index</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

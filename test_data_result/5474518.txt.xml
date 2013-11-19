@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Fluor</word>
+            <lemma>Fluor</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corporation</word>
+            <lemma>Corporation</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Board</word>
+            <lemma>Board</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Meeting</word>
+            <lemma>meet</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Aug</word>
+            <lemma>Aug</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-08-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-08-01</Timex>
+          </token>
+          <token id="8">
+            <word>01</word>
+            <lemma>01</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-08-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-08-01</Timex>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-08-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-08-01</Timex>
+          </token>
+          <token id="10">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-08-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-08-01</Timex>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Fluor) (NNP Corporation)) (, ,) (S (NP (NNP Board)) (VP (VBG Meeting))) (, ,) (NP (NNP Aug) (CD 01) (, ,) (CD 2008)) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Fluor</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Meeting</governor>
+            <dependent idx="4">Board</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="5">Meeting</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="7">Aug</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="8">01</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="10">2008</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Fluor</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Meeting</governor>
+            <dependent idx="4">Board</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="5">Meeting</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="7">Aug</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="8">01</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="10">2008</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Fluor</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Meeting</governor>
+            <dependent idx="4">Board</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="5">Meeting</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="7">Aug</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="8">01</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="10">2008</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Fluor</word>
+            <lemma>Fluor</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corporation</word>
+            <lemma>Corporation</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Board</word>
+            <lemma>Board</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Meeting</word>
+            <lemma>meet</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Aug</word>
+            <lemma>Aug</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-08-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-08-01</Timex>
+          </token>
+          <token id="8">
+            <word>01</word>
+            <lemma>01</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-08-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-08-01</Timex>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-08-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-08-01</Timex>
+          </token>
+          <token id="10">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-08-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-08-01</Timex>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NP (NNP Fluor) (NNP Corporation)) (, ,) (NP (NP (NNP Board)) (VP (VBG Meeting)))) (, ,) (NP (NNP Aug) (CD 01) (, ,) (CD 2008))))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Fluor</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="4">Board</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="4">Board</governor>
+            <dependent idx="5">Meeting</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="7">Aug</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="8">01</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="10">2008</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Fluor</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="4">Board</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="4">Board</governor>
+            <dependent idx="5">Meeting</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="7">Aug</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="8">01</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="10">2008</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="1">Fluor</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="4">Board</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="4">Board</governor>
+            <dependent idx="5">Meeting</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corporation</governor>
+            <dependent idx="7">Aug</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="8">01</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Aug</governor>
+            <dependent idx="10">2008</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

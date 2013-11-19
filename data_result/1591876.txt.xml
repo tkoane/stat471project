@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Molex</word>
+            <lemma>Molex</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Shareholder\/Analyst</word>
+            <lemma>Shareholder\/Analyst</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Call</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Molex) (NNP Inc.)) (: -) (S (NP (NNP Shareholder\/Analyst)) (VP (VB Call))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Molex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Call</governor>
+            <dependent idx="4">Shareholder\/Analyst</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="5">Call</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Molex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Call</governor>
+            <dependent idx="4">Shareholder\/Analyst</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="5">Call</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Molex</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Call</governor>
+            <dependent idx="4">Shareholder\/Analyst</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="5">Call</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Molex</word>
+            <lemma>Molex</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Shareholder\/Analyst</word>
+            <lemma>Shareholder\/Analyst</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Calls</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Molex) (NNP Inc.)) (: -) (NP (NNP Shareholder\/Analyst) (NNS Calls)))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Molex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Calls</governor>
+            <dependent idx="4">Shareholder\/Analyst</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="5">Calls</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Molex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Calls</governor>
+            <dependent idx="4">Shareholder\/Analyst</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="5">Calls</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="1">Molex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Calls</governor>
+            <dependent idx="4">Shareholder\/Analyst</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Inc.</governor>
+            <dependent idx="5">Calls</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

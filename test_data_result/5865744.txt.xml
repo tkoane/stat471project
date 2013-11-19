@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>KeyCorp</word>
+            <lemma>KeyCorp</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Primary</word>
+            <lemma>primary</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Exchange</word>
+            <lemma>Exchange</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Listing</word>
+            <lemma>Listing</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>Change</word>
+            <lemma>Change</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>NYSE</word>
+            <lemma>NYSE</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="9">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>OTCUS</word>
+            <lemma>OTCUS</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP KeyCorp)) (NP (JJ Primary) (NNP Exchange) (NNP Listing))) (VP (MD will) (VP (NP (NP (NNP Change)) (PP (TO to) (NP (NNP NYSE)))) (PP (IN from) (NP (NNP OTCUS))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="6">Change</governor>
+            <dependent idx="1">KeyCorp</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Listing</governor>
+            <dependent idx="2">Primary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Listing</governor>
+            <dependent idx="3">Exchange</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">KeyCorp</governor>
+            <dependent idx="4">Listing</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">Change</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">Change</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">to</governor>
+            <dependent idx="8">NYSE</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">Change</governor>
+            <dependent idx="9">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">from</governor>
+            <dependent idx="10">OTCUS</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="6">Change</governor>
+            <dependent idx="1">KeyCorp</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Listing</governor>
+            <dependent idx="2">Primary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Listing</governor>
+            <dependent idx="3">Exchange</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">KeyCorp</governor>
+            <dependent idx="4">Listing</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">Change</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">Change</governor>
+            <dependent idx="8">NYSE</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="6">Change</governor>
+            <dependent idx="10">OTCUS</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="6">Change</governor>
+            <dependent idx="1">KeyCorp</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Listing</governor>
+            <dependent idx="2">Primary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Listing</governor>
+            <dependent idx="3">Exchange</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">KeyCorp</governor>
+            <dependent idx="4">Listing</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">Change</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">Change</governor>
+            <dependent idx="8">NYSE</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="6">Change</governor>
+            <dependent idx="10">OTCUS</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Effective</word>
+            <lemma>effective</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>March</word>
+            <lemma>March</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-03-18</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-03-18</Timex>
+          </token>
+          <token id="3">
+            <word>18</word>
+            <lemma>18</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-03-18</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-03-18</Timex>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-03-18</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-03-18</Timex>
+          </token>
+          <token id="5">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-03-18</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-03-18</Timex>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>KeyCorp</word>
+            <lemma>KeyCorp</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="8">
+            <word>primary</word>
+            <lemma>primary</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>exchange</word>
+            <lemma>exchange</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>listing</word>
+            <lemma>listing</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>change</word>
+            <lemma>change</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>NYSE</word>
+            <lemma>NYSE</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>144</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="15">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>145</CharacterOffsetBegin>
+            <CharacterOffsetEnd>149</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>OTCUS</word>
+            <lemma>OTCUS</lemma>
+            <CharacterOffsetBegin>150</CharacterOffsetBegin>
+            <CharacterOffsetEnd>155</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="17">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>155</CharacterOffsetBegin>
+            <CharacterOffsetEnd>156</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (ADJP (JJ Effective) (NP-TMP (NNP March) (CD 18) (, ,) (CD 2008) (, ,))) (NP (NNP KeyCorp) (JJ primary) (NN exchange) (NN listing))) (VP (MD will) (VP (VB change) (PP (TO to) (NP (NNP NYSE))) (PP (IN from) (NP (NNP OTCUS))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="amod">
+            <governor idx="10">listing</governor>
+            <dependent idx="1">Effective</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="1">Effective</governor>
+            <dependent idx="2">March</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">March</governor>
+            <dependent idx="3">18</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">March</governor>
+            <dependent idx="5">2008</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">listing</governor>
+            <dependent idx="7">KeyCorp</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">listing</governor>
+            <dependent idx="8">primary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">listing</governor>
+            <dependent idx="9">exchange</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">change</governor>
+            <dependent idx="10">listing</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">change</governor>
+            <dependent idx="11">will</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">change</governor>
+            <dependent idx="13">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">to</governor>
+            <dependent idx="14">NYSE</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">change</governor>
+            <dependent idx="15">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="15">from</governor>
+            <dependent idx="16">OTCUS</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="amod">
+            <governor idx="10">listing</governor>
+            <dependent idx="1">Effective</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="1">Effective</governor>
+            <dependent idx="2">March</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">March</governor>
+            <dependent idx="3">18</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">March</governor>
+            <dependent idx="5">2008</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">listing</governor>
+            <dependent idx="7">KeyCorp</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">listing</governor>
+            <dependent idx="8">primary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">listing</governor>
+            <dependent idx="9">exchange</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">change</governor>
+            <dependent idx="10">listing</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">change</governor>
+            <dependent idx="11">will</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="12">change</governor>
+            <dependent idx="14">NYSE</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="12">change</governor>
+            <dependent idx="16">OTCUS</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="amod">
+            <governor idx="10">listing</governor>
+            <dependent idx="1">Effective</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="1">Effective</governor>
+            <dependent idx="2">March</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">March</governor>
+            <dependent idx="3">18</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">March</governor>
+            <dependent idx="5">2008</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">listing</governor>
+            <dependent idx="7">KeyCorp</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">listing</governor>
+            <dependent idx="8">primary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">listing</governor>
+            <dependent idx="9">exchange</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">change</governor>
+            <dependent idx="10">listing</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">change</governor>
+            <dependent idx="11">will</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="12">change</governor>
+            <dependent idx="14">NYSE</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="12">change</governor>
+            <dependent idx="16">OTCUS</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

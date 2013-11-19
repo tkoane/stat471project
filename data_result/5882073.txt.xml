@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Discovery</word>
+            <lemma>Discovery</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Holding</word>
+            <lemma>Holding</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Co.</word>
+            <lemma>Co.</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Changed</word>
+            <lemma>change</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Name</word>
+            <lemma>name</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Discovery</word>
+            <lemma>Discovery</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="10">
+            <word>Communications</word>
+            <lemma>Communications</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="11">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="12">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Discovery) (NNP Holding) (NNP Co.)) (VP (VBZ has) (VP (VBN Changed) (S (NP (PRP$ its)) (VP (VB Name) (PP (TO to) (NP (NP (NNP Discovery) (NNPS Communications)) (, ,) (NP (NNP Inc.)))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="1">Discovery</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="2">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Changed</governor>
+            <dependent idx="3">Co.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">Changed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">Name</governor>
+            <dependent idx="6">its</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">Changed</governor>
+            <dependent idx="7">Name</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">Name</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Communications</governor>
+            <dependent idx="9">Discovery</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">to</governor>
+            <dependent idx="10">Communications</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="10">Communications</governor>
+            <dependent idx="12">Inc.</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="1">Discovery</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="2">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Changed</governor>
+            <dependent idx="3">Co.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">Changed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">Name</governor>
+            <dependent idx="6">its</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">Changed</governor>
+            <dependent idx="7">Name</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Communications</governor>
+            <dependent idx="9">Discovery</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="7">Name</governor>
+            <dependent idx="10">Communications</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="10">Communications</governor>
+            <dependent idx="12">Inc.</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="1">Discovery</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Co.</governor>
+            <dependent idx="2">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Changed</governor>
+            <dependent idx="3">Co.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">Changed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">Name</governor>
+            <dependent idx="6">its</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">Changed</governor>
+            <dependent idx="7">Name</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Communications</governor>
+            <dependent idx="9">Discovery</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="7">Name</governor>
+            <dependent idx="10">Communications</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="10">Communications</governor>
+            <dependent idx="12">Inc.</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>On</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>September</word>
+            <lemma>September</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-09-18</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-09-18</Timex>
+          </token>
+          <token id="3">
+            <word>18</word>
+            <lemma>18</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-09-18</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-09-18</Timex>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-09-18</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-09-18</Timex>
+          </token>
+          <token id="5">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2008-09-18</NormalizedNER>
+            <Timex tid="t1" type="DATE">2008-09-18</Timex>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Discovery</word>
+            <lemma>Discovery</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="8">
+            <word>Holding</word>
+            <lemma>Holding</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="9">
+            <word>Co.</word>
+            <lemma>Co.</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="10">
+            <word>changed</word>
+            <lemma>change</lemma>
+            <CharacterOffsetBegin>123</CharacterOffsetBegin>
+            <CharacterOffsetEnd>130</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>131</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>name</word>
+            <lemma>name</lemma>
+            <CharacterOffsetBegin>135</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>142</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>Discovery</word>
+            <lemma>Discovery</lemma>
+            <CharacterOffsetBegin>143</CharacterOffsetBegin>
+            <CharacterOffsetEnd>152</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="15">
+            <word>Communications</word>
+            <lemma>Communications</lemma>
+            <CharacterOffsetBegin>153</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="16">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>168</CharacterOffsetBegin>
+            <CharacterOffsetEnd>171</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="17">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>171</CharacterOffsetBegin>
+            <CharacterOffsetEnd>172</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN On) (NP (NNP September) (CD 18) (, ,) (CD 2008))) (, ,) (NP (NNP Discovery) (NNP Holding) (NNP Co.)) (VP (VBD changed) (NP (PRP$ its) (NN name)) (PP (TO to) (NP (NNP Discovery) (NNP Communications) (NNP Inc.)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="10">changed</governor>
+            <dependent idx="1">On</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">On</governor>
+            <dependent idx="2">September</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">September</governor>
+            <dependent idx="3">18</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">September</governor>
+            <dependent idx="5">2008</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Co.</governor>
+            <dependent idx="7">Discovery</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Co.</governor>
+            <dependent idx="8">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">changed</governor>
+            <dependent idx="9">Co.</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">name</governor>
+            <dependent idx="11">its</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">changed</governor>
+            <dependent idx="12">name</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">changed</governor>
+            <dependent idx="13">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">Inc.</governor>
+            <dependent idx="14">Discovery</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">Inc.</governor>
+            <dependent idx="15">Communications</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">to</governor>
+            <dependent idx="16">Inc.</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="prep_on">
+            <governor idx="10">changed</governor>
+            <dependent idx="2">September</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">September</governor>
+            <dependent idx="3">18</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">September</governor>
+            <dependent idx="5">2008</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Co.</governor>
+            <dependent idx="7">Discovery</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Co.</governor>
+            <dependent idx="8">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">changed</governor>
+            <dependent idx="9">Co.</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">name</governor>
+            <dependent idx="11">its</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">changed</governor>
+            <dependent idx="12">name</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">Inc.</governor>
+            <dependent idx="14">Discovery</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">Inc.</governor>
+            <dependent idx="15">Communications</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="10">changed</governor>
+            <dependent idx="16">Inc.</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="prep_on">
+            <governor idx="10">changed</governor>
+            <dependent idx="2">September</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">September</governor>
+            <dependent idx="3">18</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">September</governor>
+            <dependent idx="5">2008</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Co.</governor>
+            <dependent idx="7">Discovery</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Co.</governor>
+            <dependent idx="8">Holding</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">changed</governor>
+            <dependent idx="9">Co.</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">name</governor>
+            <dependent idx="11">its</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">changed</governor>
+            <dependent idx="12">name</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">Inc.</governor>
+            <dependent idx="14">Discovery</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">Inc.</governor>
+            <dependent idx="15">Communications</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="10">changed</governor>
+            <dependent idx="16">Inc.</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

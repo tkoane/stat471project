@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>News</word>
+            <lemma>News</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Report</word>
+            <lemma>Report</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Q2</word>
+            <lemma>Q2</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>2010</word>
+            <lemma>2010</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2010</NormalizedNER>
+            <Timex tid="t1" type="DATE">2010</Timex>
+          </token>
+          <token id="8">
+            <word>Results</word>
+            <lemma>result</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2010-02-03</NormalizedNER>
+            <Timex tid="t2" type="DATE">2010-02-03</Timex>
+          </token>
+          <token id="10">
+            <word>02\/03\/2010</word>
+            <lemma>02\/03\/2010</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2010-02-03</NormalizedNER>
+            <Timex tid="t2" type="DATE">2010-02-03</Timex>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP News) (NNP Corp.)) (PP (TO to) (NP (NNP Report) (NNP Q2))) (, ,) (NP (NP (CD 2010) (NNS Results)) (PP (IN on) (NP (CD 02\/03\/2010)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">News</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Q2</governor>
+            <dependent idx="4">Report</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">to</governor>
+            <dependent idx="5">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">Results</governor>
+            <dependent idx="7">2010</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="8">Results</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">Results</governor>
+            <dependent idx="9">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">on</governor>
+            <dependent idx="10">02\/03\/2010</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">News</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Q2</governor>
+            <dependent idx="4">Report</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="5">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">Results</governor>
+            <dependent idx="7">2010</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="8">Results</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="8">Results</governor>
+            <dependent idx="10">02\/03\/2010</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">News</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Q2</governor>
+            <dependent idx="4">Report</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="5">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">Results</governor>
+            <dependent idx="7">2010</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="8">Results</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="8">Results</governor>
+            <dependent idx="10">02\/03\/2010</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>News</word>
+            <lemma>News</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>announced</word>
+            <lemma>announce</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>they</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>report</word>
+            <lemma>report</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Q2</word>
+            <lemma>q2</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>2010</word>
+            <lemma>2010</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2010</NormalizedNER>
+            <Timex tid="t1" type="DATE">2010</Timex>
+          </token>
+          <token id="11">
+            <word>results</word>
+            <lemma>result</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2010-02-03</NormalizedNER>
+            <Timex tid="t2" type="DATE">2010-02-03</Timex>
+          </token>
+          <token id="13">
+            <word>02\/03\/2010</word>
+            <lemma>02\/03\/2010</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2010-02-03</NormalizedNER>
+            <Timex tid="t2" type="DATE">2010-02-03</Timex>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP News) (NNP Corp.)) (VP (VBD announced) (SBAR (IN that) (S (NP (PRP they)) (VP (MD will) (VP (VB report) (NP (NP (NN Q2)) (, ,) (NP (NP (CD 2010) (NNS results)) (PP (IN on) (NP (CD 02\/03\/2010)))))))))))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">News</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">announced</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="complm">
+            <governor idx="7">report</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">report</governor>
+            <dependent idx="5">they</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">report</governor>
+            <dependent idx="6">will</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">announced</governor>
+            <dependent idx="7">report</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">report</governor>
+            <dependent idx="8">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">results</governor>
+            <dependent idx="10">2010</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Q2</governor>
+            <dependent idx="11">results</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">results</governor>
+            <dependent idx="12">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">on</governor>
+            <dependent idx="13">02\/03\/2010</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">News</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">announced</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="complm">
+            <governor idx="7">report</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">report</governor>
+            <dependent idx="5">they</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">report</governor>
+            <dependent idx="6">will</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">announced</governor>
+            <dependent idx="7">report</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">report</governor>
+            <dependent idx="8">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">results</governor>
+            <dependent idx="10">2010</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Q2</governor>
+            <dependent idx="11">results</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="11">results</governor>
+            <dependent idx="13">02\/03\/2010</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">News</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">announced</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="complm">
+            <governor idx="7">report</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">report</governor>
+            <dependent idx="5">they</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">report</governor>
+            <dependent idx="6">will</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">announced</governor>
+            <dependent idx="7">report</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">report</governor>
+            <dependent idx="8">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">results</governor>
+            <dependent idx="10">2010</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">Q2</governor>
+            <dependent idx="11">results</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="11">results</governor>
+            <dependent idx="13">02\/03\/2010</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

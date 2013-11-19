@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Fidelity</word>
+            <lemma>Fidelity</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>National</word>
+            <lemma>National</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Information</word>
+            <lemma>Information</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Services</word>
+            <lemma>Services</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>dropped</word>
+            <lemma>drop</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>S&amp;P</word>
+            <lemma>S&amp;P</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="9">
+            <word>500</word>
+            <lemma>500</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>500.0</NormalizedNER>
+          </token>
+          <token id="10">
+            <word>Equal</word>
+            <lemma>Equal</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="11">
+            <word>Weighted</word>
+            <lemma>Weighted</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="12">
+            <word>Index</word>
+            <lemma>Index</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Fidelity) (NNP National) (NNP Information) (NNP Services) (NNP Inc.)) (VP (VBD dropped) (PP (IN from) (NP (NNP S&amp;P) (CD 500) (NNP Equal) (NNP Weighted) (NNP Index)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="1">Fidelity</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="2">National</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="3">Information</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="4">Services</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">dropped</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">dropped</governor>
+            <dependent idx="7">from</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="8">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">Index</governor>
+            <dependent idx="9">500</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="10">Equal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="11">Weighted</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">from</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="1">Fidelity</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="2">National</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="3">Information</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="4">Services</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">dropped</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="8">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">Index</governor>
+            <dependent idx="9">500</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="10">Equal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="11">Weighted</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="6">dropped</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="1">Fidelity</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="2">National</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="3">Information</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="4">Services</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">dropped</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="8">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">Index</governor>
+            <dependent idx="9">500</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="10">Equal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="11">Weighted</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="6">dropped</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Fidelity</word>
+            <lemma>Fidelity</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>National</word>
+            <lemma>National</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Information</word>
+            <lemma>Information</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Services</word>
+            <lemma>Services</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>dropped</word>
+            <lemma>drop</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>144</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>S&amp;P</word>
+            <lemma>S&amp;P</lemma>
+            <CharacterOffsetBegin>145</CharacterOffsetBegin>
+            <CharacterOffsetEnd>148</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="9">
+            <word>500</word>
+            <lemma>500</lemma>
+            <CharacterOffsetBegin>149</CharacterOffsetBegin>
+            <CharacterOffsetEnd>152</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>500.0</NormalizedNER>
+          </token>
+          <token id="10">
+            <word>Equal</word>
+            <lemma>Equal</lemma>
+            <CharacterOffsetBegin>153</CharacterOffsetBegin>
+            <CharacterOffsetEnd>158</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="11">
+            <word>Weighted</word>
+            <lemma>Weighted</lemma>
+            <CharacterOffsetBegin>159</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="12">
+            <word>Index</word>
+            <lemma>Index</lemma>
+            <CharacterOffsetBegin>168</CharacterOffsetBegin>
+            <CharacterOffsetEnd>173</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (FRAG (NP (NNP Fidelity) (NNP National) (NNP Information) (NNP Services) (NNP Inc.))) (VP (VBD dropped) (PP (IN from) (NP (NNP S&amp;P) (CD 500)))) (NP (NNP Equal) (NNP Weighted) (NNP Index)))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="1">Fidelity</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="2">National</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="3">Information</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="4">Services</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">dropped</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">dropped</governor>
+            <dependent idx="7">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">from</governor>
+            <dependent idx="8">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">S&amp;P</governor>
+            <dependent idx="9">500</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="10">Equal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="11">Weighted</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">dropped</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="1">Fidelity</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="2">National</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="3">Information</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="4">Services</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">dropped</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="6">dropped</governor>
+            <dependent idx="8">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">S&amp;P</governor>
+            <dependent idx="9">500</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="10">Equal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="11">Weighted</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">dropped</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="1">Fidelity</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="2">National</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="3">Information</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Inc.</governor>
+            <dependent idx="4">Services</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">dropped</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="6">dropped</governor>
+            <dependent idx="8">S&amp;P</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">S&amp;P</governor>
+            <dependent idx="9">500</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="10">Equal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Index</governor>
+            <dependent idx="11">Weighted</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">dropped</governor>
+            <dependent idx="12">Index</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

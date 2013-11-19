@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Eaton</word>
+            <lemma>Eaton</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Vance</word>
+            <lemma>Vance</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Q4</word>
+            <lemma>Q4</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>2007</word>
+            <lemma>2007</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007</NormalizedNER>
+            <Timex tid="t1" type="DATE">2007</Timex>
+          </token>
+          <token id="7">
+            <word>Earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Call</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>Nov-20-2007</word>
+            <lemma>nov-20-2007</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Eaton) (NNP Vance) (NNP Corp.)) (, ,) (S (NP (NNP Q4) (CD 2007) (NNS Earnings)) (VP (VB Call))) (, ,) (NP (NN Nov-20-2007)) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Eaton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Vance</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Earnings</governor>
+            <dependent idx="5">Q4</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Earnings</governor>
+            <dependent idx="6">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">Call</governor>
+            <dependent idx="7">Earnings</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="8">Call</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="10">Nov-20-2007</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Eaton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Vance</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Earnings</governor>
+            <dependent idx="5">Q4</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Earnings</governor>
+            <dependent idx="6">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">Call</governor>
+            <dependent idx="7">Earnings</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="8">Call</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="10">Nov-20-2007</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Eaton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Vance</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Earnings</governor>
+            <dependent idx="5">Q4</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">Earnings</governor>
+            <dependent idx="6">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">Call</governor>
+            <dependent idx="7">Earnings</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="8">Call</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="10">Nov-20-2007</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Eaton</word>
+            <lemma>Eaton</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Vance</word>
+            <lemma>Vance</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Q4</word>
+            <lemma>Q4</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>2007</word>
+            <lemma>2007</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007</NormalizedNER>
+            <Timex tid="t1" type="DATE">2007</Timex>
+          </token>
+          <token id="7">
+            <word>Earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Call</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>Nov</word>
+            <lemma>Nov</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-11-20</NormalizedNER>
+            <Timex tid="t2" type="DATE">2007-11-20</Timex>
+          </token>
+          <token id="11">
+            <word>20</word>
+            <lemma>20</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-11-20</NormalizedNER>
+            <Timex tid="t2" type="DATE">2007-11-20</Timex>
+          </token>
+          <token id="12">
+            <word>2007</word>
+            <lemma>2007</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-11-20</NormalizedNER>
+            <Timex tid="t2" type="DATE">2007-11-20</Timex>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NNP Eaton) (NNP Vance) (NNP Corp.)) (, ,) (NP (NP (NP (NNP Q4) (CD 2007)) (SBAR (S (NP (NNS Earnings)) (VP (VB Call))))) (, ,) (NP (NP (NNP Nov) (CD 20)) (NP (CD 2007))))))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Eaton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Vance</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="5">Q4</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">Q4</governor>
+            <dependent idx="6">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">Call</governor>
+            <dependent idx="7">Earnings</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">Q4</governor>
+            <dependent idx="8">Call</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">Q4</governor>
+            <dependent idx="10">Nov</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">Nov</governor>
+            <dependent idx="11">20</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">Nov</governor>
+            <dependent idx="12">2007</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Eaton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Vance</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="5">Q4</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">Q4</governor>
+            <dependent idx="6">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">Call</governor>
+            <dependent idx="7">Earnings</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">Q4</governor>
+            <dependent idx="8">Call</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">Q4</governor>
+            <dependent idx="10">Nov</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">Nov</governor>
+            <dependent idx="11">20</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">Nov</governor>
+            <dependent idx="12">2007</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Eaton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Vance</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="5">Q4</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">Q4</governor>
+            <dependent idx="6">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">Call</governor>
+            <dependent idx="7">Earnings</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">Q4</governor>
+            <dependent idx="8">Call</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">Q4</governor>
+            <dependent idx="10">Nov</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">Nov</governor>
+            <dependent idx="11">20</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">Nov</governor>
+            <dependent idx="12">2007</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

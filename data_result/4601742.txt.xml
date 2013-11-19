@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Gentex</word>
+            <lemma>Gentex</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Q2</word>
+            <lemma>Q2</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>2007</word>
+            <lemma>2007</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007</NormalizedNER>
+            <Timex tid="t1" type="DATE">2007</Timex>
+          </token>
+          <token id="6">
+            <word>Earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Call</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Jul-23-2007</word>
+            <lemma>jul-23-2007</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Gentex) (NNP Corp.)) (, ,) (S (NP (NNP Q2) (CD 2007) (NNS Earnings)) (VP (VB Call))) (, ,) (NP (NN Jul-23-2007)) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="4">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="5">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">Call</governor>
+            <dependent idx="6">Earnings</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="7">Call</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="9">Jul-23-2007</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="4">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="5">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">Call</governor>
+            <dependent idx="6">Earnings</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="7">Call</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="9">Jul-23-2007</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="4">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="5">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">Call</governor>
+            <dependent idx="6">Earnings</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="7">Call</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="9">Jul-23-2007</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Gentex</word>
+            <lemma>Gentex</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Q2</word>
+            <lemma>Q2</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>2007</word>
+            <lemma>2007</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007</NormalizedNER>
+            <Timex tid="t1" type="DATE">2007</Timex>
+          </token>
+          <token id="6">
+            <word>Earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Call</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Jul</word>
+            <lemma>Jul</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-07-23</NormalizedNER>
+            <Timex tid="t2" type="DATE">2007-07-23</Timex>
+          </token>
+          <token id="10">
+            <word>23</word>
+            <lemma>23</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-07-23</NormalizedNER>
+            <Timex tid="t2" type="DATE">2007-07-23</Timex>
+          </token>
+          <token id="11">
+            <word>2007</word>
+            <lemma>2007</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-07-23</NormalizedNER>
+            <Timex tid="t2" type="DATE">2007-07-23</Timex>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Gentex) (NNP Corp.) (, ,) (NNP Q2)) (VP (NP (NP (CD 2007) (NNS Earnings)) (SBAR (S (VP (VB Call))))) (, ,) (NP (NP (NNP Jul)) (FRAG (NP (CD 23) (CD 2007))))))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="4">Q2</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Q2</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="4">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="5">2007</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="7">Call</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="9">Jul</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">2007</governor>
+            <dependent idx="10">23</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">Jul</governor>
+            <dependent idx="11">2007</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Q2</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Q2</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="4">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="5">2007</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="7">Call</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="9">Jul</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">2007</governor>
+            <dependent idx="10">23</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">Jul</governor>
+            <dependent idx="11">2007</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Q2</governor>
+            <dependent idx="1">Gentex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Q2</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="4">Q2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="5">2007</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="7">Call</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">Earnings</governor>
+            <dependent idx="9">Jul</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">2007</governor>
+            <dependent idx="10">23</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">Jul</governor>
+            <dependent idx="11">2007</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

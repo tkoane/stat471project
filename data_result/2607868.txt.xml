@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NNP Starbucks) (NNP Corp.) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Reports</word>
+            <lemma>report</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Same-Store</word>
+            <lemma>Same-Store</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Sales</word>
+            <lemma>sale</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>January</word>
+            <lemma>January</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2006-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2006-01</Timex>
+          </token>
+          <token id="6">
+            <word>2006</word>
+            <lemma>2006</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2006-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2006-01</Timex>
+          </token>
+          <token id="7">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS Reports)) (NP (NP (NNP Same-Store) (NNS Sales)) (PP (IN for) (NP (NNP January) (CD 2006)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Sales</governor>
+            <dependent idx="2">Same-Store</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Reports</governor>
+            <dependent idx="3">Sales</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Sales</governor>
+            <dependent idx="4">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">for</governor>
+            <dependent idx="5">January</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">January</governor>
+            <dependent idx="6">2006</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Sales</governor>
+            <dependent idx="2">Same-Store</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Reports</governor>
+            <dependent idx="3">Sales</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">Sales</governor>
+            <dependent idx="5">January</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">January</governor>
+            <dependent idx="6">2006</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Sales</governor>
+            <dependent idx="2">Same-Store</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Reports</governor>
+            <dependent idx="3">Sales</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">Sales</governor>
+            <dependent idx="5">January</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">January</governor>
+            <dependent idx="6">2006</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>reported</word>
+            <lemma>report</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>same-store</word>
+            <lemma>same-store</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>sales</word>
+            <lemma>sale</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>January</word>
+            <lemma>January</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2006-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2006-01</Timex>
+          </token>
+          <token id="8">
+            <word>2006</word>
+            <lemma>2006</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2006-01</NormalizedNER>
+            <Timex tid="t1" type="DATE">2006-01</Timex>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Starbucks) (NNP Corp.)) (VP (VBD reported) (NP (JJ same-store) (NNS sales)) (PP (IN for) (NP (NNP January) (CD 2006)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">reported</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sales</governor>
+            <dependent idx="4">same-store</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">reported</governor>
+            <dependent idx="5">sales</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">reported</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="7">January</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">January</governor>
+            <dependent idx="8">2006</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">reported</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sales</governor>
+            <dependent idx="4">same-store</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">reported</governor>
+            <dependent idx="5">sales</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">reported</governor>
+            <dependent idx="7">January</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">January</governor>
+            <dependent idx="8">2006</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Corp.</governor>
+            <dependent idx="1">Starbucks</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">reported</governor>
+            <dependent idx="2">Corp.</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sales</governor>
+            <dependent idx="4">same-store</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">reported</governor>
+            <dependent idx="5">sales</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">reported</governor>
+            <dependent idx="7">January</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">January</governor>
+            <dependent idx="8">2006</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>120</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>company</word>
+            <lemma>company</lemma>
+            <CharacterOffsetBegin>124</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>reported</word>
+            <lemma>report</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>same-store</word>
+            <lemma>same-store</lemma>
+            <CharacterOffsetBegin>141</CharacterOffsetBegin>
+            <CharacterOffsetEnd>151</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>sales</word>
+            <lemma>sale</lemma>
+            <CharacterOffsetBegin>152</CharacterOffsetBegin>
+            <CharacterOffsetEnd>157</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>rose</word>
+            <lemma>rise</lemma>
+            <CharacterOffsetBegin>158</CharacterOffsetBegin>
+            <CharacterOffsetEnd>162</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>10</word>
+            <lemma>10</lemma>
+            <CharacterOffsetBegin>163</CharacterOffsetBegin>
+            <CharacterOffsetEnd>165</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%10.0</NormalizedNER>
+          </token>
+          <token id="8">
+            <word>%</word>
+            <lemma>%</lemma>
+            <CharacterOffsetBegin>165</CharacterOffsetBegin>
+            <CharacterOffsetEnd>166</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%10.0</NormalizedNER>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>166</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN company)) (VP (VBD reported) (SBAR (S (NP (JJ same-store) (NNS sales)) (VP (VBD rose) (NP (CD 10) (NN %)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">company</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">reported</governor>
+            <dependent idx="2">company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sales</governor>
+            <dependent idx="4">same-store</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">rose</governor>
+            <dependent idx="5">sales</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">reported</governor>
+            <dependent idx="6">rose</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">%</governor>
+            <dependent idx="7">10</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">rose</governor>
+            <dependent idx="8">%</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">company</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">reported</governor>
+            <dependent idx="2">company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sales</governor>
+            <dependent idx="4">same-store</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">rose</governor>
+            <dependent idx="5">sales</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">reported</governor>
+            <dependent idx="6">rose</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">%</governor>
+            <dependent idx="7">10</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">rose</governor>
+            <dependent idx="8">%</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">company</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">reported</governor>
+            <dependent idx="2">company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sales</governor>
+            <dependent idx="4">same-store</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">rose</governor>
+            <dependent idx="5">sales</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">reported</governor>
+            <dependent idx="6">rose</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">%</governor>
+            <dependent idx="7">10</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">rose</governor>
+            <dependent idx="8">%</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

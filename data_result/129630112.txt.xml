@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Phillips-Van</word>
+            <lemma>Phillips-Van</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Heusen</word>
+            <lemma>Heusen</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>filed</word>
+            <lemma>file</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Follow-on</word>
+            <lemma>follow-on</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Equity</word>
+            <lemma>equity</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Offering</word>
+            <lemma>offer</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Phillips-Van) (NNP Heusen) (NNP Corp.)) (VP (VBZ has) (VP (VBN filed) (NP (NP (DT a) (JJ Follow-on) (NN Equity)) (VP (VBG Offering))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Phillips-Van</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Heusen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Corp.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Equity</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="7">Follow-on</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Equity</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="9">Offering</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Phillips-Van</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Heusen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Corp.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Equity</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="7">Follow-on</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Equity</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="9">Offering</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Phillips-Van</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Heusen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Corp.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Equity</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="7">Follow-on</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Equity</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="9">Offering</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (. .))) </parse>
+        <basic-dependencies/>
+        <collapsed-dependencies/>
+        <collapsed-ccprocessed-dependencies/>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Phillips-Van</word>
+            <lemma>Phillips-Van</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Heusen</word>
+            <lemma>Heusen</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>filed</word>
+            <lemma>file</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Follow-on</word>
+            <lemma>follow-on</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Equity</word>
+            <lemma>equity</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Offering</word>
+            <lemma>offer</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>130</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Phillips-Van) (NNP Heusen) (NNP Corp.)) (VP (VBZ has) (VP (VBN filed) (NP (NP (DT a) (JJ Follow-on) (NN Equity)) (VP (VBG Offering))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Phillips-Van</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Heusen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Corp.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Equity</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="7">Follow-on</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Equity</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="9">Offering</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Phillips-Van</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Heusen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Corp.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Equity</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="7">Follow-on</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Equity</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="9">Offering</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="1">Phillips-Van</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Corp.</governor>
+            <dependent idx="2">Heusen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">filed</governor>
+            <dependent idx="3">Corp.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">filed</governor>
+            <dependent idx="4">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Equity</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="7">Follow-on</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">filed</governor>
+            <dependent idx="8">Equity</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="8">Equity</governor>
+            <dependent idx="9">Offering</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

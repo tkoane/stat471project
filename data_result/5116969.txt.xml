@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Update</word>
+            <lemma>Update</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>KeyCorp</word>
+            <lemma>KeyCorp</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>s</word>
+            <lemma>s</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Equity</word>
+            <lemma>Equity</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>Buyback</word>
+            <lemma>Buyback</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>December</word>
+            <lemma>December</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-12-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2007-12-31</Timex>
+          </token>
+          <token id="9">
+            <word>31</word>
+            <lemma>31</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-12-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2007-12-31</Timex>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-12-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2007-12-31</Timex>
+          </token>
+          <token id="11">
+            <word>2007</word>
+            <lemma>2007</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-12-31</NormalizedNER>
+            <Timex tid="t1" type="DATE">2007-12-31</Timex>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Update)) (PP (TO to) (NP (NNP KeyCorp)))) (VP (VBZ s) (NP (NP (NNP Equity) (NNP Buyback)) (PP (IN on) (NP (NNP December) (CD 31) (, ,) (CD 2007))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="1">Update</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Update</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">to</governor>
+            <dependent idx="3">KeyCorp</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="4">s</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="5">Equity</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="7">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">on</governor>
+            <dependent idx="8">December</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">December</governor>
+            <dependent idx="9">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">December</governor>
+            <dependent idx="11">2007</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="1">Update</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">Update</governor>
+            <dependent idx="3">KeyCorp</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="4">s</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="5">Equity</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="8">December</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">December</governor>
+            <dependent idx="9">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">December</governor>
+            <dependent idx="11">2007</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="1">Update</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">Update</governor>
+            <dependent idx="3">KeyCorp</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="4">s</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="5">Equity</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">Buyback</governor>
+            <dependent idx="8">December</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">December</governor>
+            <dependent idx="9">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">December</governor>
+            <dependent idx="11">2007</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>During</word>
+            <lemma>during</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>THIS P3M</NormalizedNER>
+            <Timex tid="t1" type="DATE"/>
+          </token>
+          <token id="3">
+            <word>quarter</word>
+            <lemma>quarter</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>THIS P3M</NormalizedNER>
+            <Timex tid="t1" type="DATE"/>
+          </token>
+          <token id="4">
+            <word>ended</word>
+            <lemma>end</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>December</word>
+            <lemma>December</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-12-31</NormalizedNER>
+            <Timex tid="t2" type="DATE">2007-12-31</Timex>
+          </token>
+          <token id="6">
+            <word>31</word>
+            <lemma>31</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-12-31</NormalizedNER>
+            <Timex tid="t2" type="DATE">2007-12-31</Timex>
+          </token>
+          <token id="7">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-12-31</NormalizedNER>
+            <Timex tid="t2" type="DATE">2007-12-31</Timex>
+          </token>
+          <token id="8">
+            <word>2007</word>
+            <lemma>2007</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2007-12-31</NormalizedNER>
+            <Timex tid="t2" type="DATE">2007-12-31</Timex>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>KeyCorp</word>
+            <lemma>KeyCorp</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="11">
+            <word>made</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>no</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>repurchases</word>
+            <lemma>repurchase</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>130</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN During) (NP (NP (DT the) (NN quarter)) (VP (VBD ended) (NP-TMP (NNP December) (CD 31) (, ,) (CD 2007))))) (, ,) (NP (NNP KeyCorp)) (VP (VBD made) (NP (DT no) (NNS repurchases))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="11">made</governor>
+            <dependent idx="1">During</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">quarter</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">During</governor>
+            <dependent idx="3">quarter</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="3">quarter</governor>
+            <dependent idx="4">ended</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="4">ended</governor>
+            <dependent idx="5">December</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">December</governor>
+            <dependent idx="6">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">December</governor>
+            <dependent idx="8">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">made</governor>
+            <dependent idx="10">KeyCorp</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">repurchases</governor>
+            <dependent idx="12">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">made</governor>
+            <dependent idx="13">repurchases</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="3">quarter</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="11">made</governor>
+            <dependent idx="3">quarter</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="3">quarter</governor>
+            <dependent idx="4">ended</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="4">ended</governor>
+            <dependent idx="5">December</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">December</governor>
+            <dependent idx="6">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">December</governor>
+            <dependent idx="8">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">made</governor>
+            <dependent idx="10">KeyCorp</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">repurchases</governor>
+            <dependent idx="12">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">made</governor>
+            <dependent idx="13">repurchases</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="3">quarter</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="11">made</governor>
+            <dependent idx="3">quarter</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="3">quarter</governor>
+            <dependent idx="4">ended</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="4">ended</governor>
+            <dependent idx="5">December</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">December</governor>
+            <dependent idx="6">31</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">December</governor>
+            <dependent idx="8">2007</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">made</governor>
+            <dependent idx="10">KeyCorp</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">repurchases</governor>
+            <dependent idx="12">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">made</governor>
+            <dependent idx="13">repurchases</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

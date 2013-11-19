@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>International</word>
+            <lemma>International</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Specialty</word>
+            <lemma>Specialty</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Products</word>
+            <lemma>Products</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>acquired</word>
+            <lemma>acquire</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>roofing</word>
+            <lemma>roofing</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>granule</word>
+            <lemma>granule</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>manufacturing</word>
+            <lemma>manufacturing</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>operations</word>
+            <lemma>operation</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>Harsco</word>
+            <lemma>Harsco</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="14">
+            <word>Corporation</word>
+            <lemma>Corporation</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP International) (NNP Specialty) (NNPS Products)) (, ,) (NP (NNP Inc.))) (VP (VBD acquired) (NP (NP (DT the) (NN roofing) (NN granule) (NN manufacturing) (NNS operations)) (PP (IN of) (NP (NNP Harsco) (NNP Corporation))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="1">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="2">Specialty</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">acquired</governor>
+            <dependent idx="3">Products</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Products</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">operations</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">operations</governor>
+            <dependent idx="8">roofing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">operations</governor>
+            <dependent idx="9">granule</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">operations</governor>
+            <dependent idx="10">manufacturing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">acquired</governor>
+            <dependent idx="11">operations</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">operations</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Corporation</governor>
+            <dependent idx="13">Harsco</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">of</governor>
+            <dependent idx="14">Corporation</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="1">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="2">Specialty</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">acquired</governor>
+            <dependent idx="3">Products</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Products</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">operations</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">operations</governor>
+            <dependent idx="8">roofing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">operations</governor>
+            <dependent idx="9">granule</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">operations</governor>
+            <dependent idx="10">manufacturing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">acquired</governor>
+            <dependent idx="11">operations</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Corporation</governor>
+            <dependent idx="13">Harsco</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">operations</governor>
+            <dependent idx="14">Corporation</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="1">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="2">Specialty</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">acquired</governor>
+            <dependent idx="3">Products</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Products</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">operations</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">operations</governor>
+            <dependent idx="8">roofing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">operations</governor>
+            <dependent idx="9">granule</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">operations</governor>
+            <dependent idx="10">manufacturing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">acquired</governor>
+            <dependent idx="11">operations</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Corporation</governor>
+            <dependent idx="13">Harsco</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">operations</governor>
+            <dependent idx="14">Corporation</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (. .))) </parse>
+        <basic-dependencies/>
+        <collapsed-dependencies/>
+        <collapsed-ccprocessed-dependencies/>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>``</word>
+            <lemma>``</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>``</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>International</word>
+            <lemma>International</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Specialty</word>
+            <lemma>Specialty</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>142</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Products</word>
+            <lemma>Products</lemma>
+            <CharacterOffsetBegin>143</CharacterOffsetBegin>
+            <CharacterOffsetEnd>151</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>151</CharacterOffsetBegin>
+            <CharacterOffsetEnd>152</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>153</CharacterOffsetBegin>
+            <CharacterOffsetEnd>157</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>acquired</word>
+            <lemma>acquire</lemma>
+            <CharacterOffsetBegin>158</CharacterOffsetBegin>
+            <CharacterOffsetEnd>166</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>167</CharacterOffsetBegin>
+            <CharacterOffsetEnd>170</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>roofing</word>
+            <lemma>roofing</lemma>
+            <CharacterOffsetBegin>171</CharacterOffsetBegin>
+            <CharacterOffsetEnd>178</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>granule</word>
+            <lemma>granule</lemma>
+            <CharacterOffsetBegin>179</CharacterOffsetBegin>
+            <CharacterOffsetEnd>186</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>manufacturing</word>
+            <lemma>manufacturing</lemma>
+            <CharacterOffsetBegin>187</CharacterOffsetBegin>
+            <CharacterOffsetEnd>200</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>operations</word>
+            <lemma>operation</lemma>
+            <CharacterOffsetBegin>201</CharacterOffsetBegin>
+            <CharacterOffsetEnd>211</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>212</CharacterOffsetBegin>
+            <CharacterOffsetEnd>214</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>Harsco</word>
+            <lemma>Harsco</lemma>
+            <CharacterOffsetBegin>215</CharacterOffsetBegin>
+            <CharacterOffsetEnd>221</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="15">
+            <word>Corporation</word>
+            <lemma>Corporation</lemma>
+            <CharacterOffsetBegin>222</CharacterOffsetBegin>
+            <CharacterOffsetEnd>233</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="16">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>234</CharacterOffsetBegin>
+            <CharacterOffsetEnd>236</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>April</word>
+            <lemma>April</lemma>
+            <CharacterOffsetBegin>237</CharacterOffsetBegin>
+            <CharacterOffsetEnd>242</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-04-26</NormalizedNER>
+            <Timex tid="t1" type="DATE">2002-04-26</Timex>
+          </token>
+          <token id="18">
+            <word>26</word>
+            <lemma>26</lemma>
+            <CharacterOffsetBegin>243</CharacterOffsetBegin>
+            <CharacterOffsetEnd>245</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-04-26</NormalizedNER>
+            <Timex tid="t1" type="DATE">2002-04-26</Timex>
+          </token>
+          <token id="19">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>245</CharacterOffsetBegin>
+            <CharacterOffsetEnd>246</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-04-26</NormalizedNER>
+            <Timex tid="t1" type="DATE">2002-04-26</Timex>
+          </token>
+          <token id="20">
+            <word>2002</word>
+            <lemma>2002</lemma>
+            <CharacterOffsetBegin>247</CharacterOffsetBegin>
+            <CharacterOffsetEnd>251</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-04-26</NormalizedNER>
+            <Timex tid="t1" type="DATE">2002-04-26</Timex>
+          </token>
+          <token id="21">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>251</CharacterOffsetBegin>
+            <CharacterOffsetEnd>252</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (`` ``) (NP (NNP International) (NNP Specialty) (NNPS Products)) (, ,) (NP (NNP Inc.)) (VP (VBD acquired) (NP (NP (DT the) (NN roofing) (NN granule) (NN manufacturing) (NNS operations)) (PP (IN of) (NP (NNP Harsco) (NNP Corporation)))) (PP (IN on) (NP (NNP April) (CD 26) (, ,) (CD 2002)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="4">Products</governor>
+            <dependent idx="2">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Products</governor>
+            <dependent idx="3">Specialty</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">acquired</governor>
+            <dependent idx="4">Products</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">acquired</governor>
+            <dependent idx="6">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">operations</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">operations</governor>
+            <dependent idx="9">roofing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">operations</governor>
+            <dependent idx="10">granule</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">operations</governor>
+            <dependent idx="11">manufacturing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">acquired</governor>
+            <dependent idx="12">operations</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">operations</governor>
+            <dependent idx="13">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">Corporation</governor>
+            <dependent idx="14">Harsco</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">of</governor>
+            <dependent idx="15">Corporation</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">acquired</governor>
+            <dependent idx="16">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="16">on</governor>
+            <dependent idx="17">April</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="17">April</governor>
+            <dependent idx="18">26</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="17">April</governor>
+            <dependent idx="20">2002</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Products</governor>
+            <dependent idx="2">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Products</governor>
+            <dependent idx="3">Specialty</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">acquired</governor>
+            <dependent idx="4">Products</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">acquired</governor>
+            <dependent idx="6">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">operations</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">operations</governor>
+            <dependent idx="9">roofing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">operations</governor>
+            <dependent idx="10">granule</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">operations</governor>
+            <dependent idx="11">manufacturing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">acquired</governor>
+            <dependent idx="12">operations</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">Corporation</governor>
+            <dependent idx="14">Harsco</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="12">operations</governor>
+            <dependent idx="15">Corporation</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">acquired</governor>
+            <dependent idx="17">April</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="17">April</governor>
+            <dependent idx="18">26</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="17">April</governor>
+            <dependent idx="20">2002</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Products</governor>
+            <dependent idx="2">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Products</governor>
+            <dependent idx="3">Specialty</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">acquired</governor>
+            <dependent idx="4">Products</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">acquired</governor>
+            <dependent idx="6">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">operations</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">operations</governor>
+            <dependent idx="9">roofing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">operations</governor>
+            <dependent idx="10">granule</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">operations</governor>
+            <dependent idx="11">manufacturing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">acquired</governor>
+            <dependent idx="12">operations</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">Corporation</governor>
+            <dependent idx="14">Harsco</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="12">operations</governor>
+            <dependent idx="15">Corporation</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">acquired</governor>
+            <dependent idx="17">April</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="17">April</governor>
+            <dependent idx="18">26</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="17">April</governor>
+            <dependent idx="20">2002</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>253</CharacterOffsetBegin>
+            <CharacterOffsetEnd>256</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>terms</word>
+            <lemma>term</lemma>
+            <CharacterOffsetBegin>257</CharacterOffsetBegin>
+            <CharacterOffsetEnd>262</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>263</CharacterOffsetBegin>
+            <CharacterOffsetEnd>265</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>266</CharacterOffsetBegin>
+            <CharacterOffsetEnd>269</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>acquisition</word>
+            <lemma>acquisition</lemma>
+            <CharacterOffsetBegin>270</CharacterOffsetBegin>
+            <CharacterOffsetEnd>281</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>were</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>282</CharacterOffsetBegin>
+            <CharacterOffsetEnd>286</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>not</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>287</CharacterOffsetBegin>
+            <CharacterOffsetEnd>290</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>disclosed</word>
+            <lemma>disclose</lemma>
+            <CharacterOffsetBegin>291</CharacterOffsetBegin>
+            <CharacterOffsetEnd>300</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>300</CharacterOffsetBegin>
+            <CharacterOffsetEnd>301</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT The) (NNS terms)) (PP (IN of) (NP (DT the) (NN acquisition)))) (VP (VBD were) (RB not) (VP (VBN disclosed))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">terms</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="8">disclosed</governor>
+            <dependent idx="2">terms</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">terms</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">acquisition</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">acquisition</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">disclosed</governor>
+            <dependent idx="6">were</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="8">disclosed</governor>
+            <dependent idx="7">not</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">terms</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="8">disclosed</governor>
+            <dependent idx="2">terms</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">acquisition</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">terms</governor>
+            <dependent idx="5">acquisition</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">disclosed</governor>
+            <dependent idx="6">were</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="8">disclosed</governor>
+            <dependent idx="7">not</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">terms</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="8">disclosed</governor>
+            <dependent idx="2">terms</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">acquisition</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">terms</governor>
+            <dependent idx="5">acquisition</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">disclosed</governor>
+            <dependent idx="6">were</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="8">disclosed</governor>
+            <dependent idx="7">not</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="5">
+        <tokens>
+          <token id="1">
+            <word>International</word>
+            <lemma>International</lemma>
+            <CharacterOffsetBegin>302</CharacterOffsetBegin>
+            <CharacterOffsetEnd>315</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>Specialty</word>
+            <lemma>Specialty</lemma>
+            <CharacterOffsetBegin>316</CharacterOffsetBegin>
+            <CharacterOffsetEnd>325</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Products</word>
+            <lemma>Products</lemma>
+            <CharacterOffsetBegin>326</CharacterOffsetBegin>
+            <CharacterOffsetEnd>334</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>334</CharacterOffsetBegin>
+            <CharacterOffsetEnd>335</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>336</CharacterOffsetBegin>
+            <CharacterOffsetEnd>340</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>completed</word>
+            <lemma>complete</lemma>
+            <CharacterOffsetBegin>341</CharacterOffsetBegin>
+            <CharacterOffsetEnd>350</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>351</CharacterOffsetBegin>
+            <CharacterOffsetEnd>354</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>acquisition</word>
+            <lemma>acquisition</lemma>
+            <CharacterOffsetBegin>355</CharacterOffsetBegin>
+            <CharacterOffsetEnd>366</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>367</CharacterOffsetBegin>
+            <CharacterOffsetEnd>369</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>370</CharacterOffsetBegin>
+            <CharacterOffsetEnd>373</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>roofing</word>
+            <lemma>roofing</lemma>
+            <CharacterOffsetBegin>374</CharacterOffsetBegin>
+            <CharacterOffsetEnd>381</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>granule</word>
+            <lemma>granule</lemma>
+            <CharacterOffsetBegin>382</CharacterOffsetBegin>
+            <CharacterOffsetEnd>389</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>manufacturing</word>
+            <lemma>manufacturing</lemma>
+            <CharacterOffsetBegin>390</CharacterOffsetBegin>
+            <CharacterOffsetEnd>403</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>operations</word>
+            <lemma>operation</lemma>
+            <CharacterOffsetBegin>404</CharacterOffsetBegin>
+            <CharacterOffsetEnd>414</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>415</CharacterOffsetBegin>
+            <CharacterOffsetEnd>417</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>Harsco</word>
+            <lemma>Harsco</lemma>
+            <CharacterOffsetBegin>418</CharacterOffsetBegin>
+            <CharacterOffsetEnd>424</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="17">
+            <word>Corporation</word>
+            <lemma>Corporation</lemma>
+            <CharacterOffsetBegin>425</CharacterOffsetBegin>
+            <CharacterOffsetEnd>436</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="18">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>437</CharacterOffsetBegin>
+            <CharacterOffsetEnd>439</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>April</word>
+            <lemma>April</lemma>
+            <CharacterOffsetBegin>440</CharacterOffsetBegin>
+            <CharacterOffsetEnd>445</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-04-26</NormalizedNER>
+            <Timex tid="t1" type="DATE">2002-04-26</Timex>
+          </token>
+          <token id="20">
+            <word>26</word>
+            <lemma>26</lemma>
+            <CharacterOffsetBegin>446</CharacterOffsetBegin>
+            <CharacterOffsetEnd>448</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-04-26</NormalizedNER>
+            <Timex tid="t1" type="DATE">2002-04-26</Timex>
+          </token>
+          <token id="21">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>448</CharacterOffsetBegin>
+            <CharacterOffsetEnd>449</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-04-26</NormalizedNER>
+            <Timex tid="t1" type="DATE">2002-04-26</Timex>
+          </token>
+          <token id="22">
+            <word>2002</word>
+            <lemma>2002</lemma>
+            <CharacterOffsetBegin>450</CharacterOffsetBegin>
+            <CharacterOffsetEnd>454</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2002-04-26</NormalizedNER>
+            <Timex tid="t1" type="DATE">2002-04-26</Timex>
+          </token>
+          <token id="23">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>454</CharacterOffsetBegin>
+            <CharacterOffsetEnd>455</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>''</word>
+            <lemma>''</lemma>
+            <CharacterOffsetBegin>455</CharacterOffsetBegin>
+            <CharacterOffsetEnd>456</CharacterOffsetEnd>
+            <POS>''</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (FRAG (NP (NNP International) (NNP Specialty) (NNPS Products))) (, ,) (NP (NNP Inc.)) (VP (VBD completed) (NP (NP (DT the) (NN acquisition)) (PP (IN of) (NP (NP (DT the) (NN roofing) (NN granule) (NN manufacturing) (NNS operations)) (PP (IN of) (NP (NNP Harsco) (NNP Corporation)))))) (PP (IN on) (NP (NNP April) (CD 26) (, ,) (CD 2002)))) (. .) ('' ''))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="1">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="2">Specialty</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">completed</governor>
+            <dependent idx="3">Products</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">completed</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">acquisition</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">completed</governor>
+            <dependent idx="8">acquisition</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">acquisition</governor>
+            <dependent idx="9">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">operations</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">operations</governor>
+            <dependent idx="11">roofing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">operations</governor>
+            <dependent idx="12">granule</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">operations</governor>
+            <dependent idx="13">manufacturing</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">of</governor>
+            <dependent idx="14">operations</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="14">operations</governor>
+            <dependent idx="15">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Corporation</governor>
+            <dependent idx="16">Harsco</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="15">of</governor>
+            <dependent idx="17">Corporation</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">completed</governor>
+            <dependent idx="18">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="18">on</governor>
+            <dependent idx="19">April</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="19">April</governor>
+            <dependent idx="20">26</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="19">April</governor>
+            <dependent idx="22">2002</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="1">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="2">Specialty</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">completed</governor>
+            <dependent idx="3">Products</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">completed</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">acquisition</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">completed</governor>
+            <dependent idx="8">acquisition</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">operations</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">operations</governor>
+            <dependent idx="11">roofing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">operations</governor>
+            <dependent idx="12">granule</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">operations</governor>
+            <dependent idx="13">manufacturing</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="8">acquisition</governor>
+            <dependent idx="14">operations</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Corporation</governor>
+            <dependent idx="16">Harsco</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="14">operations</governor>
+            <dependent idx="17">Corporation</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">completed</governor>
+            <dependent idx="19">April</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="19">April</governor>
+            <dependent idx="20">26</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="19">April</governor>
+            <dependent idx="22">2002</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="1">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Products</governor>
+            <dependent idx="2">Specialty</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">completed</governor>
+            <dependent idx="3">Products</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">completed</governor>
+            <dependent idx="5">Inc.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">acquisition</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">completed</governor>
+            <dependent idx="8">acquisition</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">operations</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">operations</governor>
+            <dependent idx="11">roofing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">operations</governor>
+            <dependent idx="12">granule</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">operations</governor>
+            <dependent idx="13">manufacturing</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="8">acquisition</governor>
+            <dependent idx="14">operations</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Corporation</governor>
+            <dependent idx="16">Harsco</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="14">operations</governor>
+            <dependent idx="17">Corporation</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">completed</governor>
+            <dependent idx="19">April</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="19">April</governor>
+            <dependent idx="20">26</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="19">April</governor>
+            <dependent idx="22">2002</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>
