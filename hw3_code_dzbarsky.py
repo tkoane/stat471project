@@ -100,7 +100,7 @@ def extract_returns(filelist):
     print "Standard Deviation: " + str(numpy.std(returns))
 
     Plot.hist(returns, 100)
-    Plot.title('Distrubtion of Returns')
+    Plot.title('Distribution of Returns')
     Plot.xlabel('Percentage Return')
     Plot.ylabel('Frequency')
     Plot.savefig('returns.png')
