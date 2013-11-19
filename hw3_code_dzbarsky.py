@@ -13,8 +13,8 @@ import os
 import itertools
 import subprocess
 import xml.etree.ElementTree as ET
-#import matplotlib.pyplot as Plot
-#import numpy
+import matplotlib.pyplot as Plot
+import numpy
 
 def get_all_files(directory):
     # We assume that a filename with a . is always a file rather than a directory
@@ -96,11 +96,22 @@ def extract_returns(filelist):
         returns.append(float(tokens[i+1]))
         i += 2
 
+    print "Mean: " + str(numpy.mean(returns))
+    print "Standard Deviation: " + str(numpy.std(returns))
+
+    Plot.hist(returns, 100)
+    Plot.title('Distrubtion of Returns')
+    Plot.xlabel('Percentage Return')
+    Plot.ylabel('Frequency')
+    Plot.savefig('returns.png')
+    Plot.show()
+
     return sorted(returns)
 
+
 def main():
-    #extract_top_words('data')
     #print_file_length_hist('data')
+    #extract_top_words('data')
     returns = extract_returns('xret_tails.txt')
     print returns
 
