@@ -1,3 +1,6 @@
+#STAT 471 Project Appendix
+#Python Code
+
 # David Zbarsky: dzbarsky@wharton.upenn.edu
 # Yaou Wang: yaouwang@wharton.upenn.edu
 
@@ -14,7 +17,8 @@ import itertools
 import subprocess
 import xml.etree.ElementTree as ET
 import matplotlib.pyplot as Plot
-import numpy
+import numpy as np
+import statsmodels.api as sm
 
 def get_all_files(directory):
     # We assume that a filename with a . is always a file rather than a directory
@@ -96,8 +100,8 @@ def extract_returns(filelist):
         returns.append(float(tokens[i+1]))
         i += 2
 
-    print "Mean: " + str(numpy.mean(returns))
-    print "Standard Deviation: " + str(numpy.std(returns))
+    print "Mean: " + str(np.mean(returns))
+    print "Standard Deviation: " + str(np.std(returns))
 
     Plot.hist(returns, 100)
     Plot.title('Distribution of Returns')
@@ -108,6 +112,18 @@ def extract_returns(filelist):
 
     return sorted(returns)
 
+def column(matrix, i):
+    return [row[i] for row in matrix]
+
+def bonferroni_regression(y, matrix):
+    
+    for i in range(1):
+        X = column(matrix, i)
+        X = sm.add_constant(X, prepend=False)
+        model = sm.OLS(y, X)
+        results = model.fit()
+        print dir(results)
+        
 
 def main():
     #print_file_length_hist('data')
