@@ -162,7 +162,8 @@ def generate_bag_of_words(xret_tails):
     for file in filenames:
         returnsVector.append(returns[file])
 
-    print "Returns: " + str(returnsVector)
+    return allBagsofWords, returnsVector
+    #print "Returns: " + str(returnsVector)
     #print "Matrix: " + str(allBagsofWords)
 
 def column(matrix, i):
@@ -180,7 +181,8 @@ def bonferroni_regression(y, matrix):
 def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
-    generate_bag_of_words('xret_tails.txt')
+    matrix, y = generate_bag_of_words('xret_tails.txt')
+    bonferroni_regression(y, matrix)
     #returns = extract_returns('xret_tails.txt')
     #print returns
 
