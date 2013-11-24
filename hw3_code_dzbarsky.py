@@ -169,13 +169,35 @@ def column(matrix, i):
     return [row[i] for row in matrix]
 
 def bonferroni_regression(y, matrix):
+    matrix = np.array(matrix)
+    betas = dict()
+
+    currentArray = np.array()
+    currentArray = sm.add_constant(currentArray, prepend=False)
+    max_sig = 0
+    max_column = 0
+    max_beta = 0
+    max_pvalue = 0
+
     
-    for i in range(1):
-        X = column(matrix, i)
-        X = sm.add_constant(X, prepend=False)
+    for i in range(len(matrix[0])):
+        X = matrix[:,i]
+        X = np.append(currentArray, X, 1)
         model = sm.OLS(y, X)
         results = model.fit()
         print dir(results)
+        sig = 0
+        if sig > max_sig:
+            max_sig = sig 
+            max_column = i
+            max_beta = results.params[len(results.params)-1]
+            max_pvalue = pvalue
+    if max_pvalue < (0.05/len(matrix[0])):
+        betas[max_column] = max_beta
+        np.append(currentArray, matrix[:,max_column], 1)
+        delete(matrix, max_column, axis=1)     
+    else:
+        break
 
 def main():
     #print_file_length_hist('data')
