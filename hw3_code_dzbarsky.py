@@ -111,6 +111,59 @@ def extract_returns(filelist):
     Plot.show()
 
     return sorted(returns)
+        
+def generate_bag_of_words(xret_tails):
+    returns = dict()
+
+    fileDicts = []
+
+    allWords = set()
+
+    for line in open(xret_tails):
+        file = line[:line.find('\t')]
+        line = line[line.find('\t')+1:]
+        returns[file] = line.strip()
+
+    filenames = returns.keys()
+
+    # Delete the files that are in the test set.
+    filenames2 = []
+    for file in filenames:
+        try:
+            with open('data/' + file):
+                filenames2.append(file)
+        except IOError:
+            pass
+    filenames = filenames2
+
+    for file in filenames:
+        map = dict()
+        for word in load_file_tokens('data/' + file):
+            if word not in map:
+                map[word] = 1
+            else:
+                map[word] += 1
+            allWords.add(word)
+        fileDicts.append(map)
+
+    allBagsofWords = []
+    for i in range(len(filenames)):
+        file = filenames[i]
+        map = fileDicts[i]
+        arr = []
+        for word in allWords:
+            if word in map:
+                arr.append(map[word])
+            else:
+                arr.append(0)
+        allBagsofWords.append(arr)
+
+    returnsVector = []
+    for file in filenames:
+        returnsVector.append(returns[file])
+
+    print "Returns: " + str(returnsVector)
+    #print "Matrix: " + str(allBagsofWords)
 
 def column(matrix, i):
     return [row[i] for row in matrix]
@@ -123,13 +176,13 @@ def bonferroni_regression(y, matrix):
         model = sm.OLS(y, X)
         results = model.fit()
         print dir(results)
-        
 
 def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
-    returns = extract_returns('xret_tails.txt')
-    print returns
+    generate_bag_of_words('xret_tails.txt')
+    #returns = extract_returns('xret_tails.txt')
+    #print returns
 
 if __name__ == "__main__":
     main()
