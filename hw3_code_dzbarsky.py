@@ -167,7 +167,7 @@ def generate_bag_of_words(xret_tails):
     #print "Returns: " + str(returnsVector)
     #print "Matrix: " + str(allBagsofWords)
 
-def aic_regression(y, matrix):
+def bonferroni_regression(y, matrix):
     matrix = np.array(matrix)
     betas = []
     currentArray = np.ones((matrix.shape[0], 1), dtype=float)
@@ -193,7 +193,7 @@ def aic_regression(y, matrix):
                     max_model = results
                     max_aic = results.rsquared_adj
         
-        if max_aic > prev_aic:
+        if max_pvalue > 0.05/len(matrix[0]):
             prev_aic = max_aic
             betas.append(max_column)
             currentArray = np.append(currentArray, matrix[:,max_column:max_column+1], 1)
@@ -462,7 +462,7 @@ def main():
     print l
 
 '''
-    betas = aic_regression(y, matrix)
+    betas = bonferroni_regression(y, matrix)
     
     
 
