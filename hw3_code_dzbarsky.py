@@ -183,7 +183,7 @@ def aic_regression(y, matrix):
                 X = np.append(currentArray, X, 1)
                 model = sm.OLS(y, X)
                 results = model.fit()
-                sig = results.tvalues[len(results.params)-1]
+                sig = results.rsquared_adj
                 if sig > max_sig:
                     max_sig = sig 
                     max_column = i
@@ -254,13 +254,24 @@ Conclusion: Bonferroni is garbage and has too few elements to actually predict a
 See r squared value: 4.3%
 
 '''
-    
+
+'''
+AIC on Y as returns:
+
+'''
+
+'''
+AIC for purely directional bets (Y is -1 or 1 for going up or down)
+
+'''
+
 def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
 
     matrix, y, wordlist = generate_bag_of_words('xret_tails.txt')
-    print (wordlist[6], wordlist[43], wordlist[3934], wordlist[7473], wordlist[8994], wordlist[10998], wordlist[9444], wordlist[12189])
+    #print (wordlist[6], wordlist[43], wordlist[3934], wordlist[7473], wordlist[8994], wordlist[10998], wordlist[9444], wordlist[12189])
+    
     betas = aic_regression(y, matrix)
     l = []
     for beta in betas:
