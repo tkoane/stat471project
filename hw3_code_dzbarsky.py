@@ -160,52 +160,113 @@ def generate_bag_of_words(xret_tails):
 
     returnsVector = []
     for file in filenames:
-        returnsVector.append(returns[file])
+        returnsVector.append(float(returns[file]))
 
-    return allBagsofWords, returnsVector
+    return allBagsofWords, returnsVector, list(allWords)
     #print "Returns: " + str(returnsVector)
     #print "Matrix: " + str(allBagsofWords)
 
-def column(matrix, i):
-    return [row[i] for row in matrix]
-
-def bonferroni_regression(y, matrix):
+def aic_regression(y, matrix):
     matrix = np.array(matrix)
-    betas = dict()
-
-    currentArray = np.ones(len(matrix[0]), 1)
-    currentArray = sm.add_constant(currentArray, prepend=False)
-    max_sig = 0
-    max_column = 0
-    max_beta = 0
-    max_pvalue = 0
-
+    betas = []
+    currentArray = np.ones((matrix.shape[0], 1), dtype=float)
+    while True:
+        max_model = None
+        max_sig = 0
+        max_column = 0
+        max_beta = 0
+        max_pvalue = 0
+        prev_aic = 0
+        for i in range(len(matrix[0])):
+            if i not in betas:
+                X = matrix[:,i:i+1]
+                X = np.append(currentArray, X, 1)
+                model = sm.OLS(y, X)
+                results = model.fit()
+                sig = results.tvalues[len(results.params)-1]
+                if sig > max_sig:
+                    max_sig = sig 
+                    max_column = i
+                    max_beta = results.params[len(results.params)-1]
+                    max_pvalue = results.pvalues[len(results.params)-1]
+                    max_model = results
+                    max_aic = results.rsquared_adj
+        
+        if max_aic > prev_aic:
+            prev_aic = max_aic
+            betas.append(max_column)
+            currentArray = np.append(currentArray, matrix[:,max_column:max_column+1], 1)
+            print max_model.summary()
+            print betas 
+        else:
+            break
     
-    #for i in range(len(matrix[0])):
-    for i in range(1):
-        X = matrix[:,i]
-        X = np.append(currentArray, X, 1)
-        model = sm.OLS(y, X)
-        results = model.fit()
-        print dir(results)
-        sig = 0
-        if sig > max_sig:
-            max_sig = sig 
-            max_column = i
-            max_beta = results.params[len(results.params)-1]
-            max_pvalue = pvalue
-    if max_pvalue < (0.05/len(matrix[0])):
-        betas[max_column] = max_beta
-        np.append(currentArray, matrix[:,max_column], 1)
-        delete(matrix, max_column, axis=1)     
-    else:
-        pass
+    return betas
 
+
+'''
+    here are the column numbers generated using Bonferroni
+    #Bonferroni code just involves changing the if statement in aic_regression#
+    currentArray = np.ones((matrix.shape[0], 1), dtype=float)
+    currentArray = np.append(currentArray, matrix[:, 6:7], 1)
+    currentArray = np.append(currentArray, matrix[:, 43:44], 1)
+    currentArray = np.append(currentArray, matrix[:, 3934:3935], 1)
+    currentArray = np.append(currentArray, matrix[:, 7473:7474], 1)
+    currentArray = np.append(currentArray, matrix[:, 8994:8995], 1)
+    currentArray = np.append(currentArray, matrix[:, 10998:10999], 1)
+    currentArray = np.append(currentArray, matrix[:, 9444:9445], 1)
+    currentArray = np.append(currentArray, matrix[:, 12189:12190], 1)
+    model = sm.OLS(y, currentArray)
+    results = model.fit()
+print out:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.043
+Model:                            OLS   Adj. R-squared:                  0.042
+Method:                 Least Squares   F-statistic:                     63.99
+Date:                Sun, 24 Nov 2013   Prob (F-statistic):           2.56e-15
+Time:                        21:16:09   Log-Likelihood:                -5226.9
+No. Observations:                1435   AIC:                         1.046e+04
+Df Residuals:                    1433   BIC:                         1.047e+04
+Df Model:                           1                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+const          0.8631      0.244      3.535      0.000         0.384     1.342
+x1             2.3121      0.289      7.999      0.000         1.745     2.879
+x2             2.3121      0.289      7.999      0.000         1.745     2.879
+x3             2.3121      0.289      7.999      0.000         1.745     2.879
+x4             2.3121      0.289      7.999      0.000         1.745     2.879
+x5             2.3121      0.289      7.999      0.000         1.745     2.879
+x6             2.3121      0.289      7.999      0.000         1.745     2.879
+x7            11.5605      1.445      7.999      0.000         8.726    14.395
+x8             2.3121      0.289      7.999      0.000         1.745     2.879
+==============================================================================
+Omnibus:                       16.664   Durbin-Watson:                   1.968
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               11.256
+Skew:                          -0.074   Prob(JB):                      0.00360
+Kurtosis:                       2.592   Cond. No.                          nan
+==============================================================================
+
+Here are the words that corresponds to these variables:
+('localized', 'Tailoring', 'viewers', 'showcasing', 'native', 'Content', 'YouTube', 'tap')
+Conclusion: Bonferroni is garbage and has too few elements to actually predict anything
+See r squared value: 4.3%
+
+'''
+    
 def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
-    matrix, y = generate_bag_of_words('xret_tails.txt')
-    bonferroni_regression(y, matrix)
+
+    matrix, y, wordlist = generate_bag_of_words('xret_tails.txt')
+    print (wordlist[6], wordlist[43], wordlist[3934], wordlist[7473], wordlist[8994], wordlist[10998], wordlist[9444], wordlist[12189])
+    betas = aic_regression(y, matrix)
+    l = []
+    for beta in betas:
+        l.append(wordlist[beta])
+    print l
+
     #returns = extract_returns('xret_tails.txt')
     #print returns
 
