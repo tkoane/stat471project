@@ -484,11 +484,27 @@ The words:
 
 '''
 
+def plot_t_values(file):
+    tvalues = []
+    for line in open(file):
+        line = line.split(' ')
+        line = [i for i in line if i != '']
+        tvalues.append(math.fabs(float(line[3])))
+    indices = [n for n in range(len(tvalues))]
+    Plot.scatter(indices, tvalues)
+    Plot.title('T-values of Variables in Model')
+    Plot.xlabel('Variables')
+    Plot.ylabel('T-value')
+    Plot.savefig('tvalues.png')
+    Plot.show()
+
+    print tvalues
+
 def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
 
-    matrix, y, wordlist = generate_bag_of_words('xret_tails.txt')
+    #matrix, y, wordlist = generate_bag_of_words('xret_tails.txt')
     #print (wordlist[6], wordlist[43], wordlist[3934], wordlist[7473], wordlist[8994], wordlist[10998], wordlist[9444], wordlist[12189])
     betas = [6, 4132, 9303, 310, 11885, 6529, 8719, 2476, 2479, 952, 5094, 1539, 11666, 8160, 1320, 9663, 8010, 809, 3145, 3566, 6152, 1230, 4661, 1068, 4285, 8155, 647, 9401, 2181, 6884, 2538, 3772, 3311, 2260, 2735, 10712, 6288, 298, 1899, 1500, 4683, 1655, 3030, 11443, 5306, 10795, 87, 1198, 5982, 3648, 3507, 3080, 2607, 12286, 10157, 8061, 5316, 2379, 1558, 3874, 1162, 8004, 7681, 724, 6867, 12764, 4775, 3616, 2683, 2065, 3024, 7712, 3899, 11830, 10885, 358, 7307, 11006, 6698, 3962, 12509, 4049, 33, 12335, 12289, 5756, 3238, 11624, 939, 5309, 827, 3063, 12121, 7879, 6023, 1106, 1924, 6458, 491, 6632, 314, 4110, 4535, 2236, 123, 8328, 1005, 11196, 7538, 11410, 12001, 18, 11646, 5538, 1825, 7532, 10849, 6072, 2056, 2553, 7926, 3195, 1400, 8209, 7503, 10515, 419, 12049, 1056, 2060, 25, 10148, 8763, 5426, 11469, 11238, 10500, 5049, 481, 5722, 8921, 10039, 311, 293, 482, 6160, 2554, 3457, 1391, 7875, 11260, 1954, 6629, 9284, 723, 2166, 747, 7079, 12030, 4515, 261, 619, 8908, 6933, 4603, 2983, 4576, 7842, 11591, 3757, 8623, 10491, 3769, 11718, 6943, 1120, 12407, 2029, 7446, 9958, 10428, 270, 4213, 8911, 8089, 1641, 9493, 5180, 4551, 1355, 9903, 2021, 818]
     l = []
@@ -496,15 +512,16 @@ def main():
         l.append(wordlist[beta])
     print l
 
-'''
+    '''
     betas = bonferroni_regression(y, matrix)
     
     
 
     #returns = extract_returns('xret_tails.txt')
     #print returns
-'''
+    '''
 
+    plot_t_values('ols_results.txt')
 
 if __name__ == "__main__":
     main()
