@@ -20,6 +20,7 @@ import matplotlib.pyplot as Plot
 import numpy as np
 import statsmodels.api as sm
 from sklearn import linear_model
+from sklearn.decomposition import PCA
 
 def get_all_files(directory):
     # We assume that a filename with a . is always a file rather than a directory
@@ -174,8 +175,8 @@ def generate_bag_of_words(xret_tails):
     for file in filenames:
         returnsVector.append(float(returns[file]))
 
-    print allWords
-    return allBagsofWords, returnsVector, list(allWords)
+    return (allBagsofWords, returnsVector,
+            [i/math.fabs(i) for i in returnsVector], list(allWords))
     #print "Returns: " + str(returnsVector)
     #print "Matrix: " + str(allBagsofWords)
 
@@ -196,7 +197,7 @@ def bonferroni_regression(y, matrix):
                 X = np.append(currentArray, X, 1)
                 model = sm.OLS(y, X)
                 results = model.fit()
-                sig = results.rsquared_adj
+                sig = results.tvalues[len(results.params)-1]
                 if sig > max_sig:
                     max_sig = sig 
                     max_column = i
@@ -206,6 +207,43 @@ def bonferroni_regression(y, matrix):
                     max_aic = results.rsquared_adj
         
         if max_pvalue > 0.05/len(matrix[0]):
+            prev_aic = max_aic
+            betas.append(max_column)
+            currentArray = np.append(currentArray, matrix[:,max_column:max_column+1], 1)
+            print max_model.summary()
+            print betas 
+        else:
+            break
+    
+    return betas
+
+def aic_regression(y, matrix):
+    matrix = np.array(matrix)
+    betas = []
+    currentArray = np.ones((matrix.shape[0], 1), dtype=float)
+    while True:
+        max_model = None
+        max_sig = 0
+        max_column = 0
+        max_beta = 0
+        max_pvalue = 0
+        prev_aic = 0
+        for i in range(len(matrix[0])):
+            if i not in betas:
+                X = matrix[:,i:i+1]
+                X = np.append(currentArray, X, 1)
+                model = sm.OLS(y, X)
+                results = model.fit()
+                sig = results.tvalues[len(results.params)-1]
+                if sig > max_sig:
+                    max_sig = sig 
+                    max_column = i
+                    max_beta = results.params[len(results.params)-1]
+                    max_pvalue = results.pvalues[len(results.params)-1]
+                    max_model = results
+                    max_aic = results.rsquared_adj
+        
+        if max_aic > prev_aic:
             prev_aic = max_aic
             betas.append(max_column)
             currentArray = np.append(currentArray, matrix[:,max_column:max_column+1], 1)
@@ -493,7 +531,15 @@ the column values:
 The words:
 ['localized', 'AKS', 'pursuant', '177', '768.60', 'Also', '78.9', '1.48', 'led', '232', '7', '215,083,000', 'declines', 'needs', '13.1', 'Additionally', 'postponing', 'refinance', 'convergence', 'target', 'Mansfield', 'That', '123.1', 'emulation', '22.1', 'purchased', 'CXS', 'Panel', 'Statement', 'Special/M', '63.6', 'Heinz', '0.32', 'relating', 'interests', 'place', 'broad', 'shipped', 'MOLX', '391', '0.52', 'prior', 'Company', 'Full', 'conditions', 'any', 'Nov-03-2009', 'Shearson', 'Richard', 'year-to-date', 'medicine', 'salaried', 'Reconciliation', '89', 'enterprises', 'public', 'both', 'algorithm', 'Direct', '536', '16-ounce', 'represent', 'communicated', 'resulted', '03', 'volume', 'low', 'Releases', 'Feb-18-1997', 'connection', 'predicts', 'parent', 'participation', 'stating', 'Locations', 'Computerworld', 'Daylight', 'participant', '12-sample', 'Mirrors', 'declining', 'Dec-10-2008', 'internally', '10-Q', '83', 'remains', 'ZyDAS', 'Profit', 'mirrors', 'Changed', 'team', 'foreseeable', 'impact', 'specified', 'Expects', '150.5', 'M', 'companies', 'carbon', '10.8', '173', 'Distribution', 'Hansen', '11,875,000', 'hereby', 'Jul-26-2006', 'decreased', '4.7', 'fast', 'reflect', 'These', '153.0', 'assumed', '..', 'Nine', 'first', '44.5', 'FNF', 'last', '1.43', 'Buys', 'outlets', 'world', '23', 'assurance', 'Apr-18-2006', 'Resources', 'Asset', 'Joe', '1,48,004,000', '45.0', 'beer', 'Kimberly-Clark', '15.2', 'Ready', 'directors', 'groups', 'planning', '40.3', 'Nov-07', 'Big', '09:00', '176', '108.4', '40.0', 'expenditure', '98,464,000', '452', 'aspects', 'Illumina', 'program', 'degraded', '10.7', '30.75', 'authorized', 'Rate', 'Engineering', 'notification', 'Robinson', 'Nov-09-2006', 'substantially', 'previous', '38', 'CEPH', 'Resignation', 'upon', 'external', '4', 'added', 'Citizens', 'Apr-26-2005', '26-week', '0.18', 'oversee', '160', 'proactive', 'first-quarter', 'unrealized', 'Executives', 'roles', '.09', 'Vyngapurovsky', '0.75', '33', 'formation', '22,289,000', 'Coffee', 'juice', 'overview', 'HBM', 'biological', 'Klayko', '92.7']
 
-
+>>> clf.score(matrix, y2)
+-451.47347101810328
+(0.4301)
+>>> clf.score(pcam, y2)
+-8.8179907583791746
+(0.4782)
+>>> clf.score(matrix, y2)
+0.84599303135888504
+(0.5983)
 '''
 
 def plot_t_values(file):
@@ -513,12 +559,21 @@ def plot_t_values(file):
 def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
-
-    matrix, y, wordlist = generate_bag_of_words('xret_tails.txt')
+    '''
+    matrix, y, y2, wordlist = generate_bag_of_words('xret_tails.txt')
+    matrix = np.array(matrix)
+    y2 = np.array(y2)
+    
     #stepwise regression on bag of words
     clf = linear_model.Lars()
-    clf.fit(matrix, y)
-    print clf.coef_
+    clf.fit(matrix, y2)
+    for i in range(len(clf.coef_)):
+        if clf.coef_[i] != 0:
+            print wordlist[i]
+            print clf.coef_[i]
+    '''
+    #print y2
+    #print wordlist
     #print (wordlist[6], wordlist[43], wordlist[3934], wordlist[7473], wordlist[8994], wordlist[10998], wordlist[9444], wordlist[12189])
     #betas = [6, 4132, 9303, 310, 11885, 6529, 8719, 2476, 2479, 952, 5094, 1539, 11666, 8160, 1320, 9663, 8010, 809, 3145, 3566, 6152, 1230, 4661, 1068, 4285, 8155, 647, 9401, 2181, 6884, 2538, 3772, 3311, 2260, 2735, 10712, 6288, 298, 1899, 1500, 4683, 1655, 3030, 11443, 5306, 10795, 87, 1198, 5982, 3648, 3507, 3080, 2607, 12286, 10157, 8061, 5316, 2379, 1558, 3874, 1162, 8004, 7681, 724, 6867, 12764, 4775, 3616, 2683, 2065, 3024, 7712, 3899, 11830, 10885, 358, 7307, 11006, 6698, 3962, 12509, 4049, 33, 12335, 12289, 5756, 3238, 11624, 939, 5309, 827, 3063, 12121, 7879, 6023, 1106, 1924, 6458, 491, 6632, 314, 4110, 4535, 2236, 123, 8328, 1005, 11196, 7538, 11410, 12001, 18, 11646, 5538, 1825, 7532, 10849, 6072, 2056, 2553, 7926, 3195, 1400, 8209, 7503, 10515, 419, 12049, 1056, 2060, 25, 10148, 8763, 5426, 11469, 11238, 10500, 5049, 481, 5722, 8921, 10039, 311, 293, 482, 6160, 2554, 3457, 1391, 7875, 11260, 1954, 6629, 9284, 723, 2166, 747, 7079, 12030, 4515, 261, 619, 8908, 6933, 4603, 2983, 4576, 7842, 11591, 3757, 8623, 10491, 3769, 11718, 6943, 1120, 12407, 2029, 7446, 9958, 10428, 270, 4213, 8911, 8089, 1641, 9493, 5180, 4551, 1355, 9903, 2021, 818]
     #l = []
