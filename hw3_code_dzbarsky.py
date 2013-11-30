@@ -549,6 +549,7 @@ def plot_t_values(file):
         line = line.split(' ')
         line = [i for i in line if i != '']
         tvalues.append(math.fabs(float(line[3])))
+    tvalues.remove(11.939)
     indices = [n for n in range(len(tvalues))]
     Plot.scatter(indices, tvalues)
     Plot.title('T-values of Variables in Model')
@@ -592,6 +593,8 @@ def plot_qq(file):
         line = line.split(' ')
         line = [i for i in line if i != '']
         tvalues.append(math.fabs(float(line[3])))
+    tvalues = sorted(tvalues)
+    tvalues = tvalues[:len(tvalues)-1]
     stats.probplot(tvalues, dist="norm", plot=Plot)
     Plot.title('Q-Q plot for Bag of Words')
     Plot.xlabel('Actual Quantiles')
@@ -661,9 +664,9 @@ def main():
     '''
 
     #plot_qq('ols_results.txt')
-    #plot_t_values('ols_results.txt')
+    plot_t_values('ols_results.txt')
     #plot_qq_pca('pca_explained_variance')
-    plot_qq_cca()
+    #plot_qq_cca()
     #plot_t_values_pca('pca_explained_variance')
     #plot_t_values_cca()
 
