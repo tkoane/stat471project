@@ -561,7 +561,7 @@ def plot_t_values_pca(file):
     for line in open(file):
         line = line[:line.find(',')]
         tvalues.append((float(line)))
-    tvalues = [min(500 * t, 27) for t in tvalues]
+    tvalues = [min(500 * t, 27) + random.random()/4 for t in tvalues]
     tvalues = tvalues[1:]
     indices = [n for n in range(len(tvalues))]
     Plot.scatter(indices, tvalues)
@@ -618,7 +618,8 @@ def main():
     '''
 
     #plot_t_values('ols_results.txt')
-    plot_t_values_cca()
+    plot_t_values_pca('pca_explained_variance')
+    #plot_t_values_cca()
 
 if __name__ == "__main__":
     main()
