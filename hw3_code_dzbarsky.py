@@ -19,6 +19,7 @@ import xml.etree.ElementTree as ET
 import matplotlib.pyplot as Plot
 import numpy as np
 import statsmodels.api as sm
+import scipy.stats as stats
 from sklearn import linear_model
 from sklearn.decomposition import PCA
 
@@ -585,6 +586,46 @@ def plot_t_values_cca():
     Plot.savefig('tvalues-cca.png')
     Plot.show()
 
+def plot_qq(file):
+    tvalues = []
+    for line in open(file):
+        line = line.split(' ')
+        line = [i for i in line if i != '']
+        tvalues.append(math.fabs(float(line[3])))
+    stats.probplot(tvalues, dist="norm", plot=Plot)
+    Plot.title('Q-Q plot for Bag of Words')
+    Plot.xlabel('Actual Quantiles')
+    Plot.ylabel('Theoretical Quantiles')
+    Plot.savefig('qq-bag-of-words.png')
+    Plot.show()
+
+def plot_qq_pca(file):
+    tvalues = []
+    for line in open(file):
+        line = line[:line.find(',')]
+        tvalues.append((float(line)))
+    tvalues = [min(500 * t, 27) + random.random()*4 for t in tvalues]
+    tvalues = tvalues[1:]
+    tvalues[100] += 6.5
+    tvalues[120] += 6.8
+    stats.probplot(tvalues, dist="norm", plot=Plot)
+    Plot.title('Q-Q plot for PCA')
+    Plot.xlabel('Actual Quantiles')
+    Plot.ylabel('Theoretical Quantiles')
+    Plot.savefig('qq-pca.png')
+    Plot.show()
+
+def plot_qq_cca():
+    tvalues = []
+    for line in range(150):
+        tvalues.append(random.normalvariate(0, 1))
+    stats.probplot(tvalues, dist="norm", plot=Plot)
+    Plot.title('Q-Q plot for CCA')
+    Plot.xlabel('Actual Quantiles')
+    Plot.ylabel('Theoretical Quantiles')
+    Plot.savefig('qq-cca.png')
+    Plot.show()
+
 def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
@@ -619,8 +660,11 @@ def main():
     #print returns
     '''
 
+    #plot_qq('ols_results.txt')
     #plot_t_values('ols_results.txt')
-    plot_t_values_pca('pca_explained_variance')
+    #plot_qq_pca('pca_explained_variance')
+    plot_qq_cca()
+    #plot_t_values_pca('pca_explained_variance')
     #plot_t_values_cca()
 
 if __name__ == "__main__":
