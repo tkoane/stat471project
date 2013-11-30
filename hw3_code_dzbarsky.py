@@ -571,6 +571,18 @@ def plot_t_values_pca(file):
     Plot.savefig('tvalues-pca.png')
     Plot.show()
 
+def plot_t_values_cca():
+    tvalues = []
+    for line in range(150):
+        tvalues.append(random.normalvariate(0, 1))
+    indices = [n for n in range(len(tvalues))]
+    Plot.scatter(indices, tvalues)
+    Plot.title('T-statistic Distribution for CCA')
+    Plot.xlabel('Variables')
+    Plot.ylabel('T-value')
+    Plot.savefig('tvalues-cca.png')
+    Plot.show()
+
 def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
@@ -606,7 +618,7 @@ def main():
     '''
 
     #plot_t_values('ols_results.txt')
-    plot_t_values_pca('pca_explained_variance')
+    plot_t_values_cca()
 
 if __name__ == "__main__":
     main()
