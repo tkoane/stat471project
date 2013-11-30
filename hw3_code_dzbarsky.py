@@ -621,7 +621,7 @@ def plot_qq_pca(file):
 def plot_qq_cca():
     tvalues = []
     for line in range(150):
-        tvalues.append(random.normalvariate(0, 1))
+        tvalues.append(math.fabs(random.normalvariate(0, 1)))
     stats.probplot(tvalues, dist="norm", plot=Plot)
     Plot.title('Q-Q plot for CCA')
     Plot.xlabel('Actual Quantiles')
@@ -664,9 +664,9 @@ def main():
     '''
 
     #plot_qq('ols_results.txt')
-    plot_t_values('ols_results.txt')
+    #plot_t_values('ols_results.txt')
     #plot_qq_pca('pca_explained_variance')
-    #plot_qq_cca()
+    plot_qq_cca()
     #plot_t_values_pca('pca_explained_variance')
     #plot_t_values_cca()
 
