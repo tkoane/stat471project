@@ -22,6 +22,8 @@ import statsmodels.api as sm
 import scipy.stats as stats
 from sklearn import linear_model
 from sklearn.decomposition import PCA
+from sklearn.cross_decomposition import CCA
+from sklearn.naive_bayes import MultinomialNB
 
 def get_all_files(directory):
     # We assume that a filename with a . is always a file rather than a directory
@@ -633,9 +635,12 @@ def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
     '''
+    #code ran in the console
+    
     matrix, y, y2, wordlist = generate_bag_of_words('xret_tails.txt')
     matrix = np.array(matrix)
     y2 = np.array(y2)
+    x_pred, y_pred = generate_pred('xret_tails.txt')
     
     #stepwise regression on bag of words
     clf = linear_model.Lars()
@@ -644,6 +649,27 @@ def main():
         if clf.coef_[i] != 0:
             print wordlist[i]
             print clf.coef_[i]
+            print clf.t_stats_[i]
+
+    #predictive accuracy
+    clf.score(x_pred, y_pred)
+
+    #pca
+    pca = PCA()
+    pca.fit(matrix)
+    pca.explained_variance_ratio_
+    pcam = pca.components_
+    clf.fit(pcam, y2)
+    for i in range(150):
+        print clf.coef_[i]
+        print clf.t_stats_[i]
+
+    #cca
+    clf = CCA()
+    
+    #naive bayes
+    clf = MultinomialNB()
+    
     '''
     #print y2
     #print wordlist
