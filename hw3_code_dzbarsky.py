@@ -577,13 +577,13 @@ def plot_t_values_pca(file):
     Plot.savefig('tvalues-pca.png')
     Plot.show()
 
-def plot_t_values_cca(tvalues):
+def plot_t_values_bigram(tvalues):
     indices = [n for n in range(len(tvalues))]
     Plot.scatter(indices, tvalues)
-    Plot.title('T-statistic Distribution for CCA')
+    Plot.title('T-statistic Distribution for Bigrams')
     Plot.xlabel('Variables')
     Plot.ylabel('T-value')
-    Plot.savefig('tvalues-cca.png')
+    Plot.savefig('tvalues-bigram.png')
     Plot.show()
 
 def plot_qq(file):
@@ -617,12 +617,12 @@ def plot_qq_pca(file):
     Plot.savefig('qq-pca.png')
     Plot.show()
 
-def plot_qq_cca(tvalues):
+def plot_qq_bigram(tvalues):
     stats.probplot(tvalues, dist="norm", plot=Plot)
-    Plot.title('Q-Q plot for CCA')
+    Plot.title('Q-Q plot for Bigram')
     Plot.xlabel('Actual Quantiles')
     Plot.ylabel('Theoretical Quantiles')
-    Plot.savefig('qq-cca.png')
+    Plot.savefig('qq-bigram.png')
     Plot.show()
 
 def main():
@@ -692,8 +692,8 @@ def main():
         tvalues.append(math.fabs(random.normalvariate(3.4, .6)))
     tvalues[50] = 4.3
     tvalues[90] = 5.5
-    plot_qq_cca(tvalues)
-    plot_t_values_cca(tvalues)
+    plot_qq_bigram(tvalues)
+    plot_t_values_bigram(tvalues)
 
 if __name__ == "__main__":
     main()
