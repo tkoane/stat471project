@@ -725,7 +725,7 @@ def main():
     tvalues[40] = 12
     tvalues[15] = 9
     tvalues[60] = 11
-    #plot_qq_cca(tvalues)
+    plot_qq_cca(tvalues)
     plot_t_values_cca(tvalues)
 
 
