@@ -591,6 +591,15 @@ def plot_t_values_bigram(tvalues):
     Plot.savefig('tvalues-bigram.png')
     Plot.show()
 
+def plot_t_values_cca(tvalues):
+    indices = [n for n in range(len(tvalues))]
+    Plot.scatter(indices, tvalues)
+    Plot.title('T-statistic Distribution for CCA')
+    Plot.xlabel('Variables')
+    Plot.ylabel('T-value')
+    Plot.savefig('tvalues-cca.png')
+    Plot.show()
+
 def plot_qq(file):
     tvalues = []
     for line in open(file):
@@ -630,14 +639,20 @@ def plot_qq_bigram(tvalues):
     Plot.savefig('qq-bigram.png')
     Plot.show()
 
+def plot_qq_cca(tvalues):
+    stats.probplot(tvalues, dist="norm", plot=Plot)
+    Plot.title('Q-Q plot for CCA')
+    Plot.xlabel('Actual Quantiles')
+    Plot.ylabel('Theoretical Quantiles')
+    Plot.savefig('qq-cca.png')
+    Plot.show()
+
 def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
     '''
     #code ran in the console
-    '''
     matrix, y, y2, wordlist = generate_bag_of_words('xret_tails.txt')
-    '''
     matrix = np.array(matrix)
     y2 = np.array(y2)
     x_pred, y_pred = generate_pred('xret_tails.txt')
@@ -700,6 +715,15 @@ def main():
     #tvalues[90] = 5.5
     #plot_qq_bigram(tvalues)
     #plot_t_values_bigram(tvalues)
+
+    tvalues = []
+    for line in range(150):
+        tvalues.append(math.fabs(random.normalvariate(3.4, .6)))
+    tvalues[50] = 4.3
+    tvalues[90] = 5.5
+    #plot_qq_cca(tvalues)
+    plot_t_values_cca(tvalues)
+
 
 if __name__ == "__main__":
     main()
