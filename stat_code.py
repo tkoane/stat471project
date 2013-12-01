@@ -234,8 +234,8 @@ def generate_pred(xret_tails):
     for file in filenames:
         returnsVector.append(float(returns[file]))
 
-    return (allBagsofWords, returnsVector,
-            [i/math.fabs(i) for i in returnsVector], list(allWords))
+    return (allBagsofWords,
+            [i/math.fabs(i) for i in returnsVector])
 
 def generate_bigram(directory):
     bigramMatrices = []
@@ -377,10 +377,19 @@ def main():
     for i in range(150):
         print clf.coef_[i]
         print clf.get_params(i)
-		
+
+    #bigram
+    clf.fit(bigram, y2)
+    for i in range(len(clf.coef_)):
+        if clf.coef_[i] != 0:
+            print clf.coef_[i]
+            print clf.get_params(i)
+    clf.score(bigram_pred, y_pred)
+            
     #cca
-    clf = CCA()
-	clf.fit(bigram, y2)
+    cca = CCA()
+	cca.fit(bigram, y2)
+    clf.fit(
 	for i in range(len(clf.coef_)):
         if clf.coef_[i] != 0:
             print wordlist[i]
