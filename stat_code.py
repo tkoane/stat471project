@@ -237,12 +237,28 @@ def generate_pred(xret_tails):
     return (allBagsofWords, returnsVector,
             [i/math.fabs(i) for i in returnsVector], list(allWords))
 
-def generate_bigram(xret_tails):
+def generate_bigram(directory):
+    bigramMatrices = []
+
+    # Cache word indices so this runs in finite time.
+    allWordsLookup = dict()
+    allWords = load_collection_tokens(directory)
+    for i in range(len(allWords)):
+        allWordsLookup[allWords[i]] = i
+
+    for filename in get_all_files(directory):
+        matrix = []
+        for i in range(len(allWords)):
+            arr = []
+            for j in range(len(allWords)):
+                arr.append(0)
+            matrix.append(arr)
+        fileTokens = load_file_tokens(directory + '/' + filename)
+        for i in range(len(fileTokens) - 1):
+            matrix[allWordsLookup[fileTokens[i]]][allWordsLookup[fileTokens[i+1]]] += 1
+        bigramMatrices.append(matrix)
 
 
-def generate_bigram_pred(xret_tails):
-	
-    
 def bonferroni_regression(y, matrix):
     matrix = np.array(matrix)
     betas = []
