@@ -162,6 +162,11 @@ def generate_bag_of_words(xret_tails):
             allWords.add(word)
         fileDicts.append(map)
 
+    # Remove infrequent words ("unknown" token)
+    for word in map.keys():
+        if map[word] <= 1:
+            allWords.remove(word)
+
     allBagsofWords = []
     for i in range(len(filenames)):
         file = filenames[i]
@@ -554,10 +559,10 @@ def plot_t_values(file):
     tvalues.remove(11.939)
     indices = [n for n in range(len(tvalues))]
     Plot.scatter(indices, tvalues)
-    Plot.title('T-values of Variables in Model')
+    Plot.title('T-values of Variables for Bag of Words')
     Plot.xlabel('Variables')
     Plot.ylabel('T-value')
-    Plot.savefig('tvalues.png')
+    Plot.savefig('tvalues-bag-of-words.png')
     Plot.show()
 
 def plot_t_values_pca(file):
@@ -630,8 +635,9 @@ def main():
     #extract_top_words('data')
     '''
     #code ran in the console
-    
+    '''
     matrix, y, y2, wordlist = generate_bag_of_words('xret_tails.txt')
+    '''
     matrix = np.array(matrix)
     y2 = np.array(y2)
     x_pred, y_pred = generate_pred('xret_tails.txt')
@@ -687,13 +693,13 @@ def main():
     #plot_t_values('ols_results.txt')
     #plot_qq_pca('pca_explained_variance')
     #plot_t_values_pca('pca_explained_variance')
-    tvalues = []
-    for line in range(150):
-        tvalues.append(math.fabs(random.normalvariate(3.4, .6)))
-    tvalues[50] = 4.3
-    tvalues[90] = 5.5
-    plot_qq_bigram(tvalues)
-    plot_t_values_bigram(tvalues)
+    #tvalues = []
+    #for line in range(150):
+    #    tvalues.append(math.fabs(random.normalvariate(3.4, .6)))
+    #tvalues[50] = 4.3
+    #tvalues[90] = 5.5
+    #plot_qq_bigram(tvalues)
+    #plot_t_values_bigram(tvalues)
 
 if __name__ == "__main__":
     main()
