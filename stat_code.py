@@ -183,8 +183,16 @@ def generate_bag_of_words(dir, xret_tails):
     for file in filenames:
         returnsVector.append(float(returns[file]))
 
-    return (allBagsofWords, returnsVector,
-            [i/math.fabs(i) for i in returnsVector], list(allWords))
+    returnsVector2 = []
+    for i in returnsVector:
+        if returnVector[i] > 5:
+            returnVector2[i]=1
+        elif returnVector[i] < -5:
+            returnVector2[i]=-1
+        else:
+            returnVector2[i]=0
+        
+    return (allBagsofWords, returnsVector, returnsVector2, list(allWords))
     #print "Returns: " + str(returnsVector)
     #print "Matrix: " + str(allBagsofWords)
     
