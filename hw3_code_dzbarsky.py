@@ -718,9 +718,13 @@ def main():
 
     tvalues = []
     for line in range(150):
-        tvalues.append(math.fabs(random.normalvariate(3.4, .6)))
-    tvalues[50] = 4.3
-    tvalues[90] = 5.5
+        tvalues.append((150 - line)/40 - 1 + math.fabs(random.normalvariate(3.4, .6)))
+    tvalues[3] = 19
+    tvalues[8] = 10
+    tvalues[30] = 16
+    tvalues[40] = 12
+    tvalues[15] = 9
+    tvalues[60] = 11
     #plot_qq_cca(tvalues)
     plot_t_values_cca(tvalues)
 
