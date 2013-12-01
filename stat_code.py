@@ -182,7 +182,7 @@ def generate_bag_of_words(xret_tails):
             [i/math.fabs(i) for i in returnsVector], list(allWords))
     #print "Returns: " + str(returnsVector)
     #print "Matrix: " + str(allBagsofWords)
-
+    
 def generate_pred(xret_tails):
     returns = dict()
 
@@ -267,6 +267,30 @@ def generate_bigram(directory):
 
     return bigramMatrices
 
+def extract_named_entities(xml_file_name):
+    try:
+        tree = ET.parse(xml_file_name)
+        root = tree.getroot()
+        l = []
+        names = [0, 0, 0, 0, 0]
+        for token in root.iter('token'):
+            l.append(token.find('NER').text)
+        l = remove_adj_dup(l)
+        for ner in l:
+            if ner == 'ORGANIZATION':
+                names[0] += 1
+            if ner == 'PERSON':
+                names[1] += 1
+            if ner == 'LOCATION':
+                names[2] += 1
+            if ner == 'MONEY':
+                names[3] += 1
+            if ner == 'DATE':
+                names[4] += 1
+        return names
+    except:
+        return [0, 0, 0, 0, 0]
+
 def bonferroni_regression(y, matrix):
     matrix = np.array(matrix)
     betas = []
@@ -341,6 +365,45 @@ def aic_regression(y, matrix):
     
     return betas
 
+def get_files_listed(corpusroot, filelist):
+    lowd = dict()
+    highd = dict()
+    midd = dict()
+    files = get_all_files(corpusroot)
+    index = filelist.rfind('/')
+    if index < 0:
+        tokens = word_tokenize(PlaintextCorpusReader('.', filelist).raw())
+    else:
+        tokens = word_tokenize(PlaintextCorpusReader(filelist[:index], filelist[index+1:]).raw())
+    i = 0
+    while i < len(tokens):
+        if float(tokens[i+1]) <= -5.0 and tokens[i] in files:
+            lowd[tokens[i]] = float(tokens[i+1])
+        elif float(tokens[i+1]) >= 5.0 and tokens[i] in files:
+            highd[tokens[i]] = float(tokens[i+1])
+        else:
+            midd[tokens[i]] = float(tokens[i+1])
+        i += 2
+
+    return (lowd, midd, highd)
+
+def process_corpus(txt_dir, xml_dir, feature_mode):
+    if txt_dir.find('test') < 0:
+        flag = 'train'
+    else:
+        flag = 'test'
+    (lowd, midd, highd) = get_files_listed(txt_dir, 'xret_tails.txt')
+    f = open(flag + 'named_entity.txt', 'w')
+        for file in get_all_files(xml_dir):
+            v = extract_named_entities(xml_dir + '/' + file)
+            if file[:file.find('.xml')] in lowd:
+                label = -1
+            elif file[:file.find('xml')] in highd:
+                label = 1
+            else:
+                label = 0
+            write_features(f, label, v)
+
 def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
@@ -353,8 +416,8 @@ def main():
     matrix = np.array(matrix)
     y2 = np.array(y2)
     x_pred, y_pred = generate_pred('xret_tails.txt')
-	bigram = generate_bigram('xret_tails.txt')
-	bigram_pred = generate_bigram_pred('xret_tails.txt')
+	bigram = generate_bigram('data')
+	bigram_pred = generate_bigram('test_data')
     
     #stepwise regression on bag of words
     clf = linear_model.Lars()
@@ -405,10 +468,13 @@ def main():
                 print clf.coef_[0][i]
     clf.score(x_pred, y_pred) 
 
-    
-    
+    #command line call to run CoreNLP
+    os.system('java -cp stanford-corenlp-2012-07-09.jar:stanford-corenlp-2012-07-06-models.jar:xom.jar:joda-time.jar -Xmx3g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse -filelist datafilelist.txt -outputDirectory data_result')
+    os.system('java -cp stanford-corenlp-2012-07-09.jar:stanford-corenlp-2012-07-06-models.jar:xom.jar:joda-time.jar -Xmx3g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse -filelist test_datafilelist.txt -outputDirectory test_data_result')
 
-    #returns = extract_returns('xret_tails.txt')
-    #print returns
+    process_corpus('data', 'data_result')
+    os.system('svm-train -t 0 train_named_entity.txt model.model')
+    process_corpus('test_data', 'test_data_result')
+    os.system('svm-predict test_named_entity.txt model.model result')
     '''
 
