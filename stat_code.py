@@ -127,7 +127,7 @@ def normalize(word):
     except ValueError:
         return word
 
-def generate_bag_of_words(xret_tails):
+def generate_bag_of_words(dir, xret_tails):
     returns = dict()
 
     fileDicts = []
@@ -145,7 +145,7 @@ def generate_bag_of_words(xret_tails):
     filenames2 = []
     for file in filenames:
         try:
-            with open('data/' + file):
+            with open(dir + '/' + file):
                 filenames2.append(file)
         except IOError:
             pass
@@ -153,7 +153,7 @@ def generate_bag_of_words(xret_tails):
 
     for file in filenames:
         map = dict()
-        for word in load_file_tokens('data/' + file):
+        for word in load_file_tokens(dir + '/' + file):
             word = normalize(word)
             if word not in map:
                 map[word] = 1
@@ -161,6 +161,11 @@ def generate_bag_of_words(xret_tails):
                 map[word] += 1
             allWords.add(word)
         fileDicts.append(map)
+
+    # Remove infrequent words ("unknown" token)
+    for word in map.keys():
+        if map[word] <= 1:
+            allWords.remove(word)
 
     allBagsofWords = []
     for i in range(len(filenames)):
@@ -183,59 +188,6 @@ def generate_bag_of_words(xret_tails):
     #print "Returns: " + str(returnsVector)
     #print "Matrix: " + str(allBagsofWords)
     
-def generate_pred(xret_tails):
-    returns = dict()
-
-    fileDicts = []
-
-    allWords = set()
-
-    for line in open(xret_tails):
-        file = line[:line.find('\t')]
-        line = line[line.find('\t')+1:]
-        returns[file] = line.strip()
-
-    filenames = returns.keys()
-
-    # Delete the files that are in the train set.
-    filenames2 = []
-    for file in filenames:
-        try:
-            with open('test_data/' + file):
-                filenames2.append(file)
-        except IOError:
-            pass
-    filenames = filenames2
-
-    for file in filenames:
-        map = dict()
-        for word in load_file_tokens('test_data/' + file):
-            word = normalize(word)
-            if word not in map:
-                map[word] = 1
-            else:
-                map[word] += 1
-            allWords.add(word)
-        fileDicts.append(map)
-
-    allBagsofWords = []
-    for i in range(len(filenames)):
-        file = filenames[i]
-        map = fileDicts[i]
-        arr = []
-        for word in allWords:
-            if word in map:
-                arr.append(map[word])
-            else:
-                arr.append(0)
-        allBagsofWords.append(arr)
-
-    returnsVector = []
-    for file in filenames:
-        returnsVector.append(float(returns[file]))
-
-    return (allBagsofWords,
-            [i/math.fabs(i) for i in returnsVector])
 
 def generate_bigram(directory):
     bigramMatrices = []
@@ -316,7 +268,7 @@ def bonferroni_regression(y, matrix):
                     max_pvalue = results.pvalues[len(results.params)-1]
                     max_model = results
                     max_aic = results.rsquared_adj
-        
+
         if max_pvalue > 0.05/len(matrix[0]):
             prev_aic = max_aic
             betas.append(max_column)
@@ -325,7 +277,7 @@ def bonferroni_regression(y, matrix):
             print betas 
         else:
             break
-    
+
     return betas
 
 def aic_regression(y, matrix):
@@ -353,16 +305,16 @@ def aic_regression(y, matrix):
                     max_pvalue = results.pvalues[len(results.params)-1]
                     max_model = results
                     max_aic = results.rsquared_adj
-        
+
         if max_aic > prev_aic:
             prev_aic = max_aic
             betas.append(max_column)
             currentArray = np.append(currentArray, matrix[:,max_column:max_column+1], 1)
             print max_model.summary()
-            print betas 
+            print betas
         else:
             break
-    
+
     return betas
 
 def get_files_listed(corpusroot, filelist):
@@ -408,17 +360,20 @@ def main():
     #print_file_length_hist('data')
     #extract_top_words('data')
     '''
-	betas = bonferroni_regression(y, matrix)
-	
+    betas = bonferroni_regression(y, matrix)
+
     #code ran in the console
-    
-    matrix, y, y2, wordlist = generate_bag_of_words('xret_tails.txt')
+
+    matrix, y, y2, wordlist = generate_bag_of_words('data', 'xret_tails.txt')
     matrix = np.array(matrix)
     y2 = np.array(y2)
-    x_pred, y_pred = generate_pred('xret_tails.txt')
-	bigram = generate_bigram('data')
-	bigram_pred = generate_bigram('test_data')
     
+
+    x_pred, y_pred = generate_bag_of_words('test_data', 'xret_tails.txt')
+    bigram = generate_bigram('data')
+    bigram_pred = generate_bigram('test_data')
+
+
     #stepwise regression on bag of words
     clf = linear_model.Lars()
     clf.fit(matrix, y2)
@@ -448,26 +403,27 @@ def main():
             print clf.coef_[i]
             print clf.get_params(i)
     clf.score(bigram_pred, y_pred)
-            
+
     #cca
     cca = CCA()
-	cca.fit(matrix, bigram)
+    cca.fit(matrix, bigram)
     clf.fit(cca.x_weights_ * matrix, y2)
-	for i in range(len(clf.coef_)):
+    for i in range(len(clf.coef_)):
         if clf.coef_[i] != 0:
             print wordlist[i]
             print clf.coef_[i]
             print clf.get_params(i)
-    
+
     #naive bayes
     clf = MultinomialNB()
-	clf.fit (matrix, y2)
-	for i in range(len(clf.coef_[0])):
-    	if clf.coef_[0][i] != 0:
+    clf.fit (matrix, y2)
+    for i in range(len(clf.coef_[0])):
+        if clf.coef_[0][i] != 0:
                 print wordlist[i]
                 print clf.coef_[0][i]
     clf.score(x_pred, y_pred) 
 
+<<<<<<< HEAD
     #command line call to run CoreNLP
     os.system('java -cp stanford-corenlp-2012-07-09.jar:stanford-corenlp-2012-07-06-models.jar:xom.jar:joda-time.jar -Xmx3g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse -filelist datafilelist.txt -outputDirectory data_result')
     os.system('java -cp stanford-corenlp-2012-07-09.jar:stanford-corenlp-2012-07-06-models.jar:xom.jar:joda-time.jar -Xmx3g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse -filelist test_datafilelist.txt -outputDirectory test_data_result')
@@ -476,5 +432,8 @@ def main():
     os.system('svm-train -t 0 train_named_entity.txt model.model')
     process_corpus('test_data', 'test_data_result')
     os.system('svm-predict test_named_entity.txt model.model result')
+=======
+    #returns = extract_returns('xret_tails.txt')
+    #print returns
+>>>>>>> 4795cd850c287ea0dc861f96839968dec2f4b028
     '''
-
