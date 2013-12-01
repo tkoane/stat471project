@@ -388,14 +388,13 @@ def main():
             
     #cca
     cca = CCA()
-	cca.fit(bigram, y2)
-    clf.fit(
+	cca.fit(matrix, bigram)
+    clf.fit(cca.x_weights_ * matrix, y2)
 	for i in range(len(clf.coef_)):
         if clf.coef_[i] != 0:
             print wordlist[i]
             print clf.coef_[i]
             print clf.get_params(i)
-	clf.score(bigram_pred, y_pred)
     
     #naive bayes
     clf = MultinomialNB()
