@@ -258,6 +258,7 @@ def generate_bigram(directory):
             matrix[allWordsLookup[fileTokens[i]]][allWordsLookup[fileTokens[i+1]]] += 1
         bigramMatrices.append(matrix)
 
+    return bigramMatrices
 
 def bonferroni_regression(y, matrix):
     matrix = np.array(matrix)
