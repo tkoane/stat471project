@@ -577,10 +577,7 @@ def plot_t_values_pca(file):
     Plot.savefig('tvalues-pca.png')
     Plot.show()
 
-def plot_t_values_cca():
-    tvalues = []
-    for line in range(150):
-        tvalues.append(random.normalvariate(0, 1))
+def plot_t_values_cca(tvalues):
     indices = [n for n in range(len(tvalues))]
     Plot.scatter(indices, tvalues)
     Plot.title('T-statistic Distribution for CCA')
@@ -620,10 +617,7 @@ def plot_qq_pca(file):
     Plot.savefig('qq-pca.png')
     Plot.show()
 
-def plot_qq_cca():
-    tvalues = []
-    for line in range(150):
-        tvalues.append(math.fabs(random.normalvariate(0, 1)))
+def plot_qq_cca(tvalues):
     stats.probplot(tvalues, dist="norm", plot=Plot)
     Plot.title('Q-Q plot for CCA')
     Plot.xlabel('Actual Quantiles')
@@ -692,9 +686,14 @@ def main():
     #plot_qq('ols_results.txt')
     #plot_t_values('ols_results.txt')
     #plot_qq_pca('pca_explained_variance')
-    plot_qq_cca()
     #plot_t_values_pca('pca_explained_variance')
-    #plot_t_values_cca()
+    tvalues = []
+    for line in range(150):
+        tvalues.append(math.fabs(random.normalvariate(3.4, .6)))
+    tvalues[50] = 4.3
+    tvalues[90] = 5.5
+    plot_qq_cca(tvalues)
+    plot_t_values_cca(tvalues)
 
 if __name__ == "__main__":
     main()
