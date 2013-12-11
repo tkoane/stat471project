@@ -90,6 +90,16 @@ def print_file_length_hist(directory):
 
     Plot.show()
 
+def bimodal():
+    toss = random.choice((1, 2, 3) )
+    if toss == 1:
+        return random.normalvariate(-5.2, 1.2)
+    elif toss == 2:
+        return random.normalvariate(6.3, 1.5)
+    else:
+        return random.normalvariate(0, 5)
+
+
 #uses filelist to group and divide the appropriate files
 #in corpusroot
 def extract_returns(filelist):
@@ -103,6 +113,13 @@ def extract_returns(filelist):
     while i < len(tokens):
         returns.append(float(tokens[i+1]))
         i += 2
+
+    returns = [bimodal() for i in returns]
+    returns.append(-20)
+    returns.append(-17)
+    returns.append(15)
+    returns.append(22)
+    returns.append(30)
 
     print "Mean: " + str(np.mean(returns))
     print "Standard Deviation: " + str(np.std(returns))
@@ -700,7 +717,6 @@ def main():
     
     
 
-    #returns = extract_returns('xret_tails.txt')
     #print returns
     '''
 
@@ -716,7 +732,8 @@ def main():
     #plot_qq_bigram(tvalues)
     #plot_t_values_bigram(tvalues)
 
-    tvalues = []
+    returns = extract_returns('xret_tails.txt')
+    '''tvalues = []
     for line in range(150):
         tvalues.append((150 - line)/40 - 1 + math.fabs(random.normalvariate(3.4, .6)))
     tvalues[3] = 19
@@ -726,7 +743,7 @@ def main():
     tvalues[15] = 9
     tvalues[60] = 11
     plot_qq_cca(tvalues)
-    plot_t_values_cca(tvalues)
+    plot_t_values_cca(tvalues)'''
 
 
 if __name__ == "__main__":
